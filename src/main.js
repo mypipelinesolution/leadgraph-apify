@@ -221,7 +221,8 @@ try {
     log.info('Starting AI outreach generation');
     let aiCount = 0;
     
-    for (const lead of mergedLeads) {
+    for (let i = 0; i < mergedLeads.length; i++) {
+      const lead = mergedLeads[i];
       try {
         const outreach = await generateOutreach(lead, input);
         
@@ -233,6 +234,11 @@ try {
             generatedAt: new Date().toISOString()
           };
           aiCount++;
+        }
+        
+        // Add delay between API calls to avoid rate limiting (1 second)
+        if (i < mergedLeads.length - 1) {
+          await new Promise(resolve => setTimeout(resolve, 1000));
         }
       } catch (error) {
         log.warning(`AI generation failed for ${lead.business.name}:`, error.message);
