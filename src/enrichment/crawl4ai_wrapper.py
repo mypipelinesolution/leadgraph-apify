@@ -18,7 +18,7 @@ async def crawl_url(url, timeout=30):
     Crawl a single URL using Crawl4AI with stealth mode
     """
     try:
-        # Configure browser with stealth mode
+        # Configure browser with stealth mode and memory optimization
         browser_config = BrowserConfig(
             headless=True,
             verbose=False,
@@ -26,7 +26,20 @@ async def crawl_url(url, timeout=30):
                 "--no-sandbox",
                 "--disable-setuid-sandbox",
                 "--disable-dev-shm-usage",
-                "--disable-blink-features=AutomationControlled"
+                "--disable-blink-features=AutomationControlled",
+                "--disable-gpu",
+                "--disable-software-rasterizer",
+                "--disable-extensions",
+                "--disable-background-networking",
+                "--disable-sync",
+                "--metrics-recording-only",
+                "--mute-audio",
+                "--no-first-run",
+                "--disable-default-apps",
+                "--disable-background-timer-throttling",
+                "--disable-backgrounding-occluded-windows",
+                "--disable-renderer-backgrounding",
+                "--single-process"
             ]
         )
         

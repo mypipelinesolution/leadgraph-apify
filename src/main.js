@@ -162,13 +162,13 @@ try {
     log.info('Starting enrichment phase');
     let enrichedCount = 0;
     
-    // PARALLEL ENRICHMENT: Process 5 leads at a time
+    // PARALLEL ENRICHMENT: Process 2 leads at a time (reduced from 5 to avoid OOM)
     const leadsToEnrich = mergedLeads.filter(lead => lead.online?.website);
-    const batchSize = 5;
+    const batchSize = 2;
     
     for (let i = 0; i < leadsToEnrich.length; i += batchSize) {
       const batch = leadsToEnrich.slice(i, i + batchSize);
-      log.info(`Enriching batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(leadsToEnrich.length / batchSize)} (${batch.length} leads)`);
+      log.info(`Enriching batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(leadsToEnrich.length / batchSize)} (${batch.length} leads in parallel)`);
       
       // Process batch in parallel
       await Promise.all(batch.map(async (lead) => {
