@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Apify storage
+apify_storage/
+storage/
+.apify/
+
+# Build output
+dist/
+
+# Environment variables (NEVER commit API keys!)
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+
+# Test files (optional - remove if you want to commit test files)
+test-local.js

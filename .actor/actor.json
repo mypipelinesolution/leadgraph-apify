@@ -1,0 +1,39 @@
+{
+  "actorSpecification": 1,
+  "name": "leadgraph",
+  "title": "LeadGraph™ - Local Business Lead Discovery",
+  "description": "Multi-source local business lead discovery with enrichment, deduplication, scoring, and CRM integration. Uses official APIs for reliable data collection.",
+  "version": "0.2",
+  "buildTag": "latest",
+  "input": "./INPUT_SCHEMA.json",
+  "dockerfile": "./Dockerfile",
+  "readme": "./README.md",
+  "environmentVariables": {
+    "GOOGLE_PLACES_API_KEY": {
+      "title": "Google Places API Key",
+      "type": "string",
+      "description": "Your Google Places API key for data collection. Get from: https://console.cloud.google.com/apis/credentials",
+      "isSecret": true
+    },
+    "YELP_API_KEY": {
+      "title": "Yelp Fusion API Key",
+      "type": "string",
+      "description": "Your Yelp Fusion API key (optional). Get from: https://www.yelp.com/developers/v3/manage_app",
+      "isSecret": true
+    }
+  },
+  "storages": {
+    "dataset": {
+      "actorSpecification": 1,
+      "title": "Leads",
+      "views": {
+        "overview": {
+          "title": "Overview",
+          "transformation": {
+            "fields": ["business.name", "business.category", "business.address.formatted", "business.phone", "online.website", "score.leadScore", "score.tier"]
+          }
+        }
+      }
+    }
+  }
+}

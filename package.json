@@ -1,0 +1,22 @@
+{
+  "name": "leadgraph",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "LeadGraph™ - Multi-source local business lead discovery with website enrichment, deduplication, scoring, and CRM-ready output",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apify": "^3.1.0",
+    "crawlee": "^3.5.0",
+    "playwright": "^1.40.0",
+    "cheerio": "^1.0.0-rc.12",
+    "libphonenumber-js": "^1.10.0",
+    "email-validator": "^2.0.4",
+    "string-similarity": "^4.0.4"
+  }
+}

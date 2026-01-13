@@ -1,0 +1,51 @@
+{
+  "seedType": "keyword",
+  "keywords": ["tree service"],
+  "locations": ["Pepperell, MA"],
+  "useApis": true,
+  "sources": ["googleMaps", "yelp", "bbb", "serp"],
+  "maxResultsPerLocation": 10,
+  "maxTotalResults": 50,
+  "filters": {
+    "minRating": 0,
+    "minReviews": 0,
+    "requireWebsite": false,
+    "excludeFranchises": false,
+    "excludeKeywords": [],
+    "includeKeywords": []
+  },
+  "enrichment": {
+    "crawlWebsite": false,
+    "maxWebsitePages": 5,
+    "emailExtraction": "standard",
+    "phoneExtraction": true,
+    "collectTechSignals": true
+  },
+  "dedupe": {
+    "enabled": true,
+    "strategy": "balanced"
+  },
+  "scoring": {
+    "enabled": true,
+    "weightsPreset": "localService"
+  },
+  "aiOutreach": {
+    "enabled": false
+  },
+  "exports": {
+    "outputFormat": "dataset",
+    "deltaMode": false,
+    "webhookUrl": "",
+    "webhookMode": "off"
+  },
+  "runMode": {
+    "stealth": true,
+    "maxConcurrency": 2,
+    "maxRetries": 3,
+    "proxyEnabled": false
+  },
+  "debug": {
+    "saveHtmlSnapshots": false,
+    "logLevel": "INFO"
+  }
+}

@@ -1,0 +1,105 @@
+# LeadGraph™ Apify Actor - AI Assistant Rules
+# ============================================
+# These rules govern AI behavior when developing this project.
+
+## PROJECT CONTEXT
+- Project: LeadGraph™ - Local Business Lead Discovery & Enrichment Actor
+- Platform: Apify (https://docs.apify.com)
+- Language: JavaScript/Node.js with TypeScript
+- Framework: Crawlee + Apify SDK
+- Target: Apify $1M Challenge (deadline: January 31, 2026)
+
+## CORE RULES
+
+### 1. SCHEMA COMPLIANCE
+- All output MUST match the defined lead schema exactly
+- dedupeId is CRITICAL - must be stable SHA1 hash of: normName|normAddress|domain|phoneE164
+- Never change the output schema structure without explicit approval
+- INPUT_SCHEMA.json defines the contract - respect all field types and defaults
+
+### 2. DATA INTEGRITY
+- dedupeId must be deterministic and stable across runs (required for delta mode)
+- Confidence scores must be 0.0-1.0 range
+- LeadScore must be 0-100 with tier A/B/C/D
+- All dates must be ISO 8601 format
+- Phone numbers should include phoneE164 format when possible
+
+### 3. SOURCE HANDLING
+- Each source (googleMaps, yelp, bbb, chambers, serp) is a separate module
+- Sources can fail independently - don't let one source failure crash the run
+- Track which sources confirmed each field for confidence scoring
+- Respect rate limits and use stealth mode for stricter sources
+
+### 4. ENRICHMENT RULES
+- Website crawl prioritizes: contact, about, team, footer pages
+- Max pages per domain controlled by input (default 10)
+- Extract emails via mailto: links AND text patterns
+- Detect tech signals: GA, GTM, Meta Pixel, HubSpot, Mailchimp
+- Never store raw HTML in output - only extracted structured data
+
+### 5. DEDUPE LOGIC
+- Merge duplicates across sources into single "best" record
+- Use fuzzy matching on name + address + phone + domain
+- Higher confidence source wins for conflicting fields
+- Preserve all source URLs in the sources object
+
+### 6. CRM INTEGRATION
+- Webhook payloads must match the documented contract exactly
+- Batch upserts preferred (25-200 leads per request)
+- Always include: source, crmTarget, runId, collectedAt, mode, leads[]
+- Handle CRM errors gracefully - store failed batches for retry
+
+### 7. DELTA MODE
+- Store LEAD_STATE.json in Key-Value Store with {dedupeId: contentHash}
+- contentHash = SHA1 of core fields (not timestamps)
+- Only output leads where: new dedupeId OR contentHash changed
+- Core fields for hash: name, address, phoneE164, domain, emails, score
+
+### 8. ERROR HANDLING
+- Retry failed requests up to maxRetries (default 3)
+- Log errors with context but don't expose sensitive data
+- Store RUN_SUMMARY.json with error counts and details
+- Failed CRM batches go to FAILED_BATCHES/<timestamp>.json
+
+### 9. CODE STYLE
+- Use async/await consistently
+- Modular architecture: discovery/, enrichment/, processing/, ai/, integrations/
+- Each source adapter is independent and testable
+- Use Crawlee patterns: RequestQueue, Dataset, KeyValueStore
+
+### 10. TESTING REQUIREMENTS
+- Test dedupeId stability (same input = same output)
+- Test delta mode (2nd run produces minimal changes)
+- Test each source adapter independently
+- Test CRM webhook payload format
+- Test error recovery and retry logic
+
+## FORBIDDEN ACTIONS
+- DO NOT hardcode API keys or secrets
+- DO NOT change output schema without approval
+- DO NOT skip deduplication step
+- DO NOT ignore rate limits or anti-bot measures
+- DO NOT store PII in logs
+- DO NOT make dedupeId non-deterministic
+
+## REFERENCE FILES
+- project-starter-template.md - Full project spec and schemas
+- actoridea.md - Original requirements and CRM mapping
+- apify-actor-ai-guide.md - Apify development best practices
+
+## KEY DOCUMENTATION
+- Apify Actors: https://docs.apify.com/platform/actors/development
+- Input Schema: https://docs.apify.com/platform/actors/development/actor-definition/input-schema
+- Crawlee: https://crawlee.dev/docs
+- Apify SDK: https://docs.apify.com/sdk/js
+
+## ACCEPTANCE CRITERIA (Definition of Done)
+- [ ] keyword + location → produces LEADS dataset
+- [ ] Dedupe merges duplicates correctly across sources
+- [ ] Website crawl extracts email/phone/contact form/socials
+- [ ] LeadScore populated (0-100 with A/B/C/D tier)
+- [ ] Delta mode works (2nd run = minimal CHANGES)
+- [ ] Webhook pushes in batches successfully
+- [ ] CRM upsert creates/updates by dedupeId
+- [ ] Tasks created automatically on new leads
+- [ ] Pipeline stage set to "New Lead (LeadGraph)"

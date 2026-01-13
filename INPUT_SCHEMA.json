@@ -1,0 +1,355 @@
+{
+  "title": "LeadGraph™ Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "seedType": {
+      "title": "Seed Type",
+      "type": "string",
+      "description": "How to start the search.",
+      "default": "keyword",
+      "editor": "select",
+      "enum": ["keyword", "category", "customUrls"],
+      "enumTitles": ["Keyword search", "Category browse", "Custom URLs list"]
+    },
+    "keywords": {
+      "title": "Keywords",
+      "type": "array",
+      "description": "Search terms (e.g., 'HVAC contractor', 'landscaping'). Used when Seed Type = Keyword search.",
+      "editor": "stringList",
+      "default": ["tree service"]
+    },
+    "customUrls": {
+      "title": "Custom URLs",
+      "type": "array",
+      "description": "Business listing URLs. Used when Seed Type = Custom URLs list.",
+      "editor": "stringList",
+      "default": []
+    },
+    "locations": {
+      "title": "Locations",
+      "type": "array",
+      "description": "Locations to search. Use 'City, State' or 'ZIP'.",
+      "editor": "stringList",
+      "default": ["Pepperell, MA"]
+    },
+    "useApis": {
+      "title": "Use APIs Instead of Web Scraping",
+      "type": "boolean",
+      "description": "If true, uses official APIs (Google Places, Yelp Fusion) instead of web scraping. Requires API keys but is faster and more reliable.",
+      "default": false
+    },
+    "geoMode": {
+      "title": "Geo Mode",
+      "type": "string",
+      "description": "Use city/town text search or precise lat/lng radius.",
+      "default": "text",
+      "editor": "select",
+      "enum": ["text", "radius"],
+      "enumTitles": ["Text locations", "Lat/Lng + radius"]
+    },
+    "radiusMiles": {
+      "title": "Radius (miles)",
+      "type": "number",
+      "description": "Only used when Geo Mode = Lat/Lng + radius.",
+      "default": 10,
+      "minimum": 1,
+      "maximum": 200
+    },
+    "centerLat": {
+      "title": "Center Latitude",
+      "type": "number",
+      "default": 42.665
+    },
+    "centerLng": {
+      "title": "Center Longitude",
+      "type": "number",
+      "default": -71.588
+    },
+    "sources": {
+      "title": "Sources",
+      "type": "array",
+      "description": "Select which sources to use for discovery.",
+      "editor": "checkboxGroup",
+      "default": ["googleMaps", "yelp", "bbb", "serp"],
+      "items": {
+        "type": "string",
+        "enum": ["googleMaps", "yelp", "bbb", "chambers", "serp", "nicheDirectories"],
+        "enumTitles": ["Google Maps", "Yelp", "BBB", "Chambers of Commerce", "Search (SERP)", "Niche directories"]
+      }
+    },
+    "maxResultsPerLocation": {
+      "title": "Max Results per Location",
+      "type": "integer",
+      "description": "Maximum businesses to collect per location (before dedupe).",
+      "default": 100,
+      "minimum": 1,
+      "maximum": 5000
+    },
+    "maxTotalResults": {
+      "title": "Max Total Results",
+      "type": "integer",
+      "description": "Hard cap across all locations (before dedupe).",
+      "default": 500,
+      "minimum": 1,
+      "maximum": 50000
+    },
+    "filters": {
+      "title": "Filters",
+      "type": "object",
+      "description": "Filtering and qualification rules.",
+      "properties": {
+        "minRating": {
+          "title": "Min Rating",
+          "type": "number",
+          "default": 0,
+          "minimum": 0,
+          "maximum": 5
+        },
+        "minReviews": {
+          "title": "Min Reviews",
+          "type": "integer",
+          "default": 0,
+          "minimum": 0
+        },
+        "requireWebsite": {
+          "title": "Require Website",
+          "type": "boolean",
+          "default": false
+        },
+        "excludeFranchises": {
+          "title": "Exclude Franchises / Chains",
+          "type": "boolean",
+          "default": false
+        },
+        "excludeKeywords": {
+          "title": "Exclude Keywords",
+          "type": "array",
+          "editor": "stringList",
+          "default": []
+        },
+        "includeKeywords": {
+          "title": "Include Keywords",
+          "type": "array",
+          "editor": "stringList",
+          "default": []
+        }
+      }
+    },
+    "enrichment": {
+      "title": "Enrichment",
+      "type": "object",
+      "description": "Website crawl + contact extraction options.",
+      "properties": {
+        "crawlWebsite": {
+          "title": "Crawl Website for Contacts",
+          "type": "boolean",
+          "default": true
+        },
+        "maxWebsitePages": {
+          "title": "Max Website Pages",
+          "type": "integer",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 100
+        },
+        "emailExtraction": {
+          "title": "Email Extraction",
+          "type": "string",
+          "default": "standard",
+          "editor": "select",
+          "enum": ["off", "standard", "aggressive"],
+          "enumTitles": ["Off", "Standard", "Aggressive"]
+        },
+        "phoneExtraction": {
+          "title": "Phone Extraction",
+          "type": "boolean",
+          "default": true
+        },
+        "collectTechSignals": {
+          "title": "Collect Tech Signals",
+          "type": "boolean",
+          "default": true
+        }
+      }
+    },
+    "dedupe": {
+      "title": "Dedupe & Matching",
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "title": "Enable Dedupe",
+          "type": "boolean",
+          "default": true
+        },
+        "strategy": {
+          "title": "Dedupe Strategy",
+          "type": "string",
+          "default": "balanced",
+          "editor": "select",
+          "enum": ["strict", "balanced", "aggressive"],
+          "enumTitles": ["Strict (few merges)", "Balanced (recommended)", "Aggressive (more merges)"]
+        }
+      }
+    },
+    "scoring": {
+      "title": "Lead Scoring",
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "title": "Enable Scoring",
+          "type": "boolean",
+          "default": true
+        },
+        "weightsPreset": {
+          "title": "Weights Preset",
+          "type": "string",
+          "default": "localService",
+          "editor": "select",
+          "enum": ["localService", "b2bAgency", "retail", "custom"],
+          "enumTitles": ["Local service", "B2B agency", "Retail", "Custom (advanced)"]
+        },
+        "customWeights": {
+          "title": "Custom Weights (advanced)",
+          "type": "object",
+          "default": {},
+          "properties": {
+            "reviews": { "type": "number", "default": 1 },
+            "recency": { "type": "number", "default": 1 },
+            "hasWebsite": { "type": "number", "default": 1 },
+            "techSignals": { "type": "number", "default": 1 },
+            "contactability": { "type": "number", "default": 1 }
+          }
+        }
+      }
+    },
+    "ai": {
+      "title": "AI Outreach Generation",
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "title": "Enable AI Outreach",
+          "type": "boolean",
+          "description": "Generate personalized cold emails, voicemail scripts, and SMS messages using AI",
+          "default": false
+        },
+        "model": {
+          "title": "AI Model",
+          "type": "string",
+          "default": "gpt-3.5-turbo",
+          "editor": "select",
+          "enum": ["gpt-3.5-turbo", "gpt-4", "gpt-4-turbo"],
+          "enumTitles": ["GPT-3.5 Turbo (Fast & Cheap)", "GPT-4 (Better Quality)", "GPT-4 Turbo (Best Quality)"]
+        },
+        "yourCompanyName": {
+          "title": "Your Company Name",
+          "type": "string",
+          "default": "Your Company",
+          "description": "Your company name for personalization"
+        },
+        "yourServiceOffering": {
+          "title": "Your Service/Offering",
+          "type": "string",
+          "default": "digital marketing services",
+          "description": "What you're offering (e.g., 'SEO services', 'lead generation', 'web design')"
+        },
+        "personalizationDepth": {
+          "title": "Personalization Depth",
+          "type": "string",
+          "default": "medium",
+          "editor": "select",
+          "enum": ["low", "medium", "high"],
+          "enumTitles": ["Low (fast)", "Medium", "High (slower)"]
+        },
+        "includeSmsOpener": {
+          "title": "Include SMS opener",
+          "type": "boolean",
+          "default": false
+        }
+      }
+    },
+    "exports": {
+      "title": "Exports & Integrations",
+      "type": "object",
+      "properties": {
+        "outputFormat": {
+          "title": "Output Format",
+          "type": "string",
+          "default": "dataset",
+          "editor": "select",
+          "enum": ["dataset", "csv", "json", "xlsx"],
+          "enumTitles": ["Apify Dataset", "CSV", "JSON", "Excel (XLSX)"]
+        },
+        "deltaMode": {
+          "title": "Delta Mode",
+          "type": "boolean",
+          "description": "Only output new/changed leads compared to previous run.",
+          "default": false
+        },
+        "webhookUrl": {
+          "title": "Webhook URL (optional)",
+          "type": "string",
+          "default": ""
+        },
+        "webhookMode": {
+          "title": "Webhook Mode",
+          "type": "string",
+          "default": "summary",
+          "editor": "select",
+          "enum": ["off", "summary", "perLead", "both"],
+          "enumTitles": ["Off", "Summary only", "Per-lead", "Both"]
+        }
+      }
+    },
+    "runMode": {
+      "title": "Run Mode",
+      "type": "object",
+      "properties": {
+        "stealth": {
+          "title": "Stealth Mode",
+          "type": "boolean",
+          "default": true
+        },
+        "maxConcurrency": {
+          "title": "Max Concurrency",
+          "type": "integer",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 200
+        },
+        "maxRetries": {
+          "title": "Max Retries",
+          "type": "integer",
+          "default": 3,
+          "minimum": 0,
+          "maximum": 20
+        },
+        "proxyEnabled": {
+          "title": "Use Apify Proxy",
+          "type": "boolean",
+          "default": true
+        }
+      }
+    },
+    "debug": {
+      "title": "Debug",
+      "type": "object",
+      "properties": {
+        "saveHtmlSnapshots": {
+          "title": "Save HTML Snapshots",
+          "type": "boolean",
+          "default": false
+        },
+        "logLevel": {
+          "title": "Log Level",
+          "type": "string",
+          "default": "INFO",
+          "editor": "select",
+          "enum": ["ERROR", "WARN", "INFO", "DEBUG"],
+          "enumTitles": ["ERROR", "WARN", "INFO", "DEBUG"]
+        }
+      }
+    }
+  },
+  "required": ["seedType", "locations"]
+}
