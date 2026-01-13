@@ -8,20 +8,6 @@
   "input": "./INPUT_SCHEMA.json",
   "dockerfile": "./Dockerfile",
   "readme": "./README.md",
-  "environmentVariables": {
-    "GOOGLE_PLACES_API_KEY": {
-      "title": "Google Places API Key",
-      "type": "string",
-      "description": "Your Google Places API key for data collection. Get from: https://console.cloud.google.com/apis/credentials",
-      "isSecret": true
-    },
-    "YELP_API_KEY": {
-      "title": "Yelp Fusion API Key",
-      "type": "string",
-      "description": "Your Yelp Fusion API key (optional). Get from: https://www.yelp.com/developers/v3/manage_app",
-      "isSecret": true
-    }
-  },
   "storages": {
     "dataset": {
       "actorSpecification": 1,
