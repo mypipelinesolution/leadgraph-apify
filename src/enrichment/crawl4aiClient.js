@@ -1,24 +1,28 @@
 import { log } from 'crawlee';
+import { spawn } from 'child_process';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 /**
- * Crawl4AI Client - Uses Crawl4AI for advanced web scraping with bot detection bypass
- * Crawl4AI is an open-source Python library that we'll call via HTTP when available
- * Falls back to basic fetch if Crawl4AI service is not running
+ * Crawl4AI Client - Uses Crawl4AI Python library for advanced web scraping with bot detection bypass
+ * Calls Python wrapper script that uses Crawl4AI directly
  */
 
 export class Crawl4AIClient {
-  constructor(baseUrl = 'http://localhost:11235') {
-    this.baseUrl = baseUrl;
+  constructor() {
     this.available = false;
+    this.pythonPath = 'python3';
+    this.wrapperPath = join(__dirname, 'crawl4ai_wrapper.py');
   }
 
   async checkAvailability() {
     try {
-      const response = await fetch(`${this.baseUrl}/health`, {
-        method: 'GET',
-        signal: AbortSignal.timeout(2000)
-      });
-      this.available = response.ok;
+      // Check if Python and Crawl4AI are available
+      const result = await this.runPythonCommand('import crawl4ai; print("OK")');
+      this.available = result.trim() === 'OK';
       return this.available;
     } catch (error) {
       this.available = false;
@@ -26,63 +30,84 @@ export class Crawl4AIClient {
     }
   }
 
+  async runPythonCommand(command) {
+    return new Promise((resolve, reject) => {
+      const python = spawn(this.pythonPath, ['-c', command]);
+      let output = '';
+      let error = '';
+
+      python.stdout.on('data', (data) => {
+        output += data.toString();
+      });
+
+      python.stderr.on('data', (data) => {
+        error += data.toString();
+      });
+
+      python.on('close', (code) => {
+        if (code === 0) {
+          resolve(output);
+        } else {
+          reject(new Error(error || 'Python command failed'));
+        }
+      });
+    });
+  }
+
   async crawlUrl(url, options = {}) {
     const {
-      maxPages = 5,
-      includeLinks = true,
-      extractMarkdown = true,
-      waitForSelector = null,
-      timeout = 30000
+      timeout = 30
     } = options;
 
     try {
-      const response = await fetch(`${this.baseUrl}/crawl`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          urls: [url],
-          word_count_threshold: 10,
-          extraction_strategy: 'NoExtractionStrategy',
-          chunking_strategy: {
-            type: 'RegexChunking'
-          },
-          bypass_cache: false,
-          screenshot: false,
-          pdf: false,
-          verbose: false,
-          extra: {
-            wait_for_selector: waitForSelector,
-            timeout: timeout
-          }
-        }),
-        signal: AbortSignal.timeout(timeout + 5000)
+      const input = JSON.stringify({
+        url: url,
+        timeout: timeout
       });
 
-      if (!response.ok) {
-        throw new Error(`Crawl4AI API error: ${response.status}`);
+      const result = await new Promise((resolve, reject) => {
+        const python = spawn(this.pythonPath, [this.wrapperPath]);
+        let output = '';
+        let error = '';
+
+        python.stdout.on('data', (data) => {
+          output += data.toString();
+        });
+
+        python.stderr.on('data', (data) => {
+          error += data.toString();
+        });
+
+        python.on('close', (code) => {
+          if (code === 0) {
+            try {
+              resolve(JSON.parse(output));
+            } catch (e) {
+              reject(new Error(`Failed to parse Python output: ${output}`));
+            }
+          } else {
+            reject(new Error(error || 'Python script failed'));
+          }
+        });
+
+        // Send input to Python script
+        python.stdin.write(input);
+        python.stdin.end();
+
+        // Set timeout
+        setTimeout(() => {
+          python.kill();
+          reject(new Error('Crawl timeout'));
+        }, (timeout + 5) * 1000);
+      });
+
+      if (result.success) {
+        log.info(`Crawl4AI successfully crawled ${url}`);
+      } else {
+        log.warning(`Crawl4AI failed for ${url}: ${result.error}`);
       }
 
-      const data = await response.json();
-      
-      if (!data.success || !data.results || data.results.length === 0) {
-        throw new Error('No results from Crawl4AI');
-      }
-
-      const result = data.results[0];
-      
-      return {
-        success: true,
-        url: result.url,
-        title: result.metadata?.title || '',
-        html: result.html || '',
-        markdown: result.markdown || '',
-        text: result.cleaned_html || result.markdown || '',
-        links: result.links?.internal || [],
-        images: result.media?.images || [],
-        metadata: result.metadata || {}
-      };
+      return result;
 
     } catch (error) {
       log.warning(`Crawl4AI crawl failed for ${url}:`, error.message);
