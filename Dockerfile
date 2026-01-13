@@ -13,8 +13,8 @@ RUN apt-get update && apt-get install -y \
 # Create symlink for python (pip already exists)
 RUN ln -sf /usr/bin/python3 /usr/bin/python
 
-# Install Crawl4AI and dependencies
-RUN pip install --no-cache-dir \
+# Install Crawl4AI and dependencies (--break-system-packages needed for Python 3.13)
+RUN pip install --no-cache-dir --break-system-packages \
     crawl4ai \
     playwright \
     && python -m playwright install chromium \
