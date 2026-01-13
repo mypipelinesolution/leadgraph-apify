@@ -162,51 +162,62 @@ try {
     log.info('Starting enrichment phase');
     let enrichedCount = 0;
     
-    for (const lead of mergedLeads) {
-      if (!lead.online?.website) {
-        continue;
-      }
+    // PARALLEL ENRICHMENT: Process 5 leads at a time
+    const leadsToEnrich = mergedLeads.filter(lead => lead.online?.website);
+    const batchSize = 5;
+    
+    for (let i = 0; i < leadsToEnrich.length; i += batchSize) {
+      const batch = leadsToEnrich.slice(i, i + batchSize);
+      log.info(`Enriching batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(leadsToEnrich.length / batchSize)} (${batch.length} leads)`);
       
-      try {
-        log.info(`Enriching: ${lead.business.name}`);
-        
-        const crawlResult = await crawlWebsite(lead.online.website, input);
-        
-        if (crawlResult.htmlContent) {
-          const emails = extractEmails(crawlResult.htmlContent, lead.online.domain);
-          const phones = extractPhones(crawlResult.htmlContent);
-          const socials = extractSocials(crawlResult.htmlContent);
-          const techSignals = detectTechSignals(crawlResult.htmlContent);
+      // Process batch in parallel
+      await Promise.all(batch.map(async (lead) => {
+        try {
+          log.info(`Enriching: ${lead.business.name}`);
           
-          if (emails.length > 0) {
-            lead.contacts.emails = [...lead.contacts.emails, ...emails];
+          const crawlResult = await crawlWebsite(lead.online.website, input);
+          
+          if (crawlResult.htmlContent) {
+            const emails = extractEmails(crawlResult.htmlContent, lead.online.domain);
+            const phones = extractPhones(crawlResult.htmlContent);
+            const socials = extractSocials(crawlResult.htmlContent);
+            const techSignals = detectTechSignals(crawlResult.htmlContent);
+            
+            if (emails.length > 0) {
+              lead.contacts.emails = [...lead.contacts.emails, ...emails];
+            }
+            
+            if (phones.length > 0) {
+              lead.contacts.phones = [...lead.contacts.phones, ...phones];
+            }
+            
+            lead.online.socials = socials;
+            
+            lead.signals.websiteSignals = {
+              hasHttps: lead.online.website.startsWith('https'),
+              hasContactForm: crawlResult.metadata.hasContactForm || false,
+              hasBookingWidget: crawlResult.metadata.hasBookingWidget || false,
+              hasChatWidget: crawlResult.metadata.hasChatWidget || false
+            };
+            
+            lead.signals.techSignals = techSignals;
+            
+            if (emails.length > 0 || phones.length > 0 || Object.values(socials).some(s => s)) {
+              enrichedCount++;
+            }
           }
-          
-          if (phones.length > 0) {
-            lead.contacts.phones = [...lead.contacts.phones, ...phones];
-          }
-          
-          lead.online.socials = socials;
-          
-          lead.signals.websiteSignals = {
-            hasHttps: lead.online.website.startsWith('https'),
-            hasContactForm: crawlResult.metadata.hasContactForm || false,
-            hasBookingWidget: crawlResult.metadata.hasBookingWidget || false,
-            hasChatWidget: crawlResult.metadata.hasChatWidget || false
-          };
-          
-          lead.signals.techSignals = techSignals;
-          
-          if (emails.length > 0 || phones.length > 0 || Object.values(socials).some(s => s)) {
-            enrichedCount++;
-          }
+        } catch (error) {
+          log.warning(`Enrichment failed for ${lead.business.name}:`, error.message);
         }
-      } catch (error) {
-        log.warning(`Enrichment failed for ${lead.business.name}:`, error.message);
+      }));
+      
+      // Small delay between batches to avoid overwhelming the system
+      if (i + batchSize < leadsToEnrich.length) {
+        await new Promise(resolve => setTimeout(resolve, 500));
       }
     }
     
-    log.info(`Enrichment complete: ${enrichedCount}/${mergedLeads.length} leads enriched`);
+    log.info(`Enrichment complete: ${enrichedCount}/${leadsToEnrich.length} leads enriched`);
   }
 
   if (input.scoring?.enabled !== false) {

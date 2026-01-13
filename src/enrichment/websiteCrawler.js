@@ -20,63 +20,56 @@ export async function crawlWebsite(websiteUrl, options) {
     
     log.info(`Crawling website: ${domain}`);
     
-    // Try Crawl4AI first (better bot detection bypass)
+    // Initialize Crawl4AI client if needed
     if (crawl4aiAvailable === null) {
       crawl4aiClient = new Crawl4AIClient();
       crawl4aiAvailable = await crawl4aiClient.checkAvailability();
       if (crawl4aiAvailable) {
-        log.info('Crawl4AI service available - using advanced scraping');
+        log.info('Crawl4AI service available - using hybrid approach');
       } else {
-        log.info('Crawl4AI not available - using simple fetch fallback');
+        log.info('Crawl4AI not available - using simple fetch only');
       }
     }
 
-    // If Crawl4AI is available, use it
+    // HYBRID APPROACH: Try simple fetch first (fast), fallback to Crawl4AI if it fails
+    log.debug(`Trying simple fetch for ${domain}`);
+    const simpleResult = await simpleFetch(startUrl, 10000);
+    
+    // Check if simple fetch succeeded with good content
+    if (simpleResult.success && simpleResult.html && simpleResult.html.length > 1000) {
+      // Check if we got blocked (403, 401, captcha, etc.)
+      const isBlocked = simpleResult.html.includes('403 Forbidden') ||
+                       simpleResult.html.includes('Access Denied') ||
+                       simpleResult.html.includes('captcha') ||
+                       simpleResult.html.includes('Cloudflare') ||
+                       simpleResult.html.length < 5000; // Suspiciously small
+      
+      if (!isBlocked) {
+        log.info(`Simple fetch succeeded for ${domain}`);
+        crawledPages.push({
+          url: startUrl,
+          title: extractTitle(simpleResult.html),
+          html: simpleResult.html
+        });
+        allHtml = simpleResult.text;
+        
+        return buildCrawlResult(crawledPages, allHtml, domain);
+      } else {
+        log.info(`Simple fetch blocked for ${domain}, trying Crawl4AI`);
+      }
+    } else {
+      log.debug(`Simple fetch failed for ${domain}: ${simpleResult.error || 'No content'}`);
+    }
+    
+    // Fallback to Crawl4AI if simple fetch failed or was blocked
     if (crawl4aiAvailable) {
+      log.info(`Using Crawl4AI for ${domain}`);
       return await crawlWithCrawl4AI(startUrl, domain, maxPages, options);
     }
     
-    // Fallback: Use simple fetch (lightweight, no external dependencies)
-    log.info(`Using simple fetch for ${domain}`);
-    const simpleResult = await simpleFetch(startUrl);
-    
-    if (simpleResult.success && simpleResult.html && simpleResult.html.length > 1000) {
-      log.info(`Successfully fetched ${domain}`);
-      crawledPages.push({
-        url: startUrl,
-        title: extractTitle(simpleResult.html),
-        html: simpleResult.html
-      });
-      allHtml = simpleResult.text;
-      
-      const hasContactForm = allHtml.toLowerCase().includes('contact') && 
-                            (allHtml.toLowerCase().includes('form') || 
-                             allHtml.toLowerCase().includes('submit'));
-      
-      const hasBookingWidget = allHtml.toLowerCase().includes('book') && 
-                              (allHtml.toLowerCase().includes('appointment') || 
-                               allHtml.toLowerCase().includes('schedule'));
-      
-      const hasChatWidget = allHtml.toLowerCase().includes('chat') || 
-                           allHtml.toLowerCase().includes('intercom') ||
-                           allHtml.toLowerCase().includes('drift');
-      
-      log.info(`Crawled 1 page from ${domain}`);
-      
-      return {
-        pages: crawledPages,
-        metadata: {
-          pageCount: 1,
-          hasContactForm,
-          hasBookingWidget,
-          hasChatWidget
-        },
-        htmlContent: allHtml
-      };
-    } else {
-      log.warning(`Failed to fetch ${domain}: ${simpleResult.error || 'No content'}`);
-      return { pages: [], metadata: {}, htmlContent: '' };
-    }
+    // Both methods failed
+    log.warning(`All crawl methods failed for ${domain}`);
+    return { pages: [], metadata: {}, htmlContent: '' };
     
   } catch (error) {
     log.error(`Website crawl failed for ${websiteUrl}:`, error.message);
@@ -91,8 +84,7 @@ async function crawlWithCrawl4AI(startUrl, domain, maxPages, options) {
   
   try {
     const result = await crawl4aiClient.crawlUrl(startUrl, {
-      maxPages: 1, // Start with homepage
-      timeout: 30000
+      timeout: 20 // Reduced from 30s to 20s
     });
     
     if (result.success) {
@@ -104,33 +96,11 @@ async function crawlWithCrawl4AI(startUrl, domain, maxPages, options) {
       allHtml = result.text || result.markdown;
       
       log.info(`Crawl4AI successfully crawled ${domain}`);
+      return buildCrawlResult(crawledPages, allHtml, domain);
     } else {
       log.warning(`Crawl4AI failed for ${domain}: ${result.error}`);
       return { pages: [], metadata: {}, htmlContent: '' };
     }
-    
-    const hasContactForm = allHtml.toLowerCase().includes('contact') && 
-                          (allHtml.toLowerCase().includes('form') || 
-                           allHtml.toLowerCase().includes('submit'));
-    
-    const hasBookingWidget = allHtml.toLowerCase().includes('book') && 
-                            (allHtml.toLowerCase().includes('appointment') || 
-                             allHtml.toLowerCase().includes('schedule'));
-    
-    const hasChatWidget = allHtml.toLowerCase().includes('chat') || 
-                         allHtml.toLowerCase().includes('intercom') ||
-                         allHtml.toLowerCase().includes('drift');
-    
-    return {
-      pages: crawledPages,
-      metadata: {
-        pageCount: crawledPages.length,
-        hasContactForm,
-        hasBookingWidget,
-        hasChatWidget
-      },
-      htmlContent: allHtml
-    };
     
   } catch (error) {
     log.error(`Crawl4AI error for ${domain}:`, error.message);
@@ -142,4 +112,32 @@ async function crawlWithCrawl4AI(startUrl, domain, maxPages, options) {
 function extractTitle(html) {
   const titleMatch = html.match(/<title[^>]*>([^<]+)<\/title>/i);
   return titleMatch ? titleMatch[1].trim() : '';
+}
+
+// Build crawl result with metadata
+function buildCrawlResult(crawledPages, allHtml, domain) {
+  const hasContactForm = allHtml.toLowerCase().includes('contact') && 
+                        (allHtml.toLowerCase().includes('form') || 
+                         allHtml.toLowerCase().includes('submit'));
+  
+  const hasBookingWidget = allHtml.toLowerCase().includes('book') && 
+                          (allHtml.toLowerCase().includes('appointment') || 
+                           allHtml.toLowerCase().includes('schedule'));
+  
+  const hasChatWidget = allHtml.toLowerCase().includes('chat') || 
+                       allHtml.toLowerCase().includes('intercom') ||
+                       allHtml.toLowerCase().includes('drift');
+  
+  log.info(`Crawled ${crawledPages.length} page(s) from ${domain}`);
+  
+  return {
+    pages: crawledPages,
+    metadata: {
+      pageCount: crawledPages.length,
+      hasContactForm,
+      hasBookingWidget,
+      hasChatWidget
+    },
+    htmlContent: allHtml
+  };
 }
