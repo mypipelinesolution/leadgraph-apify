@@ -104,6 +104,7 @@
         "minRating": {
           "title": "Min Rating",
           "type": "number",
+          "description": "Minimum star rating (0-5). Businesses below this rating will be filtered out.",
           "default": 0,
           "minimum": 0,
           "maximum": 5
@@ -111,28 +112,33 @@
         "minReviews": {
           "title": "Min Reviews",
           "type": "integer",
+          "description": "Minimum number of reviews required.",
           "default": 0,
           "minimum": 0
         },
         "requireWebsite": {
           "title": "Require Website",
           "type": "boolean",
+          "description": "Only include businesses with a website.",
           "default": false
         },
         "excludeFranchises": {
           "title": "Exclude Franchises / Chains",
           "type": "boolean",
+          "description": "Exclude franchise and chain businesses.",
           "default": false
         },
         "excludeKeywords": {
           "title": "Exclude Keywords",
           "type": "array",
+          "description": "Filter out businesses containing these keywords in name or description.",
           "editor": "stringList",
           "default": []
         },
         "includeKeywords": {
           "title": "Include Keywords",
           "type": "array",
+          "description": "Only include businesses containing these keywords.",
           "editor": "stringList",
           "default": []
         }
@@ -146,11 +152,13 @@
         "crawlWebsite": {
           "title": "Crawl Website for Contacts",
           "type": "boolean",
+          "description": "Crawl business websites to extract emails, phones, and social media links.",
           "default": true
         },
         "maxWebsitePages": {
           "title": "Max Website Pages",
           "type": "integer",
+          "description": "Maximum number of pages to crawl per website.",
           "default": 10,
           "minimum": 1,
           "maximum": 100
@@ -158,6 +166,7 @@
         "emailExtraction": {
           "title": "Email Extraction",
           "type": "string",
+          "description": "Email extraction mode: off, standard, or aggressive.",
           "default": "standard",
           "editor": "select",
           "enum": ["off", "standard", "aggressive"],
@@ -166,11 +175,13 @@
         "phoneExtraction": {
           "title": "Phone Extraction",
           "type": "boolean",
+          "description": "Extract and validate phone numbers from websites.",
           "default": true
         },
         "collectTechSignals": {
           "title": "Collect Tech Signals",
           "type": "boolean",
+          "description": "Detect marketing technologies (Google Analytics, Facebook Pixel, etc.).",
           "default": true
         }
       }
@@ -178,15 +189,18 @@
     "dedupe": {
       "title": "Dedupe & Matching",
       "type": "object",
+      "description": "Deduplication settings for merging duplicate businesses.",
       "properties": {
         "enabled": {
           "title": "Enable Dedupe",
           "type": "boolean",
+          "description": "Enable deduplication of businesses found across multiple sources.",
           "default": true
         },
         "strategy": {
           "title": "Dedupe Strategy",
           "type": "string",
+          "description": "Deduplication strategy: strict, balanced, or aggressive.",
           "default": "balanced",
           "editor": "select",
           "enum": ["strict", "balanced", "aggressive"],
@@ -197,15 +211,18 @@
     "scoring": {
       "title": "Lead Scoring",
       "type": "object",
+      "description": "Lead scoring configuration (0-100 score with A/B/C/D tiers).",
       "properties": {
         "enabled": {
           "title": "Enable Scoring",
           "type": "boolean",
+          "description": "Enable lead scoring based on quality signals.",
           "default": true
         },
         "weightsPreset": {
           "title": "Weights Preset",
           "type": "string",
+          "description": "Scoring weights preset optimized for different business types.",
           "default": "localService",
           "editor": "select",
           "enum": ["localService", "b2bAgency", "retail", "custom"],
@@ -214,6 +231,7 @@
         "customWeights": {
           "title": "Custom Weights (advanced)",
           "type": "object",
+          "description": "Custom scoring weights (only used when preset = custom).",
           "default": {},
           "properties": {
             "reviews": { "type": "number", "default": 1 },
@@ -228,6 +246,7 @@
     "ai": {
       "title": "AI Outreach Generation",
       "type": "object",
+      "description": "AI-powered outreach content generation using OpenAI.",
       "properties": {
         "enabled": {
           "title": "Enable AI Outreach",
@@ -238,6 +257,7 @@
         "model": {
           "title": "AI Model",
           "type": "string",
+          "description": "OpenAI model to use for content generation.",
           "default": "gpt-3.5-turbo",
           "editor": "select",
           "enum": ["gpt-3.5-turbo", "gpt-4", "gpt-4-turbo"],
@@ -258,6 +278,7 @@
         "personalizationDepth": {
           "title": "Personalization Depth",
           "type": "string",
+          "description": "How personalized the AI-generated content should be.",
           "default": "medium",
           "editor": "select",
           "enum": ["low", "medium", "high"],
@@ -266,6 +287,7 @@
         "includeSmsOpener": {
           "title": "Include SMS opener",
           "type": "boolean",
+          "description": "Include a personalized opener in SMS messages.",
           "default": false
         }
       }
@@ -273,10 +295,12 @@
     "exports": {
       "title": "Exports & Integrations",
       "type": "object",
+      "description": "Output format and integration settings.",
       "properties": {
         "outputFormat": {
           "title": "Output Format",
           "type": "string",
+          "description": "Format for exported data.",
           "default": "dataset",
           "editor": "select",
           "enum": ["dataset", "csv", "json", "xlsx"],
@@ -291,11 +315,13 @@
         "webhookUrl": {
           "title": "Webhook URL (optional)",
           "type": "string",
+          "description": "URL to send webhook notifications to.",
           "default": ""
         },
         "webhookMode": {
           "title": "Webhook Mode",
           "type": "string",
+          "description": "When to send webhook notifications.",
           "default": "summary",
           "editor": "select",
           "enum": ["off", "summary", "perLead", "both"],
@@ -306,15 +332,18 @@
     "runMode": {
       "title": "Run Mode",
       "type": "object",
+      "description": "Advanced runtime configuration.",
       "properties": {
         "stealth": {
           "title": "Stealth Mode",
           "type": "boolean",
+          "description": "Use stealth techniques to avoid detection.",
           "default": true
         },
         "maxConcurrency": {
           "title": "Max Concurrency",
           "type": "integer",
+          "description": "Maximum number of concurrent requests.",
           "default": 10,
           "minimum": 1,
           "maximum": 200
@@ -322,6 +351,7 @@
         "maxRetries": {
           "title": "Max Retries",
           "type": "integer",
+          "description": "Maximum number of retries for failed requests.",
           "default": 3,
           "minimum": 0,
           "maximum": 20
@@ -329,6 +359,7 @@
         "proxyEnabled": {
           "title": "Use Apify Proxy",
           "type": "boolean",
+          "description": "Use Apify's proxy service for requests.",
           "default": true
         }
       }
@@ -336,15 +367,18 @@
     "debug": {
       "title": "Debug",
       "type": "object",
+      "description": "Debugging and logging options.",
       "properties": {
         "saveHtmlSnapshots": {
           "title": "Save HTML Snapshots",
           "type": "boolean",
+          "description": "Save HTML snapshots for debugging.",
           "default": false
         },
         "logLevel": {
           "title": "Log Level",
           "type": "string",
+          "description": "Logging verbosity level.",
           "default": "INFO",
           "editor": "select",
           "enum": ["ERROR", "WARN", "INFO", "DEBUG"],
