@@ -1,0 +1,1173 @@
+[{
+  "dedupeId": "2b7066ad2cae0ba9",
+  "confidence": 0.95,
+  "sources": {
+    "googleMaps": {
+      "url": "https://www.google.com/maps/place/?q=place_id:ChIJkWUJx22Ha4cRVVLq4AJk7Ng",
+      "placeId": "ChIJkWUJx22Ha4cRVVLq4AJk7Ng"
+    }
+  },
+  "business": {
+    "name": "Applewood Plumbing Heating & Electric",
+    "category": "electrician",
+    "categories": [
+      "electrician",
+      "establishment",
+      "general contractor",
+      "plumber",
+      "point of interest"
+    ],
+    "description": "",
+    "address": {
+      "street": "5000 West 29th Avenue",
+      "city": "Denver",
+      "state": "CO",
+      "postalCode": "80212",
+      "country": "US",
+      "formatted": "5000 W 29th Ave, Denver, CO 80212, USA"
+    },
+    "geo": {
+      "lat": 39.7583004,
+      "lng": -105.0512657
+    },
+    "phone": "(720) 780-9143",
+    "phoneE164": "+1 720-780-9143"
+  },
+  "online": {
+    "website": "https://www.applewoodfixit.com/",
+    "domain": "www.applewoodfixit.com",
+    "socials": {
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": "",
+      "tiktok": "",
+      "x": ""
+    }
+  },
+  "contacts": {
+    "emails": [
+      {
+        "email": "custservice@applewoodfixit.com",
+        "source": "text",
+        "confidence": 0.7,
+        "isRoleBased": false,
+        "isValidated": false
+      }
+    ],
+    "phones": [
+      {
+        "phone": "(720) 780-9143",
+        "phoneE164": "+1 720-780-9143",
+        "source": "googlePlacesApi",
+        "confidence": 0.95
+      },
+      {
+        "phone": "(303) 328-3060",
+        "phoneE164": "+13033283060",
+        "source": "text",
+        "confidence": 0.7
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.8,
+      "reviewCount": 16345,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {
+      "hasHttps": true,
+      "hasContactForm": true,
+      "hasBookingWidget": true,
+      "hasChatWidget": true
+    },
+    "techSignals": {
+      "googleAnalytics": false,
+      "googleTagManager": false,
+      "facebookPixel": false,
+      "hubspot": false,
+      "mailchimp": false
+    }
+  },
+  "score": {
+    "leadScore": 64,
+    "tier": "B",
+    "reasons": [
+      "Well-reviewed business",
+      "Has active website",
+      "Email contact available"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Boost Your Online Presence with Digital Growth Partners\n\nHi Applewood Plumbing Heating & Electric team,",
+    "voicemail": "Hi there, this is [Your Name] from Digital Growth Partners. I recently came across Applewood Plumbing Heating & Electric in Denver and was impressed by your stellar reputation. I believe we can help enhance your online presence through website design, SEO, and lead generation services. I'd love to discuss this further with you. Feel free to reach me at [Your Phone Number]. Thanks!",
+    "sms": "Hi Applewood Plumbing! Impressed by your 4.8/5 rating! Let's boost your online presence together. Interested in a chat? Reach me at [Your Phone Number]. - Digital Growth Partners",
+    "generatedAt": "2026-01-13T03:46:24.967Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:46:15.681Z",
+    "runId": "fZRc7zexbdf5bCCzz",
+    "notes": "Collected from Google Places API"
+  }
+},
+{
+  "dedupeId": "280fef7af4149c3e",
+  "confidence": 0.95,
+  "sources": {
+    "googleMaps": {
+      "url": "https://www.google.com/maps/place/?q=place_id:ChIJAeGy-L53bIcRVCD6yZOiGVU",
+      "placeId": "ChIJAeGy-L53bIcRVCD6yZOiGVU"
+    }
+  },
+  "business": {
+    "name": "A Better Plumber (an Absolute Plumbing Company)",
+    "category": "electrician",
+    "categories": [
+      "electrician",
+      "establishment",
+      "general contractor",
+      "plumber",
+      "point of interest",
+      "store"
+    ],
+    "description": "",
+    "address": {
+      "street": "3980 Quebec Street",
+      "city": "Denver",
+      "state": "CO",
+      "postalCode": "80207",
+      "country": "US",
+      "formatted": "3980 Quebec St #140, Denver, CO 80207, USA"
+    },
+    "geo": {
+      "lat": 39.77252379999999,
+      "lng": -104.8999427
+    },
+    "phone": "(720) 579-8133",
+    "phoneE164": "+1 720-579-8133"
+  },
+  "online": {
+    "website": "https://abetterplumberco.com/?utm_source=google-gbp&utm_medium=organic&utm_campaign=*2*a-better-plumber-denver",
+    "domain": "abetterplumberco.com",
+    "socials": {
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": "",
+      "tiktok": "",
+      "x": ""
+    }
+  },
+  "contacts": {
+    "emails": [
+      {
+        "email": "booking@absolutefix.com",
+        "source": "text",
+        "confidence": 0.7,
+        "isRoleBased": false,
+        "isValidated": false
+      },
+      {
+        "email": "info@absolutefix.com",
+        "source": "text",
+        "confidence": 0.5,
+        "isRoleBased": true,
+        "isValidated": false
+      }
+    ],
+    "phones": [
+      {
+        "phone": "(720) 579-8133",
+        "phoneE164": "+1 720-579-8133",
+        "source": "googlePlacesApi",
+        "confidence": 0.95
+      },
+      {
+        "phone": "(720) 642-7377",
+        "phoneE164": "+17206427377",
+        "source": "text",
+        "confidence": 0.7
+      },
+      {
+        "phone": "(526) 272-8293",
+        "phoneE164": "+15262728293",
+        "source": "text",
+        "confidence": 0.7
+      },
+      {
+        "phone": "(202) 720-2620",
+        "phoneE164": "+12027202620",
+        "source": "text",
+        "confidence": 0.7
+      },
+      {
+        "phone": "(202) 220-2120",
+        "phoneE164": "+12022202120",
+        "source": "text",
+        "confidence": 0.7
+      },
+      {
+        "phone": "(201) 720-1620",
+        "phoneE164": "+12017201620",
+        "source": "text",
+        "confidence": 0.7
+      },
+      {
+        "phone": "(201) 220-1120",
+        "phoneE164": "+12012201120",
+        "source": "text",
+        "confidence": 0.7
+      },
+      {
+        "phone": "(951) 994-1993",
+        "phoneE164": "+19519941993",
+        "source": "text",
+        "confidence": 0.7
+      },
+      {
+        "phone": "(901) 989-1988",
+        "phoneE164": "+19019891988",
+        "source": "text",
+        "confidence": 0.7
+      },
+      {
+        "phone": "(801) 979-1978",
+        "phoneE164": "+18019791978",
+        "source": "text",
+        "confidence": 0.7
+      },
+      {
+        "phone": "(701) 969-1968",
+        "phoneE164": "+17019691968",
+        "source": "text",
+        "confidence": 0.7
+      },
+      {
+        "phone": "(651) 964-1963",
+        "phoneE164": "+16519641963",
+        "source": "text",
+        "confidence": 0.7
+      },
+      {
+        "phone": "(601) 959-1958",
+        "phoneE164": "+16019591958",
+        "source": "text",
+        "confidence": 0.7
+      },
+      {
+        "phone": "(551) 954-1953",
+        "phoneE164": "+15519541953",
+        "source": "text",
+        "confidence": 0.7
+      },
+      {
+        "phone": "(501) 949-1948",
+        "phoneE164": "+15019491948",
+        "source": "text",
+        "confidence": 0.7
+      },
+      {
+        "phone": "(401) 939-1938",
+        "phoneE164": "+14019391938",
+        "source": "text",
+        "confidence": 0.7
+      },
+      {
+        "phone": "(351) 934-1933",
+        "phoneE164": "+13519341933",
+        "source": "text",
+        "confidence": 0.7
+      },
+      {
+        "phone": "(301) 929-1928",
+        "phoneE164": "+13019291928",
+        "source": "text",
+        "confidence": 0.7
+      },
+      {
+        "phone": "(251) 924-1923",
+        "phoneE164": "+12519241923",
+        "source": "text",
+        "confidence": 0.7
+      },
+      {
+        "phone": "(234) 567-8910",
+        "phoneE164": "+12345678910",
+        "source": "text",
+        "confidence": 0.7
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.8,
+      "reviewCount": 3297,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {
+      "hasHttps": true,
+      "hasContactForm": true,
+      "hasBookingWidget": true,
+      "hasChatWidget": false
+    },
+    "techSignals": {
+      "googleAnalytics": false,
+      "googleTagManager": false,
+      "facebookPixel": false,
+      "hubspot": false,
+      "mailchimp": false
+    }
+  },
+  "score": {
+    "leadScore": 64,
+    "tier": "B",
+    "reasons": [
+      "Well-reviewed business",
+      "Has active website",
+      "Email contact available"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Enhance Your Online Presence with Our Services\n\nHi [Owner's Name],",
+    "voicemail": "Hi [Owner's Name], this is [Your Name] from Digital Growth Partners. I recently discovered A Better Plumber and was impressed by your outstanding reputation. I specialize in website design, SEO, and lead generation services for local service businesses like yours. I'd love to discuss how we can help enhance your online presence. Please give me a call back at [Your Phone Number]. Thank you.",
+    "sms": "Hi [Owner's Name], this is [Your Name] from Digital Growth Partners. Impressed by A Better Plumber's reputation! Let's discuss enhancing your online presence. Call me at [Your Phone Number].",
+    "generatedAt": "2026-01-13T03:46:28.030Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:46:15.840Z",
+    "runId": "fZRc7zexbdf5bCCzz",
+    "notes": "Collected from Google Places API"
+  }
+},
+{
+  "dedupeId": "2e90967a113b7f98",
+  "confidence": 0.95,
+  "sources": {
+    "googleMaps": {
+      "url": "https://www.google.com/maps/place/?q=place_id:ChIJXQdbzlF5bIcRisJQL72gJFI",
+      "placeId": "ChIJXQdbzlF5bIcRisJQL72gJFI"
+    }
+  },
+  "business": {
+    "name": "Time Plumbing, Heating & Electric Denver",
+    "category": "electrician",
+    "categories": [
+      "electrician",
+      "establishment",
+      "general contractor",
+      "plumber",
+      "point of interest"
+    ],
+    "description": "",
+    "address": {
+      "street": "2525 West 6th Avenue",
+      "city": "Denver",
+      "state": "CO",
+      "postalCode": "80204",
+      "country": "US",
+      "formatted": "2525 W 6th Ave, Denver, CO 80204, USA"
+    },
+    "geo": {
+      "lat": 39.7259254,
+      "lng": -105.018292
+    },
+    "phone": "(303) 758-6237",
+    "phoneE164": "+1 303-758-6237"
+  },
+  "online": {
+    "website": "https://www.303plumber.com/",
+    "domain": "www.303plumber.com",
+    "socials": {
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": "",
+      "tiktok": "",
+      "x": "https://x.com/bolt"
+    }
+  },
+  "contacts": {
+    "emails": [
+      {
+        "email": "303-758-6237service@303plumber.common",
+        "source": "text",
+        "confidence": 0.7,
+        "isRoleBased": false,
+        "isValidated": false
+      },
+      {
+        "email": "605a7baede844d278b89dc95ae0a9123@sentry-next.wixpress.com",
+        "source": "text",
+        "confidence": 0.7,
+        "isRoleBased": false,
+        "isValidated": false
+      },
+      {
+        "email": "dd0a55ccb8124b9c9d938e3acf41f8aa@sentry.wixpress.com",
+        "source": "text",
+        "confidence": 0.7,
+        "isRoleBased": false,
+        "isValidated": false
+      },
+      {
+        "email": "c183baa23371454f99f417f6616b724d@sentry.wixpress.com",
+        "source": "text",
+        "confidence": 0.7,
+        "isRoleBased": false,
+        "isValidated": false
+      },
+      {
+        "email": "8c4075d5481d476e945486754f783364@sentry.io",
+        "source": "text",
+        "confidence": 0.7,
+        "isRoleBased": false,
+        "isValidated": false
+      },
+      {
+        "email": "79baaa8e09c746d2b7401643b99792e0@sentry.wixpress.com",
+        "source": "text",
+        "confidence": 0.7,
+        "isRoleBased": false,
+        "isValidated": false
+      },
+      {
+        "email": "18d2f96d279149989b95faf0a4b41882@sentry-next.wixpress.com",
+        "source": "text",
+        "confidence": 0.7,
+        "isRoleBased": false,
+        "isValidated": false
+      },
+      {
+        "email": "8eb368c655b84e029ed79ad7a5c1718e@sentry.wixpress.com",
+        "source": "text",
+        "confidence": 0.7,
+        "isRoleBased": false,
+        "isValidated": false
+      },
+      {
+        "email": "5d1795a2db124a268f1e1bd88f503500@sentry.wixpress.com",
+        "source": "text",
+        "confidence": 0.7,
+        "isRoleBased": false,
+        "isValidated": false
+      },
+      {
+        "email": "service@303plumber.com",
+        "source": "text",
+        "confidence": 0.5,
+        "isRoleBased": true,
+        "isValidated": false
+      }
+    ],
+    "phones": [
+      {
+        "phone": "(303) 758-6237",
+        "phoneE164": "+1 303-758-6237",
+        "source": "googlePlacesApi",
+        "confidence": 0.95
+      },
+      {
+        "phone": "(303) 758-6237",
+        "phoneE164": "+13037586237",
+        "source": "text",
+        "confidence": 0.7
+      },
+      {
+        "phone": "(566) 249-3854",
+        "phoneE164": "+15662493854",
+        "source": "text",
+        "confidence": 0.7
+      },
+      {
+        "phone": "(641) 475-9035",
+        "phoneE164": "+16414759035",
+        "source": "text",
+        "confidence": 0.7
+      },
+      {
+        "phone": "(603) 725-6650",
+        "phoneE164": "+16037256650",
+        "source": "text",
+        "confidence": 0.7
+      },
+      {
+        "phone": "(309) 786-5384",
+        "phoneE164": "+13097865384",
+        "source": "text",
+        "confidence": 0.7
+      },
+      {
+        "phone": "(683) 223-9914",
+        "phoneE164": "+16832239914",
+        "source": "text",
+        "confidence": 0.7
+      },
+      {
+        "phone": "(364) 897-9285",
+        "phoneE164": "+13648979285",
+        "source": "text",
+        "confidence": 0.7
+      },
+      {
+        "phone": "(656) 888-6478",
+        "phoneE164": "+16568886478",
+        "source": "text",
+        "confidence": 0.7
+      },
+      {
+        "phone": "(501) 628-8049",
+        "phoneE164": "+15016288049",
+        "source": "text",
+        "confidence": 0.7
+      },
+      {
+        "phone": "(317) 530-3217",
+        "phoneE164": "+13175303217",
+        "source": "text",
+        "confidence": 0.7
+      },
+      {
+        "phone": "(651) 404-3175",
+        "phoneE164": "+16514043175",
+        "source": "text",
+        "confidence": 0.7
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.6,
+      "reviewCount": 776,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {
+      "hasHttps": true,
+      "hasContactForm": true,
+      "hasBookingWidget": true,
+      "hasChatWidget": true
+    },
+    "techSignals": {
+      "googleAnalytics": true,
+      "googleTagManager": false,
+      "facebookPixel": false,
+      "hubspot": false,
+      "mailchimp": false
+    }
+  },
+  "score": {
+    "leadScore": 67,
+    "tier": "B",
+    "reasons": [
+      "Well-reviewed business",
+      "Has active website",
+      "Email contact available",
+      "Uses marketing technology"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Enhance Your Online Presence with Digital Growth Partners\n\nHi Time Plumbing, Heating & Electric Denver team,",
+    "voicemail": "Hi there, this is [Your Name] from Digital Growth Partners. I noticed the impressive reputation of Time Plumbing, Heating & Electric Denver and wanted to connect. We specialize in website design, SEO, and lead generation services tailored for local service businesses like yours. Let's discuss how we can enhance your online presence and drive more leads. Feel free to reach me at [Your Phone Number]. Looking forward to potentially working with you!",
+    "sms": "Hi Time Plumbing, Heating & Electric Denver! Impressed by your 4.6/5 rating! Let's chat about boosting your online presence with website design, SEO, and lead gen services. Reach me at [Your Phone Number]. - [Your Name], Digital Growth Partners.",
+    "generatedAt": "2026-01-13T03:46:31.628Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:46:16.004Z",
+    "runId": "fZRc7zexbdf5bCCzz",
+    "notes": "Collected from Google Places API"
+  }
+},
+{
+  "dedupeId": "3a84f3214712b689",
+  "confidence": 0.95,
+  "sources": {
+    "googleMaps": {
+      "url": "https://www.google.com/maps/place/?q=place_id:ChIJp2j7hnh3bIcR-SKPYms0xOU",
+      "placeId": "ChIJp2j7hnh3bIcR-SKPYms0xOU"
+    }
+  },
+  "business": {
+    "name": "King Rooter & Plumbing | Plumbers Denver, CO | Drain Cleaning | Sewer & Water Line | Tankless Water Heater Repair",
+    "category": "establishment",
+    "categories": [
+      "establishment",
+      "general contractor",
+      "home goods store",
+      "plumber",
+      "point of interest",
+      "store"
+    ],
+    "description": "",
+    "address": {
+      "street": "100 Fillmore Street",
+      "city": "Denver",
+      "state": "CO",
+      "postalCode": "80206",
+      "country": "US",
+      "formatted": "100 Fillmore St #500, Denver, CO 80206, USA"
+    },
+    "geo": {
+      "lat": 39.7185837,
+      "lng": -104.9530527
+    },
+    "phone": "(303) 502-5651",
+    "phoneE164": "+1 303-502-5651"
+  },
+  "online": {
+    "website": "https://www.kingrooterandplumbing.com/?utm_source=google&utm_medium=search_engine&utm_campaign=gmb",
+    "domain": "www.kingrooterandplumbing.com",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(303) 502-5651",
+        "phoneE164": "+1 303-502-5651",
+        "source": "googlePlacesApi",
+        "confidence": 0.95
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.7,
+      "reviewCount": 478,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 54,
+    "tier": "C",
+    "reasons": [
+      "Well-reviewed business",
+      "Has active website"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Boost Your Online Presence with Digital Growth Partners\n\nHi there,",
+    "voicemail": "Hi there, this is [Your Name] from Digital Growth Partners. I came across King Rooter & Plumbing and was impressed by your work in Denver. We specialize in website design, SEO, and lead generation services for local service businesses like yours. I believe we can help enhance your online presence to attract more customers. I'd love to discuss this further. Feel free to reach me at [Your Phone Number]. Thanks, and have a great day!",
+    "sms": "Hi King Rooter & Plumbing! Impressed by your work in Denver. Enhance your online presence with Digital Growth Partners. Let's chat? [Your Name] at Digital Growth.",
+    "generatedAt": "2026-01-13T03:46:34.819Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:46:16.145Z",
+    "runId": "fZRc7zexbdf5bCCzz",
+    "notes": "Collected from Google Places API"
+  }
+},
+{
+  "dedupeId": "95e89a8f308be852",
+  "confidence": 0.95,
+  "sources": {
+    "googleMaps": {
+      "url": "https://www.google.com/maps/place/?q=place_id:ChIJszGcvzV0bIcR3_6j5Gru8sM",
+      "placeId": "ChIJszGcvzV0bIcR3_6j5Gru8sM"
+    }
+  },
+  "business": {
+    "name": "Brothers Plumbing, Heating, and Electric - Denver",
+    "category": "electrician",
+    "categories": [
+      "electrician",
+      "establishment",
+      "general contractor",
+      "plumber",
+      "point of interest"
+    ],
+    "description": "",
+    "address": {
+      "street": "6201 Broadway",
+      "city": "Denver",
+      "state": "CO",
+      "postalCode": "80216",
+      "country": "US",
+      "formatted": "6201 Broadway, Denver, CO 80216, USA"
+    },
+    "geo": {
+      "lat": 39.80964609999999,
+      "lng": -104.9881312
+    },
+    "phone": "(303) 451-5057",
+    "phoneE164": "+1 303-451-5057"
+  },
+  "online": {
+    "website": "https://www.brothersplumbing.com/",
+    "domain": "www.brothersplumbing.com",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(303) 451-5057",
+        "phoneE164": "+1 303-451-5057",
+        "source": "googlePlacesApi",
+        "confidence": 0.95
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.7,
+      "reviewCount": 8428,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 54,
+    "tier": "C",
+    "reasons": [
+      "Well-reviewed business",
+      "Has active website"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Enhance Brothers Plumbing, Heating, and Electric’s Online Presence with Digital Growth Partners\n\nHi Brothers Plumbing, Heating, and Electric team,",
+    "voicemail": "Hi there, this is [Your Name] from Digital Growth Partners. I recently discovered Brothers Plumbing, Heating, and Electric in Denver and was impressed by your outstanding reputation. We specialize in website design, SEO, and lead generation services for local service businesses like yours. I believe we can enhance your online presence to attract more customers. Let’s discuss how we can collaborate. Give me a call back at your convenience. Looking forward to potentially working together!",
+    "sms": "Hi Brothers Plumbing! I’m [Your Name] from Digital Growth Partners. We can boost your online presence with our website design, SEO, and lead generation services. Let's chat!",
+    "generatedAt": "2026-01-13T03:46:39.111Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:46:16.318Z",
+    "runId": "fZRc7zexbdf5bCCzz",
+    "notes": "Collected from Google Places API"
+  }
+},
+{
+  "dedupeId": "fe5a5c6ba980b4ef",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/bluefrog-plumbing-drain-englewood?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "s2sPqT3TYWDwHsT0YaUwng"
+    }
+  },
+  "business": {
+    "name": "Bluefrog Plumbing + Drain",
+    "category": "Plumbing",
+    "categories": [
+      "Plumbing",
+      "Water Heater Installation/Repair",
+      "Water Purification Services"
+    ],
+    "description": "",
+    "address": {
+      "street": "",
+      "city": "Englewood",
+      "state": "CO",
+      "postalCode": "80112",
+      "country": "US",
+      "formatted": "Englewood, CO 80112"
+    },
+    "geo": {
+      "lat": 39.681410383764,
+      "lng": -104.94846065253908
+    },
+    "phone": "(720) 807-5077",
+    "phoneE164": "+17208075077"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(720) 807-5077",
+        "phoneE164": "+17208075077",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.7,
+      "reviewCount": 126,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 34,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Enhance Bluefrog Plumbing + Drain's Online Presence with Our Expertise\n\nHi Bluefrog Plumbing team,",
+    "voicemail": "Hi, this is [Your Name] from Digital Growth Partners. I wanted to connect with you from Bluefrog Plumbing + Drain in Englewood. Your reputation and reviews are outstanding, and I believe we can help enhance your online presence. Let's chat about how we can support your business growth. Feel free to reach out at [Your Phone Number]. Looking forward to connecting!",
+    "sms": "Hi Bluefrog Plumbing! Your reputation is impressive. Let's discuss how we can boost your online presence. Contact us at [Your Phone Number]. - Digital Growth Partners",
+    "generatedAt": "2026-01-13T03:46:41.857Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:46:16.856Z",
+    "runId": "fZRc7zexbdf5bCCzz",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "3fe13ec3c5573097",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/speed-plumbing-denver?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "PvO-uDyFV6XXkMKba6l_oQ"
+    }
+  },
+  "business": {
+    "name": "Speed plumbing",
+    "category": "Plumbing",
+    "categories": [
+      "Plumbing",
+      "Water Heater Installation/Repair"
+    ],
+    "description": "",
+    "address": {
+      "street": "225 S Harrison St A412",
+      "city": "Denver",
+      "state": "CO",
+      "postalCode": "80209",
+      "country": "US",
+      "formatted": "225 S Harrison St A412, Ste A412, Denver, CO 80209"
+    },
+    "geo": {
+      "lat": 39.712678,
+      "lng": -104.941585
+    },
+    "phone": "(720) 670-6361",
+    "phoneE164": "+17206706361"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(720) 670-6361",
+        "phoneE164": "+17206706361",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.9,
+      "reviewCount": 142,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 35,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Increase Your Plumbing Leads with Custom Website Design & SEO\n\nHi there, Speed Plumbing team,",
+    "voicemail": "Hi there, this is [Your Name] from Digital Growth Partners. I recently came across Speed Plumbing in Denver and was impressed by your excellent 4.9/5 rating. I specialize in website design, SEO, and lead generation services tailored for local service businesses like yours. I believe we can help you boost your online presence and drive more leads. Would love to discuss this further with you. Feel free to reach me at [Your Phone Number]. Looking forward to potentially working together!",
+    "sms": "Hi Speed Plumbing! Increase your leads with custom website design & SEO from Digital Growth Partners. Let's chat about boosting your online presence! -[Your Name]",
+    "generatedAt": "2026-01-13T03:46:44.761Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:46:16.999Z",
+    "runId": "fZRc7zexbdf5bCCzz",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "f449e2248cec53c2",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/hyper-flow-service-denver-4?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "mCFpv7L2pvqr8Wo8NrKUAA"
+    }
+  },
+  "business": {
+    "name": "Hyper Flow Service",
+    "category": "Plumbing",
+    "categories": [
+      "Plumbing",
+      "Hydro-jetting",
+      "Excavation Services"
+    ],
+    "description": "",
+    "address": {
+      "street": "1130 S Cherokee St",
+      "city": "Denver",
+      "state": "CO",
+      "postalCode": "80223",
+      "country": "US",
+      "formatted": "1130 S Cherokee St, Denver, CO 80223"
+    },
+    "geo": {
+      "lat": 39.695969,
+      "lng": -104.991112
+    },
+    "phone": "(720) 259-5816",
+    "phoneE164": "+17202595816"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(720) 259-5816",
+        "phoneE164": "+17202595816",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.7,
+      "reviewCount": 232,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 34,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Enhance Hyper Flow Service's Online Presence with Our Digital Solutions\n\nHi Hyper Flow Service team,",
+    "voicemail": "Hi, this is [Your Name] from Digital Growth Partners. I noticed Hyper Flow Service's great reputation in Denver and wanted to discuss how we can improve your online presence to drive more business. Please give me a call back at your convenience at [Your Phone Number]. Thank you!",
+    "sms": "Hi Hyper Flow Service, it's [Your Name] from Digital Growth Partners. Let's chat about boosting your online presence to attract more customers. Can we discuss further?",
+    "generatedAt": "2026-01-13T03:46:47.892Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:46:17.379Z",
+    "runId": "fZRc7zexbdf5bCCzz",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "cea410def876a016",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/hero-plumbing-and-drains-denver?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "-nA5lYbsF41RZYKa4W5MAw"
+    }
+  },
+  "business": {
+    "name": "Hero Plumbing and Drains",
+    "category": "Plumbing",
+    "categories": [
+      "Plumbing",
+      "Water Heater Installation/Repair"
+    ],
+    "description": "",
+    "address": {
+      "street": "1357 E 73rd Ave",
+      "city": "Denver",
+      "state": "CO",
+      "postalCode": "80223",
+      "country": "US",
+      "formatted": "1357 E 73rd Ave, Denver, CO 80223"
+    },
+    "geo": {
+      "lat": 39.829521,
+      "lng": -104.97153
+    },
+    "phone": "(720) 421-5016",
+    "phoneE164": "+17204215016"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(720) 421-5016",
+        "phoneE164": "+17204215016",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.9,
+      "reviewCount": 51,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 35,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Enhance Hero Plumbing's Online Presence with Our Expertise\n\nHi Team at Hero Plumbing and Drains,",
+    "voicemail": "Hi there, this is [Your Name] from Digital Growth Partners. I noticed Hero Plumbing and Drains in Denver and your impressive 4.9/5 rating. We specialize in website design, SEO, and lead generation for local service businesses like yours. Let's explore how we can enhance your online presence. Feel free to reach me at [Your Phone Number]. Thank you!",
+    "sms": "Hi Hero Plumbing! Impressed by your 4.9/5 rating. Let's boost your online presence with our website design & SEO services. Interested? Call [Your Number].",
+    "generatedAt": "2026-01-13T03:46:51.322Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:46:17.514Z",
+    "runId": "fZRc7zexbdf5bCCzz",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "9ea8f8c475466b03",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/spartan-plumbing-arvada-2?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "xKYIe0LXlAUStvUlYhwYgA"
+    }
+  },
+  "business": {
+    "name": "Spartan Plumbing",
+    "category": "Plumbing",
+    "categories": [
+      "Plumbing",
+      "Water Heater Installation/Repair",
+      "Hydro-jetting"
+    ],
+    "description": "",
+    "address": {
+      "street": "5440 Marshall St",
+      "city": "Arvada",
+      "state": "CO",
+      "postalCode": "80002",
+      "country": "US",
+      "formatted": "5440 Marshall St, Arvada, CO 80002"
+    },
+    "geo": {
+      "lat": 39.795288,
+      "lng": -105.067878
+    },
+    "phone": "(720) 900-3192",
+    "phoneE164": "+17209003192"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(720) 900-3192",
+        "phoneE164": "+17209003192",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.6,
+      "reviewCount": 181,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 34,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Enhance Spartan Plumbing's Online Presence with Our Expertise\n\nHi Spartan Plumbing Team,",
+    "voicemail": "Hi, this is [Your Name] from Digital Growth Partners. I noticed Spartan Plumbing's excellent reputation in Arvada and wanted to offer our expertise in website design, SEO, and lead generation to help boost your online presence. Let's chat about how we can drive more leads to your business. Feel free to reach me at [Your Contact Number]. Thank you!",
+    "sms": "Hi Spartan Plumbing! Impressed by your 4.6/5 rating in Arvada. Let's enhance your online presence together. Interested in a chat? Reach me at [Your Contact Number]. - [Your Name]",
+    "generatedAt": "2026-01-13T03:46:54.478Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:46:17.645Z",
+    "runId": "fZRc7zexbdf5bCCzz",
+    "notes": "Collected from Yelp Fusion API"
+  }
+}]

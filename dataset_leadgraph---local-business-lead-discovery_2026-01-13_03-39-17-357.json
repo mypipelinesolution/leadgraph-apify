@@ -1,0 +1,3638 @@
+[{
+  "dedupeId": "2fa49217ce1b6c1d",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/beard-brothers-roofing-highlands-ranch-2?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "lTr0K3p7Eyng9L6N49T03Q"
+    }
+  },
+  "business": {
+    "name": "Beard Brothers Roofing",
+    "category": "Roofing",
+    "categories": [
+      "Roofing",
+      "Roof Inspectors"
+    ],
+    "description": "",
+    "address": {
+      "street": "",
+      "city": "Highlands ranch",
+      "state": "CO",
+      "postalCode": "80126",
+      "country": "US",
+      "formatted": "Highlands ranch, CO 80126"
+    },
+    "geo": {
+      "lat": 39.540731944534485,
+      "lng": -104.96082848703688
+    },
+    "phone": "(720) 515-6605",
+    "phoneE164": "+17205156605"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(720) 515-6605",
+        "phoneE164": "+17205156605",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 5,
+      "reviewCount": 29,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 29,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {},
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:37.957Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "c0f4d08745c1ae97",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/jenesis-roofing-denver?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "vHqXaGVnZRjNpsl6u33PZg"
+    }
+  },
+  "business": {
+    "name": "Jenesis Roofing",
+    "category": "Roofing",
+    "categories": [
+      "Roofing",
+      "Gutter Services",
+      "Roof Inspectors"
+    ],
+    "description": "",
+    "address": {
+      "street": "1191 S Bannock St",
+      "city": "Denver",
+      "state": "CO",
+      "postalCode": "80223",
+      "country": "US",
+      "formatted": "1191 S Bannock St, Denver, CO 80223"
+    },
+    "geo": {
+      "lat": 39.69518168983924,
+      "lng": -104.99047892424856
+    },
+    "phone": "(303) 789-1505",
+    "phoneE164": "+13037891505"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(303) 789-1505",
+        "phoneE164": "+13037891505",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.6,
+      "reviewCount": 61,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 34,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Helping Jenesis Roofing in Denver Stand Out Online\n\nHello Jenesis Roofing team,",
+    "voicemail": "Hi there, this is [Your Name] from Digital Growth Partners. I noticed the great reputation Jenesis Roofing has built in Denver, and I believe we can help you stand out even more online. I specialize in digital marketing services tailored for businesses like yours. Let's chat about how we can boost your online presence and generate more leads. Feel free to reach me at [Your Phone Number]. Looking forward to connecting soon!",
+    "sms": "Hi Jenesis Roofing! I'm [Your Name] from Digital Growth Partners. Impressed by your 4.6/5 rating! Let's discuss how we can enhance your online presence and generate more leads. Can we schedule a call?",
+    "generatedAt": "2026-01-13T03:37:05.160Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:38.416Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "6bf58fae594b4e18",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/ethos-roofing-and-restoration-centennial?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "CgbxXqEMNqPyxyQHWnB2pA"
+    }
+  },
+  "business": {
+    "name": "Ethos Roofing & Restoration",
+    "category": "Roofing",
+    "categories": [
+      "Roofing",
+      "Siding",
+      "Painters"
+    ],
+    "description": "",
+    "address": {
+      "street": "2305 E Arapahoe Rd.",
+      "city": "Centennial",
+      "state": "CO",
+      "postalCode": "80122",
+      "country": "US",
+      "formatted": "2305 E Arapahoe Rd., Ste 153, Centennial, CO 80122"
+    },
+    "geo": {
+      "lat": 39.59641,
+      "lng": -104.960816
+    },
+    "phone": "(855) 553-8467",
+    "phoneE164": "+18555538467"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(855) 553-8467",
+        "phoneE164": "+18555538467",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.6,
+      "reviewCount": 85,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 34,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Helping Ethos Roofing & Restoration Boost Online Presence\n\nHi [Recipient's Name],",
+    "voicemail": "Hi [Recipient's Name], this is [Your Name] calling from Digital Growth Partners. I came across Ethos Roofing & Restoration and was impressed by your outstanding reputation in Centennial. We specialize in digital marketing services tailored for businesses like yours and would love to discuss how we can help you enhance your online presence. Please give me a call back at [Your Phone Number]. Thank you!",
+    "sms": "Hi [Recipient's Name], this is [Your Name] from Digital Growth Partners. I saw Ethos Roofing & Restoration's great reviews! Let's chat about boosting your online presence. Call me at [Your Phone Number].",
+    "generatedAt": "2026-01-13T03:37:08.390Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:38.567Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "a66b50a2f1b78040",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/colorado-roofing-company-englewood-2?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "kqekQ7XiyO6Bo_Zr0-ThVg"
+    }
+  },
+  "business": {
+    "name": "Colorado Roofing Company",
+    "category": "Roofing",
+    "categories": [
+      "Roofing"
+    ],
+    "description": "",
+    "address": {
+      "street": "4885 S Broadway",
+      "city": "Englewood",
+      "state": "CO",
+      "postalCode": "80113",
+      "country": "US",
+      "formatted": "4885 S Broadway, Ste 300, Englewood, CO 80113"
+    },
+    "geo": {
+      "lat": 39.628119,
+      "lng": -104.988366
+    },
+    "phone": "(303) 329-6363",
+    "phoneE164": "+13033296363"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(303) 329-6363",
+        "phoneE164": "+13033296363",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.2,
+      "reviewCount": 10,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 21,
+    "tier": "D",
+    "reasons": []
+  },
+  "ai": {
+    "coldEmail": "Subject: Boost Your Roofing Business with Digital Marketing Expertise\n\nHi Colorado Roofing Company team,",
+    "voicemail": "Hi there, this is [Your Name] calling from Digital Growth Partners. I recently came across Colorado Roofing Company in Englewood and I'm impressed by your reputation. We specialize in digital marketing for home service businesses like yours and I believe we can help you enhance your online presence. I'd love to discuss how we can work together to drive more leads and boost your business. Feel free to give me a call back at [Your Phone Number]. Looking forward to connecting!",
+    "sms": "Hi Colorado Roofing Company, it's [Your Name] from Digital Growth Partners. Noticed your great work! Let's chat about boosting your online presence. Call me at [Your Phone Number].",
+    "generatedAt": "2026-01-13T03:37:11.529Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:38.694Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "049919348dd75c3b",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/sweet-roofing-frederick?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "vwfcf5xoIHPEj6ncuE_iWQ"
+    }
+  },
+  "business": {
+    "name": "Sweet Roofing",
+    "category": "Roofing",
+    "categories": [
+      "Roofing",
+      "Roof Inspectors"
+    ],
+    "description": "",
+    "address": {
+      "street": "451 Oak St",
+      "city": "Frederick",
+      "state": "CO",
+      "postalCode": "80530",
+      "country": "US",
+      "formatted": "451 Oak St, Unit 203, Frederick, CO 80530"
+    },
+    "geo": {
+      "lat": 40.098917,
+      "lng": -104.938583
+    },
+    "phone": "(970) 371-8975",
+    "phoneE164": "+19703718975"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(970) 371-8975",
+        "phoneE164": "+19703718975",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.8,
+      "reviewCount": 11,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 23,
+    "tier": "D",
+    "reasons": []
+  },
+  "ai": {
+    "coldEmail": "Subject: Help Sweet Roofing Boost Online Presence & Leads\n\nHi Sweet Roofing Team,",
+    "voicemail": "Hi, this is [Your Name] from Digital Growth Partners. I noticed Sweet Roofing's stellar reviews in Frederick and wanted to discuss how we can boost your online presence and generate more leads. Please give me a call back at your convenience. Thank you.",
+    "sms": "Hi Sweet Roofing! Impressed by your 4.8/5 rating in Frederick! Let's chat about boosting your online presence & leads with our tailored digital marketing services. Interested? Reply to schedule a call. - Digital Growth Partners",
+    "generatedAt": "2026-01-13T03:37:14.966Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:38.831Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "e92256388a6c5a14",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/formula-roofing-and-remodeling-denver-2?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "K3DsCevLA0swLlKG6w7MXg"
+    }
+  },
+  "business": {
+    "name": "Formula Roofing and Remodeling",
+    "category": "Roofing",
+    "categories": [
+      "Roofing",
+      "General Contractors",
+      "Windows Installation"
+    ],
+    "description": "",
+    "address": {
+      "street": "4560 Columbine St",
+      "city": "Denver",
+      "state": "CO",
+      "postalCode": "80216",
+      "country": "US",
+      "formatted": "4560 Columbine St, Denver, CO 80216"
+    },
+    "geo": {
+      "lat": 39.779354773702195,
+      "lng": -104.956826
+    },
+    "phone": "(303) 600-8696",
+    "phoneE164": "+13036008696"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(303) 600-8696",
+        "phoneE164": "+13036008696",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.4,
+      "reviewCount": 160,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 33,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Boost Your Roofing Business with Tailored Digital Marketing Solutions\n\nHi Formula Roofing and Remodeling team,",
+    "voicemail": "Hi there, this is [Your Name] from Digital Growth Partners. I recently discovered Formula Roofing and Remodeling and was impressed by your outstanding reputation in Denver. We specialize in digital marketing solutions tailored for home service businesses like yours. I believe we can help take your online presence to the next level. I'd love to discuss this further with you. Please give me a call back at [Your Phone Number]. Thank you.",
+    "sms": "Hi Formula Roofing & Remodeling! Impressed by your 4.4/5 rating. Let's chat about boosting your online presence with tailored digital marketing. Reach out at [Your Phone Number]. - Digital Growth Partners",
+    "generatedAt": "2026-01-13T03:37:19.088Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:39.072Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "ae5db50a2e45acc0",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/hometown-gutter-aurora?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "SpVl7yAOnyTDyDesYMeOeg"
+    }
+  },
+  "business": {
+    "name": "Hometown Gutter",
+    "category": "Gutter Services",
+    "categories": [
+      "Gutter Services",
+      "Solar Panel Cleaning"
+    ],
+    "description": "",
+    "address": {
+      "street": "6105 S Main St",
+      "city": "Aurora",
+      "state": "CO",
+      "postalCode": "80016",
+      "country": "US",
+      "formatted": "6105 S Main St, Ste 200, Aurora, CO 80016"
+    },
+    "geo": {
+      "lat": 39.605775,
+      "lng": -104.709568
+    },
+    "phone": "(720) 440-7246",
+    "phoneE164": "+17204407246"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(720) 440-7246",
+        "phoneE164": "+17204407246",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 5,
+      "reviewCount": 17,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 25,
+    "tier": "D",
+    "reasons": []
+  },
+  "ai": {
+    "coldEmail": "Subject: Boost Your Gutter Business with Tailored Digital Marketing Solutions\n\nHi Hometown Gutter team,",
+    "voicemail": "Hi there, this is [Your Name] from Digital Growth Partners. I wanted to reach out to Hometown Gutter in Aurora to discuss how we can boost your online presence and lead generation efforts. Your 5-star reputation caught our eye, and we believe we can help take your business to the next level. Let's schedule a call to explore this further. You can reach me at [Your Phone Number]. Thank you!",
+    "sms": "Hi Hometown Gutter! Impressed by your 5-star rating in Aurora. Let's chat about enhancing your online presence & generating more leads. Interested? - Digital Growth Partners",
+    "generatedAt": "2026-01-13T03:37:22.161Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:39.175Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "f8be6d025041ca4e",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/covr-denver-2?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "QnsuZR_HaJ4nXz2Cy3yZMA"
+    }
+  },
+  "business": {
+    "name": "covR Roofing + Exteriors",
+    "category": "Roofing",
+    "categories": [
+      "Roofing",
+      "Gutter Services"
+    ],
+    "description": "",
+    "address": {
+      "street": "229 Vallejo St",
+      "city": "Denver",
+      "state": "CO",
+      "postalCode": "80223",
+      "country": "US",
+      "formatted": "229 Vallejo St, Unit B, Denver, CO 80223"
+    },
+    "geo": {
+      "lat": 39.73083,
+      "lng": -104.99835
+    },
+    "phone": "(844) 613-7663",
+    "phoneE164": "+18446137663"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(844) 613-7663",
+        "phoneE164": "+18446137663",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 5,
+      "reviewCount": 12,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 24,
+    "tier": "D",
+    "reasons": []
+  },
+  "ai": {},
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:39.588Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "97a922ae58a9756d",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/faros-construction-services-denver-2?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "KS1cP_Jd0NrrijmOuI9dfQ"
+    }
+  },
+  "business": {
+    "name": "Faros Construction Services",
+    "category": "General Contractors",
+    "categories": [
+      "General Contractors",
+      "Masonry/Concrete",
+      "Landscaping"
+    ],
+    "description": "",
+    "address": {
+      "street": "",
+      "city": "Denver",
+      "state": "CO",
+      "postalCode": "80204",
+      "country": "US",
+      "formatted": "Denver, CO 80204"
+    },
+    "geo": {
+      "lat": 39.734896,
+      "lng": -105.020346
+    },
+    "phone": "(720) 594-5558",
+    "phoneE164": "+17205945558"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(720) 594-5558",
+        "phoneE164": "+17205945558",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.6,
+      "reviewCount": 85,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 34,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Unlock Your Business Potential with Digital Growth Partners\n\nHi Faros Construction Services team,",
+    "voicemail": "Hi, this is [Your Name] from Digital Growth Partners. I was impressed by Faros Construction Services' stellar reputation in Denver. We specialize in digital marketing for home service businesses and would love to discuss how we can help you optimize your online presence. Please give me a call back at [Your Phone Number]. Thank you!",
+    "sms": "Hi Faros Construction Services! Impressed by your reputation in Denver. Let's chat about boosting your online presence! Reach me at [Your Phone Number]. - [Your Name], Digital Growth Partners",
+    "generatedAt": "2026-01-13T03:37:27.711Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:43.089Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "a6b2f1523c130608",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/peak-builders-and-roofers-of-denver-denver-2?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "ElnAlhXfMSwoyOt_KhLgOA"
+    }
+  },
+  "business": {
+    "name": "Peak Builders & Roofers of Denver",
+    "category": "Roofing",
+    "categories": [
+      "Roofing",
+      "General Contractors"
+    ],
+    "description": "",
+    "address": {
+      "street": "2727 Bryant St",
+      "city": "Denver",
+      "state": "CO",
+      "postalCode": "80211",
+      "country": "US",
+      "formatted": "2727 Bryant St, Denver, CO 80211"
+    },
+    "geo": {
+      "lat": 39.75661000128431,
+      "lng": -105.0195002
+    },
+    "phone": "(720) 605-7785",
+    "phoneE164": "+17206057785"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(720) 605-7785",
+        "phoneE164": "+17206057785",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 5,
+      "reviewCount": 16,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 25,
+    "tier": "D",
+    "reasons": []
+  },
+  "ai": {},
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:43.380Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "7b4cfa265f3a5f0b",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/colorado-and-wyoming-granite-and-remodel-denver-3?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "pKGI4eOyv_6Jcmzx11lEPw"
+    }
+  },
+  "business": {
+    "name": "Colorado & Wyoming Granite & Remodel",
+    "category": "General Contractors",
+    "categories": [
+      "General Contractors",
+      "Countertop Installation",
+      "Cabinetry"
+    ],
+    "description": "",
+    "address": {
+      "street": "",
+      "city": "Denver",
+      "state": "CO",
+      "postalCode": "80223",
+      "country": "US",
+      "formatted": "Denver, CO 80223"
+    },
+    "geo": {
+      "lat": 39.696177,
+      "lng": -105.001848
+    },
+    "phone": "(720) 466-3383",
+    "phoneE164": "+17204663383"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(720) 466-3383",
+        "phoneE164": "+17204663383",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.4,
+      "reviewCount": 33,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 28,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {},
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:43.590Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "53540fb792b31cb0",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/black-river-construction-denver-2?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "0zPGdjqutkpz_Gd_a9l8Cg"
+    }
+  },
+  "business": {
+    "name": "Black River Construction",
+    "category": "General Contractors",
+    "categories": [
+      "General Contractors"
+    ],
+    "description": "",
+    "address": {
+      "street": "",
+      "city": "Denver",
+      "state": "CO",
+      "postalCode": "80211",
+      "country": "US",
+      "formatted": "Denver, CO 80211"
+    },
+    "geo": {
+      "lat": 39.7672424316406,
+      "lng": -105.020324707031
+    },
+    "phone": "(303) 803-2084",
+    "phoneE164": "+13038032084"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(303) 803-2084",
+        "phoneE164": "+13038032084",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.7,
+      "reviewCount": 57,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 34,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Help Black River Construction Boost Online Presence & Generate More Leads\n\nHi Black River Construction team,",
+    "voicemail": "Hi there, this is [Your Name] from Digital Growth Partners. I noticed Black River Construction's outstanding reputation in Denver and wanted to discuss how we can help boost your online presence to attract more leads. Give me a call back at [Your Phone Number]. Looking forward to connecting!",
+    "sms": "Hi Black River Construction! Impressed by your reviews. Let's chat about enhancing your online presence for more leads. Reach out to Digital Growth Partners at [Your Phone Number].",
+    "generatedAt": "2026-01-13T03:37:33.495Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:43.721Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "ffc95b4846e2f39e",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/empirical-construction-denver-2?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "8l1W4MFKJGKtSIe8XfqcLA"
+    }
+  },
+  "business": {
+    "name": "Empirical Construction",
+    "category": "General Contractors",
+    "categories": [
+      "General Contractors"
+    ],
+    "description": "",
+    "address": {
+      "street": "4560 Columbine St",
+      "city": "Denver",
+      "state": "CO",
+      "postalCode": "80216",
+      "country": "US",
+      "formatted": "4560 Columbine St, Denver, CO 80216"
+    },
+    "geo": {
+      "lat": 39.77932,
+      "lng": -104.95693
+    },
+    "phone": "(720) 441-5060",
+    "phoneE164": "+17204415060"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(720) 441-5060",
+        "phoneE164": "+17204415060",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.9,
+      "reviewCount": 32,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 29,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Boost Your Online Presence with Empirical Construction\n\nHi Empirical Construction team,",
+    "voicemail": "Hi there, this is [Your Name] from Digital Growth Partners. I was impressed by Empirical Construction's stellar reputation in Denver and I believe we can help boost your online presence even further. Let's discuss how our digital marketing services can benefit your business. Feel free to reach me at [Your Phone Number]. Looking forward to connecting!",
+    "sms": "Hi Empirical Construction! Your work in Denver is impressive. Let's enhance your online presence with our tailored digital marketing services. Interested? - [Your Name], Digital Growth Partners",
+    "generatedAt": "2026-01-13T03:37:36.462Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:43.857Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "1288389990c82236",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/cg-renovation-services-denver-2?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "M4hWBhv81EvGnsRTky5t5A"
+    }
+  },
+  "business": {
+    "name": "CG Renovation Services",
+    "category": "General Contractors",
+    "categories": [
+      "General Contractors"
+    ],
+    "description": "",
+    "address": {
+      "street": "",
+      "city": "Denver",
+      "state": "CO",
+      "postalCode": "80209",
+      "country": "US",
+      "formatted": "Denver, CO 80209"
+    },
+    "geo": {
+      "lat": 39.7090797424316,
+      "lng": -104.946952819824
+    },
+    "phone": "(303) 495-8701",
+    "phoneE164": "+13034958701"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(303) 495-8701",
+        "phoneE164": "+13034958701",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 5,
+      "reviewCount": 21,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 26,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {},
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:43.987Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "542d8b65d567ed71",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/denver-remodels-edgewater-7?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "1GjicP_AYjVAGMKDboskZw"
+    }
+  },
+  "business": {
+    "name": "Denver Remodels",
+    "category": "General Contractors",
+    "categories": [
+      "General Contractors",
+      "Fences & Gates",
+      "Decks & Railing"
+    ],
+    "description": "",
+    "address": {
+      "street": "",
+      "city": "Edgewater",
+      "state": "CO",
+      "postalCode": "80214",
+      "country": "US",
+      "formatted": "Edgewater, CO 80214"
+    },
+    "geo": {
+      "lat": 39.74751663,
+      "lng": -105.06252289
+    },
+    "phone": "(720) 800-2925",
+    "phoneE164": "+17208002925"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(720) 800-2925",
+        "phoneE164": "+17208002925",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.9,
+      "reviewCount": 189,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 35,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Enhance Your Online Presence with Tailored Digital Marketing Solutions\n\nHi Denver Remodels team,",
+    "voicemail": "Hi, this is [Your Name] from Digital Growth Partners. I came across Denver Remodels in Edgewater and I'm impressed by your work. We specialize in digital marketing for home service businesses like yours. Let's chat about how we can enhance your online presence and generate more leads. Give me a call back at [Your Phone Number]. Looking forward to connecting!",
+    "sms": "Hi Denver Remodels! Enhance your online presence with tailored digital marketing solutions from Digital Growth Partners. Let's chat about driving growth for your business. Call me at [Your Phone Number].",
+    "generatedAt": "2026-01-13T03:37:40.443Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:44.143Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "1c054cb2f63eeadf",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/alton-handyman-denver-7?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "xkaYf5CmpE4udVcW3a652A"
+    }
+  },
+  "business": {
+    "name": "Alton Handyman",
+    "category": "Handyman",
+    "categories": [
+      "Handyman",
+      "Painters",
+      "General Contractors"
+    ],
+    "description": "",
+    "address": {
+      "street": "",
+      "city": "Denver",
+      "state": "CO",
+      "postalCode": "80231",
+      "country": "US",
+      "formatted": "Denver, CO 80231"
+    },
+    "geo": {
+      "lat": 39.671505,
+      "lng": -104.887827
+    },
+    "phone": "(303) 319-2772",
+    "phoneE164": "+13033192772"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(303) 319-2772",
+        "phoneE164": "+13033192772",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.7,
+      "reviewCount": 12,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 23,
+    "tier": "D",
+    "reasons": []
+  },
+  "ai": {
+    "coldEmail": "Subject: Enhance Your Handyman Business with Tailored Digital Marketing Solutions\n\nHi Alton Handyman team,",
+    "voicemail": "Hi there, this is [Your Name] from Digital Growth Partners. I noticed your impressive 4.7/5 rating for Alton Handyman in Denver. We specialize in digital marketing tailored for home service businesses like yours. Let's discuss how we can boost your online presence and attract more customers. Give me a call back at [Your Phone Number]. Looking forward to connecting!",
+    "sms": "Hi Alton Handyman! Impressed by your 4.7/5 rating. Let's chat about enhancing your business with our tailored digital marketing solutions. Reach out at [Your Phone Number]. - Digital Growth Partners",
+    "generatedAt": "2026-01-13T03:37:44.802Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:44.270Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "434c31fac927d9ce",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/buerger-brothers-construction-lakewood?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "3ZI0sClA3vFSStc_3VYXuA"
+    }
+  },
+  "business": {
+    "name": "Buerger Brothers Construction",
+    "category": "General Contractors",
+    "categories": [
+      "General Contractors",
+      "Fences & Gates",
+      "Decks & Railing"
+    ],
+    "description": "",
+    "address": {
+      "street": "",
+      "city": "Lakewood",
+      "state": "CO",
+      "postalCode": "80228",
+      "country": "US",
+      "formatted": "Lakewood, CO 80228"
+    },
+    "geo": {
+      "lat": 39.70739,
+      "lng": -105.13546
+    },
+    "phone": "(720) 975-4220",
+    "phoneE164": "+17209754220"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(720) 975-4220",
+        "phoneE164": "+17209754220",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 5,
+      "reviewCount": 19,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 26,
+    "tier": "D",
+    "reasons": []
+  },
+  "ai": {
+    "coldEmail": "Subject: Boost Your Contractor Business with Digital Marketing Solutions\n\nHi Buerger Brothers Construction team,",
+    "voicemail": "Hi, this is [Your Name] from Digital Growth Partners. I noticed Buerger Brothers Construction's exceptional 5-star rating and wanted to connect with you about our digital marketing solutions tailored for home service businesses like yours. I'd love to discuss how we can help enhance your online presence and drive more leads. Please give me a call back at [Your Phone Number]. Thank you.",
+    "sms": "Hi Buerger Bros! Your 5-star reviews caught our eye. Let's boost your online presence with our digital marketing services. Interested? Call us at [Your Phone Number].",
+    "generatedAt": "2026-01-13T03:37:47.467Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:44.558Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "62ed714bb0849426",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/steel-bridge-construction-denver-2?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "LsyWgtgWNe_Aaw6tUHk9Aw"
+    }
+  },
+  "business": {
+    "name": "Steel Bridge Construction",
+    "category": "General Contractors",
+    "categories": [
+      "General Contractors",
+      "Tiling"
+    ],
+    "description": "",
+    "address": {
+      "street": "7535 E Hampden Ave",
+      "city": "Denver",
+      "state": "CO",
+      "postalCode": "80231",
+      "country": "US",
+      "formatted": "7535 E Hampden Ave, Ste 400, Denver, CO 80231"
+    },
+    "geo": {
+      "lat": 39.65327,
+      "lng": -104.90153
+    },
+    "phone": "(720) 930-5728",
+    "phoneE164": "+17209305728"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(720) 930-5728",
+        "phoneE164": "+17209305728",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.7,
+      "reviewCount": 30,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 28,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Helping Steel Bridge Construction in Denver Boost Online Presence\n\nHi Steel Bridge Construction team,",
+    "voicemail": "Hi, this is [Your Name] from Digital Growth Partners. I was impressed by Steel Bridge Construction's reputation in Denver and wanted to offer our expertise in digital marketing to help you attract more clients. Let's discuss how we can enhance your online presence. Feel free to reach me at [Your Phone Number]. Have a great day!",
+    "sms": "Hi Steel Bridge Construction! Impressed by your 4.7/5 rating. Let's boost your online presence together. Interested in a chat? - Digital Growth Partners",
+    "generatedAt": "2026-01-13T03:37:50.213Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:44.859Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "93e5454aa06444c2",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/sundog-electric-littleton-6?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "oFE8bTkI0QiNgMUFnhP5bA"
+    }
+  },
+  "business": {
+    "name": "Sundog Electric",
+    "category": "Electricians",
+    "categories": [
+      "Electricians"
+    ],
+    "description": "",
+    "address": {
+      "street": "",
+      "city": "Littleton",
+      "state": "CO",
+      "postalCode": "80128",
+      "country": "US",
+      "formatted": "Littleton, CO 80128"
+    },
+    "geo": {
+      "lat": 39.57648468,
+      "lng": -105.07702637
+    },
+    "phone": "(303) 503-0081",
+    "phoneE164": "+13035030081"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(303) 503-0081",
+        "phoneE164": "+13035030081",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.9,
+      "reviewCount": 113,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 35,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Unlock Your Electric Business's Online Potential with Digital Growth Partners\n\nHi Sundog Electric Team,",
+    "voicemail": "Hi there, this is [Your Name] from Digital Growth Partners. I've been following Sundog Electric in Littleton and I'm impressed by your 4.9/5 rating. I specialize in helping businesses like yours maximize their online presence and generate more leads. Let's chat about how we can tailor our services to benefit Sundog Electric. Give me a call back at [Your Phone Number]. Have a great day!",
+    "sms": "Hi Sundog Electric! Impressed by your 4.9/5 rating! Let's boost your online presence together. Schedule a chat with us at Digital Growth Partners. Reply to this message to connect!",
+    "generatedAt": "2026-01-13T03:37:53.590Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:47.692Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "ae5e4e3664991ef4",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/electric-doctor-englewood?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "y3O7o4_KlU2Hw81aKtyV2w"
+    }
+  },
+  "business": {
+    "name": "Electric Doctor",
+    "category": "Electricians",
+    "categories": [
+      "Electricians"
+    ],
+    "description": "",
+    "address": {
+      "street": "4131 S Natches Ct",
+      "city": "Englewood",
+      "state": "CO",
+      "postalCode": "80110",
+      "country": "US",
+      "formatted": "4131 S Natches Ct, Unit B, Englewood, CO 80110"
+    },
+    "geo": {
+      "lat": 39.64105989999999,
+      "lng": -105.0094454
+    },
+    "phone": "(303) 973-2551",
+    "phoneE164": "+13039732551"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(303) 973-2551",
+        "phoneE164": "+13039732551",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.9,
+      "reviewCount": 140,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 35,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Enhance Your Electric Doctor Business with Tailored Digital Marketing Solutions\n\nHi Electric Doctor team,",
+    "voicemail": "Hi there, this is [Your Name] from Digital Growth Partners. I wanted to reach out to Electric Doctor in Englewood. I've been impressed by your exceptional reputation and believe our tailored digital marketing solutions can help further enhance your business. I'd love to discuss this further. Please give me a call back at your convenience. Thank you.",
+    "sms": "Hi Electric Doctor! Impressed by your 4.9/5 rating with 140 reviews. Let's chat about how our digital marketing services can boost your business. Call me at Digital Growth Partners.",
+    "generatedAt": "2026-01-13T03:37:57.346Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:47.827Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "a70584dc15b8688b",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/mh-electrical-denver-5?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "v1Fop4VzCB3bIBlkSTYhDg"
+    }
+  },
+  "business": {
+    "name": "MH Electrical",
+    "category": "Electricians",
+    "categories": [
+      "Electricians",
+      "Solar Installation"
+    ],
+    "description": "",
+    "address": {
+      "street": "2806 N Speer Blvd",
+      "city": "Denver",
+      "state": "CO",
+      "postalCode": "80211",
+      "country": "US",
+      "formatted": "2806 N Speer Blvd, Denver, CO 80211"
+    },
+    "geo": {
+      "lat": 39.7577465,
+      "lng": -105.0185757
+    },
+    "phone": "(303) 915-0914",
+    "phoneE164": "+13039150914"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(303) 915-0914",
+        "phoneE164": "+13039150914",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 5,
+      "reviewCount": 56,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 35,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Help MH Electrical in Denver enhance their online presence!\n\nHi MH Electrical team,",
+    "voicemail": "Hi there, this is [Your Name] from Digital Growth Partners. I was impressed by MH Electrical's outstanding 5/5 rating in Denver! I specialize in boosting online visibility for home service businesses like yours. Let's chat about how we can enhance your digital presence. Feel free to reach me at [Your Phone Number]. Looking forward to connecting with you!",
+    "sms": "Hi MH Electrical! Impressed by your 5/5 rating! Let's chat about boosting your online presence. Reach me at [Your Phone Number]. - [Your Name], Digital Growth Partners",
+    "generatedAt": "2026-01-13T03:38:01.022Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:48.155Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "436791a3143a7ac5",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/just-in-time-electrical-and-plumbing-thornton-3?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "zzINkDqT4ynjHTO1WmmllQ"
+    }
+  },
+  "business": {
+    "name": "Just In Time Electrical & Plumbing",
+    "category": "Electricians",
+    "categories": [
+      "Electricians",
+      "Lighting Fixtures & Equipment",
+      "Plumbing"
+    ],
+    "description": "",
+    "address": {
+      "street": "2200 E 104th Ave",
+      "city": "Thornton",
+      "state": "CO",
+      "postalCode": "80233",
+      "country": "US",
+      "formatted": "2200 E 104th Ave, Ste 205, Thornton, CO 80233"
+    },
+    "geo": {
+      "lat": 39.884209,
+      "lng": -104.959959
+    },
+    "phone": "(303) 625-7625",
+    "phoneE164": "+13036257625"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(303) 625-7625",
+        "phoneE164": "+13036257625",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.9,
+      "reviewCount": 54,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 35,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Boost Your Electrical Business in Thornton with Digital Marketing Expertise\n\nHi Just In Time Electrical & Plumbing team,",
+    "voicemail": "Hi there, this is [Your Name] from Digital Growth Partners. I wanted to reach out to Just In Time Electrical & Plumbing in Thornton. I see you have a fantastic reputation, and I believe our digital marketing expertise could help you reach even more clients. I'd love to chat about how we can assist your business. You can reach me at [Your Phone Number]. Thanks and have a great day!",
+    "sms": "Hi Just In Time Electrical & Plumbing! Impressed by your 4.9/5 rating! Let's boost your reach with tailored digital marketing. Interested in learning more? - Digital Growth Partners",
+    "generatedAt": "2026-01-13T03:38:04.894Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:48.285Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "7e54177f5a3e349b",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/r-and-a-enterprises-denver-englewood-2?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "zHDrVtqmGP4mn1Cux_Im7g"
+    }
+  },
+  "business": {
+    "name": "R&A Enterprises - Denver",
+    "category": "Electricians",
+    "categories": [
+      "Electricians"
+    ],
+    "description": "",
+    "address": {
+      "street": "4720 S Santa Fe Cir",
+      "city": "Englewood",
+      "state": "CO",
+      "postalCode": "80110",
+      "country": "US",
+      "formatted": "4720 S Santa Fe Cir, Ste 8, Englewood, CO 80110"
+    },
+    "geo": {
+      "lat": 39.630348,
+      "lng": -105.010879
+    },
+    "phone": "(303) 653-7232",
+    "phoneE164": "+13036537232"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(303) 653-7232",
+        "phoneE164": "+13036537232",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.9,
+      "reviewCount": 54,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 35,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Boost Your Online Presence with Tailored Digital Marketing Services\n\nHi R&A Enterprises team,",
+    "voicemail": "Hi there, this is [Your Name] from Digital Growth Partners. I came across R&A Enterprises and your exceptional reputation in Denver. We specialize in digital marketing services tailored for home service businesses like yours. I would love to discuss how we can help boost your online presence. Please give me a call back at [Your Number]. Thank you!",
+    "sms": "Hi R&A Enterprises! Impressed by your 4.9/5 rating! Let's chat about boosting your online presence. Schedule a call with us today. - Digital Growth Partners",
+    "generatedAt": "2026-01-13T03:38:07.896Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:48.401Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "14d6f2809ab4ff57",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/piper-electric-arvada?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "r4svEcmPAUnemLbjaonxmg"
+    }
+  },
+  "business": {
+    "name": "Piper Electric",
+    "category": "Electricians",
+    "categories": [
+      "Electricians"
+    ],
+    "description": "",
+    "address": {
+      "street": "5550 W 60th Ave",
+      "city": "Arvada",
+      "state": "CO",
+      "postalCode": "80003",
+      "country": "US",
+      "formatted": "5550 W 60th Ave, Arvada, CO 80003"
+    },
+    "geo": {
+      "lat": 39.804926,
+      "lng": -105.057118
+    },
+    "phone": "(303) 422-9219",
+    "phoneE164": "+13034229219"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(303) 422-9219",
+        "phoneE164": "+13034229219",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.6,
+      "reviewCount": 138,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 34,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Enhance Piper Electric's Online Presence with Tailored Digital Marketing Solutions\n\nHello Piper Electric Team,",
+    "voicemail": "Hi, this is [Your Name] from Digital Growth Partners. I came across Piper Electric and was impressed by your reputation in Arvada. We specialize in digital marketing for home service businesses like yours and would love to discuss how we can help enhance your online presence. Please give me a call back at [Your Phone Number]. Thank you!",
+    "sms": "Hi Piper Electric! Impressed by your reputation in Arvada. Let's discuss how our digital marketing services can boost your online presence. Call me at [Your Phone Number]. Thank you!",
+    "generatedAt": "2026-01-13T03:38:11.214Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:48.680Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "8dbeae38a31b332c",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/r-and-b-electrical-services-loveland?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "nnz0zLB-ujve7-_dCrKD2w"
+    }
+  },
+  "business": {
+    "name": "R&B Electrical Services",
+    "category": "Electricians",
+    "categories": [
+      "Electricians",
+      "Lighting Fixtures & Equipment",
+      "Solar Installation"
+    ],
+    "description": "",
+    "address": {
+      "street": "4580 Foothills Dr",
+      "city": "Loveland",
+      "state": "CO",
+      "postalCode": "80537",
+      "country": "US",
+      "formatted": "4580 Foothills Dr, Loveland, CO 80537"
+    },
+    "geo": {
+      "lat": 40.39596,
+      "lng": -105.13968
+    },
+    "phone": "(970) 590-3839",
+    "phoneE164": "+19705903839"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(970) 590-3839",
+        "phoneE164": "+19705903839",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.9,
+      "reviewCount": 37,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 31,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Enhance Your Online Presence with Digital Growth Partners\n\nHi R&B Electrical Services team,",
+    "voicemail": "Hi there, this is [Your Name] from Digital Growth Partners. I was impressed to learn about R&B Electrical Services in Loveland and your outstanding reputation. We specialize in digital marketing and lead generation services tailored for businesses like yours. I'd love to chat about how we can help enhance your online presence. Feel free to reach me at [Your Number]. Have a great day!",
+    "sms": "Hi R&B Electrical Services! Impressed by your 4.9 rating! Let's boost your online presence with Digital Growth Partners. Interested in a chat? [Your Name] at Digital Growth Partners.",
+    "generatedAt": "2026-01-13T03:38:15.491Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:48.929Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "fc88ab19e4a55953",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/amp-electric-aurora?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "8iyDEUbkpzsEieEHNzg7GA"
+    }
+  },
+  "business": {
+    "name": "AMP Electric",
+    "category": "Electricians",
+    "categories": [
+      "Electricians"
+    ],
+    "description": "",
+    "address": {
+      "street": "14802 E Grand Pl",
+      "city": "Aurora",
+      "state": "CO",
+      "postalCode": "80015",
+      "country": "US",
+      "formatted": "14802 E Grand Pl, Aurora, CO 80015"
+    },
+    "geo": {
+      "lat": 39.62623,
+      "lng": -104.81698
+    },
+    "phone": "(303) 963-6711",
+    "phoneE164": "+13039636711"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(303) 963-6711",
+        "phoneE164": "+13039636711",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.9,
+      "reviewCount": 152,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 35,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Enhance Your Electrician Business with Digital Growth Partners\n\nHi AMP Electric team,",
+    "voicemail": "Hi there, this is [Your Name] calling from Digital Growth Partners. I recently discovered AMP Electric in Aurora and was impressed by your stellar reputation. I specialize in digital marketing solutions tailored for local service businesses like yours. I'd love to discuss how we can help enhance your online presence. Please give me a call back at [Your Phone Number]. Thank you!",
+    "sms": "Hi AMP Electric! Impressed by your 4.9/5 rating in Aurora. Let's boost your online presence together. Complimentary consultation awaits! Call me at [Your Phone Number]. - Digital Growth Partners",
+    "generatedAt": "2026-01-13T03:38:19.507Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:49.054Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "a211dbc471e74d08",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/custom-electric-denver-3?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "oCN-_sD4oO94u6ntMxvevg"
+    }
+  },
+  "business": {
+    "name": "Custom Electric",
+    "category": "Electricians",
+    "categories": [
+      "Electricians"
+    ],
+    "description": "",
+    "address": {
+      "street": "467 S University Blvd",
+      "city": "Denver",
+      "state": "CO",
+      "postalCode": "80209",
+      "country": "US",
+      "formatted": "467 S University Blvd, Denver, CO 80209"
+    },
+    "geo": {
+      "lat": 39.70806,
+      "lng": -104.95971
+    },
+    "phone": "(303) 520-7794",
+    "phoneE164": "+13035207794"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(303) 520-7794",
+        "phoneE164": "+13035207794",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.7,
+      "reviewCount": 92,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 34,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Boost Your Electric Business in Denver with Digital Marketing Solutions\n\nHi Custom Electric team,",
+    "voicemail": "Hi there, this is [Your Name] calling from Digital Growth Partners. I wanted to reach out to Custom Electric in Denver. I noticed your impressive 4.7/5 rating and would love to discuss how our digital marketing solutions can help elevate your online presence and attract more customers. Please give me a call back at [Your Phone Number]. Thank you!",
+    "sms": "Hi Custom Electric! Impressed by your 4.7/5 rating. Let's chat about boosting your online presence with our digital marketing services. Call me at [Your Phone Number]. - [Your Name], Digital Growth Partners",
+    "generatedAt": "2026-01-13T03:38:22.487Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:49.809Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "58528ad2e193877e",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/rize-roofing-colorado-springs-5?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "04ojbIyLZ3SHgyEOOhjtyA"
+    }
+  },
+  "business": {
+    "name": "RIZE Roofing",
+    "category": "Roofing",
+    "categories": [
+      "Roofing",
+      "Roof Inspectors",
+      "Solar Installation"
+    ],
+    "description": "",
+    "address": {
+      "street": "6225 Lehman Dr",
+      "city": "Colorado Springs",
+      "state": "CO",
+      "postalCode": "80918",
+      "country": "US",
+      "formatted": "6225 Lehman Dr, Colorado Springs, CO 80918"
+    },
+    "geo": {
+      "lat": 38.920523,
+      "lng": -104.78797
+    },
+    "phone": "(719) 339-4004",
+    "phoneE164": "+17193394004"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(719) 339-4004",
+        "phoneE164": "+17193394004",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 5,
+      "reviewCount": 27,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 28,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Boost Your Roofing Business with Tailored Digital Marketing Solutions\n\nHi RIZE Roofing Team,",
+    "voicemail": "Hi there, this is [Your Name] from Digital Growth Partners. I wanted to reach out to discuss how our tailored digital marketing solutions can help boost your already impressive roofing business in Colorado Springs. Let's chat about how we can drive more quality leads your way. Feel free to give me a call back at [Your Phone Number]. Looking forward to connecting with you soon!",
+    "sms": "Hi RIZE Roofing! Impressed by your 5-star rating & reviews. Let's chat about boosting your business with tailored digital marketing. Call me at [Your Phone Number]. - [Your Name], Digital Growth Partners",
+    "generatedAt": "2026-01-13T03:38:26.268Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:51.636Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "11f10d5384885fa5",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/front-line-roofing-and-restoration-colorado-springs?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "Vl76NsIZU5_YB-Vk9lnXHg"
+    }
+  },
+  "business": {
+    "name": "Front Line Roofing And Restoration",
+    "category": "Roofing",
+    "categories": [
+      "Roofing",
+      "Siding",
+      "Gutter Services"
+    ],
+    "description": "",
+    "address": {
+      "street": "2601 E Platte Pl",
+      "city": "Colorado Springs",
+      "state": "CO",
+      "postalCode": "80909",
+      "country": "US",
+      "formatted": "2601 E Platte Pl, Colorado Springs, CO 80909"
+    },
+    "geo": {
+      "lat": 38.83641,
+      "lng": -104.778523
+    },
+    "phone": "(719) 888-0741",
+    "phoneE164": "+17198880741"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(719) 888-0741",
+        "phoneE164": "+17198880741",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.6,
+      "reviewCount": 11,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 22,
+    "tier": "D",
+    "reasons": []
+  },
+  "ai": {
+    "coldEmail": "Subject: Let's Elevate Front Line Roofing And Restoration's Online Presence Together\n\nHi there,",
+    "voicemail": "Hi there, this is [Your Name] from Digital Growth Partners. I came across Front Line Roofing And Restoration in Colorado Springs and was truly impressed by your reputation. I specialize in helping businesses like yours elevate their online presence through digital marketing strategies. I'd love to chat about how we can tailor our services to help Front Line Roofing And Restoration reach new heights. Let's connect at your convenience. You can reach me at [Your Phone Number]. Have a great day!",
+    "sms": "Hi Front Line Roofing And Restoration, it's [Your Name] from Digital Growth Partners. I'd love to discuss how we can enhance your online presence and generate more leads. Let's chat!",
+    "generatedAt": "2026-01-13T03:38:29.604Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:51.783Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "db223908e8dee6ab",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/chriss-roofing-and-remodeling-colorado-springs-5?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "3_bvISEPcCvuVME37kCeDQ"
+    }
+  },
+  "business": {
+    "name": "Chris's Roofing And Remodeling",
+    "category": "Roofing",
+    "categories": [
+      "Roofing"
+    ],
+    "description": "",
+    "address": {
+      "street": "6420 Galway Dr",
+      "city": "Colorado Springs",
+      "state": "CO",
+      "postalCode": "80918",
+      "country": "US",
+      "formatted": "6420 Galway Dr, Colorado Springs, CO 80918"
+    },
+    "geo": {
+      "lat": 38.924319,
+      "lng": -104.809819
+    },
+    "phone": "(719) 533-0227",
+    "phoneE164": "+17195330227"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(719) 533-0227",
+        "phoneE164": "+17195330227",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 5,
+      "reviewCount": 8,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 22,
+    "tier": "D",
+    "reasons": []
+  },
+  "ai": {
+    "coldEmail": "Subject: Enhance Your Roofing Business with Expert Digital Marketing\n\nHi Chris's Roofing And Remodeling Team,",
+    "voicemail": "Hi there, this is [Your Name] from Digital Growth Partners. I was impressed by the 5/5 rating of Chris's Roofing And Remodeling in Colorado Springs. Our digital marketing services are tailored for businesses like yours to boost online presence and generate leads effectively. Let's chat about how we can help. Call me back at [Your Phone Number]. Thanks!",
+    "sms": "Hi Chris's Roofing! Boost your online presence and generate leads with our tailored digital marketing services. Let's chat! - Digital Growth Partners",
+    "generatedAt": "2026-01-13T03:38:32.380Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:52.272Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "153b244c825326ad",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/simple-roofing-and-exteriors-larkspur?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "tmYeG2Mefq98upYgrxTFtg"
+    }
+  },
+  "business": {
+    "name": "Simple Roofing and Exteriors",
+    "category": "Roofing",
+    "categories": [
+      "Roofing"
+    ],
+    "description": "",
+    "address": {
+      "street": "103 E Perry Park Ave",
+      "city": "Larkspur",
+      "state": "CO",
+      "postalCode": "80118",
+      "country": "US",
+      "formatted": "103 E Perry Park Ave, Larkspur, CO 80118"
+    },
+    "geo": {
+      "lat": 39.229636706987606,
+      "lng": -104.88466326945644
+    },
+    "phone": "(303) 500-1807",
+    "phoneE164": "+13035001807"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(303) 500-1807",
+        "phoneE164": "+13035001807",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 5,
+      "reviewCount": 8,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 22,
+    "tier": "D",
+    "reasons": []
+  },
+  "ai": {
+    "coldEmail": "Subject: Digital Marketing Solutions for Simple Roofing and Exteriors\n\nHi Simple Roofing and Exteriors team,",
+    "voicemail": "Hi there, this is [Your Name] from Digital Growth Partners. I wanted to touch base with Simple Roofing and Exteriors in Larkspur. Your 5/5 rating caught our attention, and we believe our digital marketing services could further elevate your business. Let's discuss how we can help. Please feel free to reach out at [Your Phone Number]. Have a great day!",
+    "sms": "Hi Simple Roofing! Impressed by your 5/5 rating. Let's chat about boosting your online presence with our digital marketing services. Reach out to schedule a call. - [Your Name], Digital Growth Partners.",
+    "generatedAt": "2026-01-13T03:38:35.457Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:52.537Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "27ab0ed3d154c468",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/reliable-roofing-systems-colorado-springs?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "jOJ_ZIsoP2Y44kqyhO_0Hw"
+    }
+  },
+  "business": {
+    "name": "Reliable Roofing Systems",
+    "category": "Roofing",
+    "categories": [
+      "Roofing",
+      "Roof Inspectors"
+    ],
+    "description": "",
+    "address": {
+      "street": "306 Delaware Dr",
+      "city": "Colorado Springs",
+      "state": "CO",
+      "postalCode": "80909",
+      "country": "US",
+      "formatted": "306 Delaware Dr, Colorado Springs, CO 80909"
+    },
+    "geo": {
+      "lat": 38.83755898580795,
+      "lng": -104.76052838728933
+    },
+    "phone": "(719) 576-6300",
+    "phoneE164": "+17195766300"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(719) 576-6300",
+        "phoneE164": "+17195766300",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.9,
+      "reviewCount": 11,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 23,
+    "tier": "D",
+    "reasons": []
+  },
+  "ai": {},
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:52.664Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "dd424abaf4bce1c0",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/photon-brothers-colorado-springs?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "Gg9DFWh3cqb5c7j_gMqRog"
+    }
+  },
+  "business": {
+    "name": "Photon Brothers",
+    "category": "Solar Installation",
+    "categories": [
+      "Solar Installation"
+    ],
+    "description": "",
+    "address": {
+      "street": "752 Clark Pl",
+      "city": "Colorado Springs",
+      "state": "CO",
+      "postalCode": "80915",
+      "country": "US",
+      "formatted": "752 Clark Pl, Colorado Springs, CO 80915"
+    },
+    "geo": {
+      "lat": 38.84508,
+      "lng": -104.74006
+    },
+    "phone": "(719) 204-3094",
+    "phoneE164": "+17192043094"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(719) 204-3094",
+        "phoneE164": "+17192043094",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.6,
+      "reviewCount": 16,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 24,
+    "tier": "D",
+    "reasons": []
+  },
+  "ai": {
+    "coldEmail": "Subject: Unlock Solar Success with Digital Growth Partners\n\nHi Photon Brothers team,",
+    "voicemail": "Hi there, this is [Your Name] from Digital Growth Partners. I came across Photon Brothers and was impressed by your commitment to solar solutions in Colorado Springs. I believe our digital marketing expertise could help enhance your online presence and drive more business your way. I'd love to discuss potential opportunities for partnership. Please give me a call back at your convenience. Looking forward to connecting. Thank you.",
+    "sms": "Hi Photon Brothers! Impressed by your solar work in Colorado Springs. Let's chat about enhancing your online presence together. Reply to schedule a call. -Digital Growth Partners",
+    "generatedAt": "2026-01-13T03:38:40.534Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:52.817Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "fdc9b5285cc7a296",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/rampart-roofing-inc-colorado-springs-2?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "GhRZfRXL1V8F-TXFFylIgQ"
+    }
+  },
+  "business": {
+    "name": "Rampart Roofing, Inc.",
+    "category": "Roofing",
+    "categories": [
+      "Roofing"
+    ],
+    "description": "",
+    "address": {
+      "street": "912 N Circle Dr",
+      "city": "Colorado Springs",
+      "state": "CO",
+      "postalCode": "80909",
+      "country": "US",
+      "formatted": "912 N Circle Dr, Colorado Springs, CO 80909"
+    },
+    "geo": {
+      "lat": 38.84594422797938,
+      "lng": -104.7764189502595
+    },
+    "phone": "(719) 487-7663",
+    "phoneE164": "+17194877663"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(719) 487-7663",
+        "phoneE164": "+17194877663",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.4,
+      "reviewCount": 31,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 28,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Boost Your Roofing Business with Tailored Digital Marketing Solutions\n\nHi there,",
+    "voicemail": "Hi there, this is [Your Name] from Digital Growth Partners. I came across Rampart Roofing in Colorado Springs and was impressed by your reputation. We specialize in digital marketing solutions for home service businesses, and I believe we can help enhance your online presence. Let's chat about how we can tailor a strategy for Rampart Roofing's growth. Feel free to reach me at [Your Phone Number]. Thank you!",
+    "sms": "Hi Rampart Roofing! I'm [Your Name] from Digital Growth Partners. Let's discuss how we can boost your online presence and attract more clients. Interested? Call me at [Your Phone Number].",
+    "generatedAt": "2026-01-13T03:38:45.061Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:53.353Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "2e93595f3a0b0fa1",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/alpine-contracting-colorado-springs?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "1CJXy6lKOzO2-DfMK_6OnA"
+    }
+  },
+  "business": {
+    "name": "Alpine Contracting",
+    "category": "General Contractors",
+    "categories": [
+      "General Contractors"
+    ],
+    "description": "",
+    "address": {
+      "street": "5482 Tomah Dr",
+      "city": "Colorado Springs",
+      "state": "CO",
+      "postalCode": "80918",
+      "country": "US",
+      "formatted": "5482 Tomah Dr, Colorado Springs, CO 80918"
+    },
+    "geo": {
+      "lat": 38.9102099,
+      "lng": -104.7841478
+    },
+    "phone": "(719) 574-9676",
+    "phoneE164": "+17195749676"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(719) 574-9676",
+        "phoneE164": "+17195749676",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.6,
+      "reviewCount": 9,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 22,
+    "tier": "D",
+    "reasons": []
+  },
+  "ai": {
+    "coldEmail": "Subject: Boost Your Construction Business with Proven Digital Strategies\n\nHi Alpine Contracting team,",
+    "voicemail": "Hi there, this is [Your Name] from Digital Growth Partners. I noticed Alpine Contracting's impressive reputation in Colorado Springs and wanted to reach out to offer our expertise in digital marketing and lead generation. We specialize in helping businesses like yours thrive online. I would love to discuss how we can tailor our services to support the growth of Alpine Contracting. Please give me a call back at your earliest convenience. Thank you.",
+    "sms": "Hi Alpine Contracting! Enhance your online presence and generate more leads with our tailored digital marketing services. Let's discuss how we can support your growth. Reply to schedule a call. - Digital Growth Partners",
+    "generatedAt": "2026-01-13T03:38:49.474Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:56.367Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "e0af59c991109ba9",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/pro-finish-colorado-springs?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "dJJUtNIy4TMSG2CTtPYE-Q"
+    }
+  },
+  "business": {
+    "name": "Pro-Finish",
+    "category": "General Contractors",
+    "categories": [
+      "General Contractors",
+      "Cabinetry",
+      "Carpenters"
+    ],
+    "description": "",
+    "address": {
+      "street": "1280 Caldera Dr",
+      "city": "Colorado Springs",
+      "state": "CO",
+      "postalCode": "80904",
+      "country": "US",
+      "formatted": "1280 Caldera Dr, Colorado Springs, CO 80904"
+    },
+    "geo": {
+      "lat": 38.8501812,
+      "lng": -104.8406622
+    },
+    "phone": "(719) 271-8227",
+    "phoneE164": "+17192718227"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(719) 271-8227",
+        "phoneE164": "+17192718227",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 5,
+      "reviewCount": 10,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 23,
+    "tier": "D",
+    "reasons": []
+  },
+  "ai": {
+    "coldEmail": "Subject: Enhance Your Online Presence with Pro-Finish - Digital Growth Partners Can Help!\n\nHi Pro-Finish team,",
+    "voicemail": "Hi, this is [Your Name] from Digital Growth Partners. I noticed Pro-Finish's outstanding reputation in Colorado Springs and wanted to offer our expertise in enhancing your online presence. We specialize in digital marketing solutions tailored for home service businesses like yours. Let's discuss how we can help you attract more clients. Feel free to reach me at [Your Phone Number]. Looking forward to connecting!",
+    "sms": "Hi Pro-Finish! Your 5/5 rating in Colorado Springs caught our eye. Let's chat about boosting your online presence. Reach out to Digital Growth Partners at [Your Phone Number].",
+    "generatedAt": "2026-01-13T03:38:52.818Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:57.178Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "70217dd441f1ed7c",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/wickhams-workbench-colorado-springs?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "ZjD02TqNi5N-QBg2anVNbQ"
+    }
+  },
+  "business": {
+    "name": "Wickham's Workbench",
+    "category": "General Contractors",
+    "categories": [
+      "General Contractors",
+      "Painters",
+      "Carpenters"
+    ],
+    "description": "",
+    "address": {
+      "street": "3604 Galley Rd",
+      "city": "Colorado Springs",
+      "state": "CO",
+      "postalCode": "80909",
+      "country": "US",
+      "formatted": "3604 Galley Rd, Ste 100, Colorado Springs, CO 80909"
+    },
+    "geo": {
+      "lat": 38.8474692,
+      "lng": -104.7616258
+    },
+    "phone": "(719) 632-5117",
+    "phoneE164": "+17196325117"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(719) 632-5117",
+        "phoneE164": "+17196325117",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.6,
+      "reviewCount": 35,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 29,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Enhance Wickham's Workbench's Online Presence with Digital Growth Partners\n\nHi Wickham's Workbench team,",
+    "voicemail": "Hi there, this is [Your Name] from Digital Growth Partners. I was impressed by Wickham's Workbench's reputation in Colorado Springs and believe our digital marketing services can help enhance your online presence. Let's chat about how we can support your business growth. Feel free to reach me at [Your Phone Number]. Looking forward to connecting with you soon!",
+    "sms": "Hi Wickham's Workbench! Enhance your online presence with Digital Growth Partners. Let's chat about boosting your business. Reach me at [Your Phone Number].",
+    "generatedAt": "2026-01-13T03:38:55.646Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:57.291Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "91c01d3c6396881f",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/dr-electric-colorado-springs-5?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "6nobPWM9yZZZXyIBBf_SQQ"
+    }
+  },
+  "business": {
+    "name": "DR Electric",
+    "category": "Electricians",
+    "categories": [
+      "Electricians",
+      "Lighting Fixtures & Equipment",
+      "Generator Installation/Repair"
+    ],
+    "description": "",
+    "address": {
+      "street": "2275 Waynoka Rd",
+      "city": "Colorado Springs",
+      "state": "CO",
+      "postalCode": "80915",
+      "country": "US",
+      "formatted": "2275 Waynoka Rd, Unit C, Colorado Springs, CO 80915"
+    },
+    "geo": {
+      "lat": 38.864889,
+      "lng": -104.7144982
+    },
+    "phone": "(719) 232-3047",
+    "phoneE164": "+17192323047"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(719) 232-3047",
+        "phoneE164": "+17192323047",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.2,
+      "reviewCount": 39,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 29,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Boost Your Electrician Business with Digital Marketing Services\n\nHi DR Electric team,",
+    "voicemail": "Hi DR Electric team, this is [Your Name] calling from Digital Growth Partners. I noticed your business's excellent reputation in Colorado Springs and wanted to discuss how our digital marketing services can help you elevate your online presence. I would love to chat further about this opportunity. Please give me a call back at your convenience. Thank you.",
+    "sms": "Hi DR Electric! Impressed by your reviews in Colorado Springs. Let's chat about boosting your online presence with our digital marketing services. Interested? Reply for more details. -Digital Growth Partners",
+    "generatedAt": "2026-01-13T03:38:58.853Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:59.054Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "7c0b0c4171e0f339",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/westside-electric-colorado-springs?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "vPewroBT65mNjcGTCujWLg"
+    }
+  },
+  "business": {
+    "name": "Westside Electric",
+    "category": "Electricians",
+    "categories": [
+      "Electricians",
+      "Lighting Fixtures & Equipment"
+    ],
+    "description": "",
+    "address": {
+      "street": "",
+      "city": "Colorado Springs",
+      "state": "CO",
+      "postalCode": "80923",
+      "country": "US",
+      "formatted": "Colorado Springs, CO 80923"
+    },
+    "geo": {
+      "lat": 38.92695794877989,
+      "lng": -104.71468928503872
+    },
+    "phone": "(719) 659-3777",
+    "phoneE164": "+17196593777"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(719) 659-3777",
+        "phoneE164": "+17196593777",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 5,
+      "reviewCount": 14,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 24,
+    "tier": "D",
+    "reasons": []
+  },
+  "ai": {
+    "coldEmail": "Subject: Enhance Your Electrician Business with Tailored Digital Marketing Solutions\n\nHi team at Westside Electric,",
+    "voicemail": "Hi, this is [Your Name] calling from Digital Growth Partners. I came across Westside Electric in Colorado Springs and was impressed by your 5-star rating and positive reviews. I believe we can help enhance your online presence and attract more clients. I'd love to discuss this further with you. Please give me a call back at your convenience. Thank you.",
+    "sms": "Hi Westside Electric! Impressed by your 5-star rating & reviews. Let's amplify your online presence together! Interested in a chat? - [Your Name], Digital Growth.",
+    "generatedAt": "2026-01-13T03:39:01.845Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:59.294Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "4b7f72521621daf2",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/awesome-home-services-no-title?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "1pBteUPdJK9h-Yhucej6qg"
+    }
+  },
+  "business": {
+    "name": "Awesome Home Services",
+    "category": "Heating & Air Conditioning/HVAC",
+    "categories": [
+      "Heating & Air Conditioning/HVAC",
+      "Electricians",
+      "Garage Door Services"
+    ],
+    "description": "",
+    "address": {
+      "street": "805 N Murray Blvd",
+      "city": "Colorado Springs",
+      "state": "CO",
+      "postalCode": "80915",
+      "country": "US",
+      "formatted": "805 N Murray Blvd, Colorado Springs, CO 80915"
+    },
+    "geo": {
+      "lat": 38.845267,
+      "lng": -104.747522
+    },
+    "phone": "(719) 435-9708",
+    "phoneE164": "+17194359708"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(719) 435-9708",
+        "phoneE164": "+17194359708",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.7,
+      "reviewCount": 31,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 28,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {
+    "coldEmail": "Subject: Enhance Your HVAC Business with Tailored Digital Solutions\n\nHi Awesome Home Services team,",
+    "voicemail": "Hi there, this is [Your Name] from Digital Growth Partners. I noticed your stellar reputation in Colorado Springs and wanted to discuss how our digital marketing services can help boost your HVAC business. Give me a call back at [Your Phone Number]. Thanks!",
+    "sms": "Hi Awesome Home Services! Enhance your HVAC business with our digital marketing services. Let's chat! - Digital Growth Partners",
+    "generatedAt": "2026-01-13T03:39:04.443Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:59.418Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "0bde91a5670de4aa",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/celtic-electric-colorado-springs?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "BHvNSgF_0Bx3X7_e45jjGQ"
+    }
+  },
+  "business": {
+    "name": "Celtic Electric",
+    "category": "Electricians",
+    "categories": [
+      "Electricians"
+    ],
+    "description": "",
+    "address": {
+      "street": "",
+      "city": "Colorado Springs",
+      "state": "CO",
+      "postalCode": "80909",
+      "country": "US",
+      "formatted": "Colorado Springs, CO 80909"
+    },
+    "geo": {
+      "lat": 38.852678,
+      "lng": -104.775813
+    },
+    "phone": "(719) 659-4715",
+    "phoneE164": "+17196594715"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(719) 659-4715",
+        "phoneE164": "+17196594715",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 5,
+      "reviewCount": 11,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 23,
+    "tier": "D",
+    "reasons": []
+  },
+  "ai": {
+    "coldEmail": "Subject: Boost Your Electrical Business with Tailored Digital Solutions\n\nHi Celtic Electric team,",
+    "voicemail": "Hi there, this is [Your Name] calling from Digital Growth Partners. I was very impressed by Celtic Electric's stellar 5-star rating in Colorado Springs. We specialize in helping businesses like yours succeed online with tailored digital marketing solutions. I'd love to discuss how we can support your growth. Feel free to reach me at [Your Phone Number]. Looking forward to chatting soon!",
+    "sms": "Hi Celtic Electric! Impressed by your 5-star rating. Let's chat about boosting your online presence with our tailored digital solutions. Call me at [Your Phone Number]. - Digital Growth Partners",
+    "generatedAt": "2026-01-13T03:39:07.482Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:59.543Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "f67ba14b68694002",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/lark-electrical-services-security-widefield-2?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "2vvYvTYbnMWum-rql_kIhA"
+    }
+  },
+  "business": {
+    "name": "Lark Electrical Services",
+    "category": "Electricians",
+    "categories": [
+      "Electricians"
+    ],
+    "description": "",
+    "address": {
+      "street": "",
+      "city": "Security-Widefield",
+      "state": "CO",
+      "postalCode": "80911",
+      "country": "US",
+      "formatted": "Security-Widefield, CO 80911"
+    },
+    "geo": {
+      "lat": 38.753293,
+      "lng": -104.7221
+    },
+    "phone": "(719) 493-0383",
+    "phoneE164": "+17194930383"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(719) 493-0383",
+        "phoneE164": "+17194930383",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 5,
+      "reviewCount": 10,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 23,
+    "tier": "D",
+    "reasons": []
+  },
+  "ai": {},
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:59.650Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "a05a60be050e3e4b",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/reliant-electric-colorado-springs-3?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "-hGanxGG9gfnfDx2nnas_w"
+    }
+  },
+  "business": {
+    "name": "Reliant Electric",
+    "category": "Electricians",
+    "categories": [
+      "Electricians",
+      "Lighting Fixtures & Equipment"
+    ],
+    "description": "",
+    "address": {
+      "street": "2590 Reveille Dr",
+      "city": "Colorado Springs",
+      "state": "CO",
+      "postalCode": "80921",
+      "country": "US",
+      "formatted": "2590 Reveille Dr, Colorado Springs, CO 80921"
+    },
+    "geo": {
+      "lat": 39.065264946322046,
+      "lng": -104.7804773328381
+    },
+    "phone": "(719) 244-0513",
+    "phoneE164": "+17192440513"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(719) 244-0513",
+        "phoneE164": "+17192440513",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.5,
+      "reviewCount": 17,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 24,
+    "tier": "D",
+    "reasons": []
+  },
+  "ai": {},
+  "raw": {
+    "collectedAt": "2026-01-13T03:36:59.815Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "d92f73136752f16a",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/front-range-electric-colorado-springs-2?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "MWeyXlj6BvsO86ENxN3O0Q"
+    }
+  },
+  "business": {
+    "name": "Front Range Electric",
+    "category": "Lighting Fixtures & Equipment",
+    "categories": [
+      "Lighting Fixtures & Equipment",
+      "Electricians"
+    ],
+    "description": "",
+    "address": {
+      "street": "",
+      "city": "Colorado Springs",
+      "state": "CO",
+      "postalCode": "80921",
+      "country": "US",
+      "formatted": "Colorado Springs, CO 80921"
+    },
+    "geo": {
+      "lat": 39.0462534,
+      "lng": -104.8007666
+    },
+    "phone": "(719) 321-4413",
+    "phoneE164": "+17193214413"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(719) 321-4413",
+        "phoneE164": "+17193214413",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.5,
+      "reviewCount": 13,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 22,
+    "tier": "D",
+    "reasons": []
+  },
+  "ai": {
+    "coldEmail": "Subject: Enhance Your Lighting Business with Digital Marketing Expertise\n\nHello Front Range Electric team,",
+    "voicemail": "Hi there, this is [Your Name] calling from Digital Growth Partners. I noticed Front Range Electric's stellar reputation in Colorado Springs and wanted to connect about how we can elevate your online presence through digital marketing strategies. Would love to chat further about how we can help. Feel free to reach me at [Your Number]. Have a great day!",
+    "sms": "Hi Front Range Electric! Impressed by your 4.5-star rating. Let's discuss boosting your online presence with our digital marketing expertise. Can we chat?",
+    "generatedAt": "2026-01-13T03:39:12.393Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:37:00.383Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "6bae04e51c563bb0",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/force-electric-colorado-springs-4?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "jEz6AzTr5PUqE-R5NHfFLw"
+    }
+  },
+  "business": {
+    "name": "Force Electric",
+    "category": "Electricians",
+    "categories": [
+      "Electricians",
+      "EV Charging Stations"
+    ],
+    "description": "",
+    "address": {
+      "street": "80 Mount View Ln",
+      "city": "Colorado Springs",
+      "state": "CO",
+      "postalCode": "80907",
+      "country": "US",
+      "formatted": "80 Mount View Ln, Colorado Springs, CO 80907"
+    },
+    "geo": {
+      "lat": 38.89118758541512,
+      "lng": -104.822129
+    },
+    "phone": "(719) 401-8953",
+    "phoneE164": "+17194018953"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(719) 401-8953",
+        "phoneE164": "+17194018953",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.6,
+      "reviewCount": 10,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 22,
+    "tier": "D",
+    "reasons": []
+  },
+  "ai": {},
+  "raw": {
+    "collectedAt": "2026-01-13T03:37:00.549Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "58481a7a111df359",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/gaddie-electric-colorado-springs?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "c2TLbR46dSr8eoLi1liuYA"
+    }
+  },
+  "business": {
+    "name": "Gaddie Electric",
+    "category": "Electricians",
+    "categories": [
+      "Electricians",
+      "Lighting Fixtures & Equipment"
+    ],
+    "description": "",
+    "address": {
+      "street": "5855 N Academy Blvd",
+      "city": "Colorado Springs",
+      "state": "CO",
+      "postalCode": "80918",
+      "country": "US",
+      "formatted": "5855 N Academy Blvd, Ste 255, Colorado Springs, CO 80918"
+    },
+    "geo": {
+      "lat": 38.916104,
+      "lng": -104.784957
+    },
+    "phone": "(719) 268-9433",
+    "phoneE164": "+17192689433"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(719) 268-9433",
+        "phoneE164": "+17192689433",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.1,
+      "reviewCount": 9,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 20,
+    "tier": "D",
+    "reasons": []
+  },
+  "ai": {
+    "coldEmail": "Subject: Boost Your Electrician Business with Tailored Digital Marketing Solutions\n\nHi Gaddie Electric team,",
+    "voicemail": "Hi, this is [Your Name] from Digital Growth Partners. I came across Gaddie Electric in Colorado Springs and was impressed by your reputation. We specialize in helping businesses like yours excel online through tailored digital marketing strategies. I'd love to discuss how we can support your growth. Please feel free to call me back at [Your Phone Number]. Thank you!",
+    "sms": "Hi Gaddie Electric! Digital Growth Partners here. Elevate your online presence with our tailored digital marketing solutions. Let's chat about boosting your business. Call us at [Your Phone Number].",
+    "generatedAt": "2026-01-13T03:39:17.160Z"
+  },
+  "raw": {
+    "collectedAt": "2026-01-13T03:37:00.682Z",
+    "runId": "urnM21HnLHJ7sh7HG",
+    "notes": "Collected from Yelp Fusion API"
+  }
+}]

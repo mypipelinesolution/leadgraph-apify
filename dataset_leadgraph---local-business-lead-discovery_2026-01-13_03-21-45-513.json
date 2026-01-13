@@ -1,0 +1,674 @@
+[{
+  "dedupeId": "f0621f85d37fc6df",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/roman-tree-services-boston-6?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "DKJBTf2iQii8rfLtL6um_Q"
+    }
+  },
+  "business": {
+    "name": "Roman Tree Services",
+    "category": "Tree Services",
+    "categories": [
+      "Tree Services",
+      "Gutter Services",
+      "Lawn Services"
+    ],
+    "description": "",
+    "address": {
+      "street": "",
+      "city": "Boston",
+      "state": "MA",
+      "postalCode": "02131",
+      "country": "US",
+      "formatted": "Boston, MA 02131"
+    },
+    "geo": {
+      "lat": 42.2832142,
+      "lng": -71.1270268
+    },
+    "phone": "(832) 418-5117",
+    "phoneE164": "+18324185117"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(832) 418-5117",
+        "phoneE164": "+18324185117",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.9,
+      "reviewCount": 89,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 35,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {},
+  "raw": {
+    "collectedAt": "2026-01-13T03:21:43.818Z",
+    "runId": "iurPDvY7eyBXPp7IC",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "d3a4e77e789a78bf",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/andrade-tree-service-lynn?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "Lf9ohZKOdqWC6YqEOW6wiA"
+    }
+  },
+  "business": {
+    "name": "Andrade Tree Service",
+    "category": "Tree Services",
+    "categories": [
+      "Tree Services",
+      "Landscaping"
+    ],
+    "description": "",
+    "address": {
+      "street": "",
+      "city": "Lynn",
+      "state": "MA",
+      "postalCode": "01905",
+      "country": "US",
+      "formatted": "Lynn, MA 01905"
+    },
+    "geo": {
+      "lat": 42.46613815982311,
+      "lng": -70.97588937313198
+    },
+    "phone": "(617) 580-6644",
+    "phoneE164": "+16175806644"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(617) 580-6644",
+        "phoneE164": "+16175806644",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 5,
+      "reviewCount": 15,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 25,
+    "tier": "D",
+    "reasons": []
+  },
+  "ai": {},
+  "raw": {
+    "collectedAt": "2026-01-13T03:21:43.924Z",
+    "runId": "iurPDvY7eyBXPp7IC",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "d01c52cfc2d29401",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/mckinney-brothers-tree-service-westwood-4?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "xIiqN3uk0x0c_mSgVEvuUQ"
+    }
+  },
+  "business": {
+    "name": "McKinney Brothers Tree Service",
+    "category": "Tree Services",
+    "categories": [
+      "Tree Services"
+    ],
+    "description": "",
+    "address": {
+      "street": "PO Box 477",
+      "city": "Westwood",
+      "state": "MA",
+      "postalCode": "02090",
+      "country": "US",
+      "formatted": "PO Box 477, Westwood, MA 02090"
+    },
+    "geo": {
+      "lat": 42.22097,
+      "lng": -71.20361
+    },
+    "phone": "(781) 320-9500",
+    "phoneE164": "+17813209500"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(781) 320-9500",
+        "phoneE164": "+17813209500",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.9,
+      "reviewCount": 72,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 35,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {},
+  "raw": {
+    "collectedAt": "2026-01-13T03:21:44.047Z",
+    "runId": "iurPDvY7eyBXPp7IC",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "5fc18cae3ad2ea1c",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/lopez-landscaping-and-tree-service-lynn?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "GDvT1Vv41FhTkEcgd8eYYA"
+    }
+  },
+  "business": {
+    "name": "Lopez Landscaping & Tree Service",
+    "category": "Tree Services",
+    "categories": [
+      "Tree Services"
+    ],
+    "description": "",
+    "address": {
+      "street": "63 High Rock St",
+      "city": "Lynn",
+      "state": "MA",
+      "postalCode": "01902",
+      "country": "US",
+      "formatted": "63 High Rock St, Ste 3, Lynn, MA 01902"
+    },
+    "geo": {
+      "lat": 42.469137,
+      "lng": -70.948386
+    },
+    "phone": "(781) 426-1318",
+    "phoneE164": "+17814261318"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(781) 426-1318",
+        "phoneE164": "+17814261318",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.7,
+      "reviewCount": 52,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 34,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {},
+  "raw": {
+    "collectedAt": "2026-01-13T03:21:44.180Z",
+    "runId": "iurPDvY7eyBXPp7IC",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "d80cb47c1f0f305a",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/velasquez-tree-services-waltham?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "fBQyiIC7CoZSL_mNUZqChg"
+    }
+  },
+  "business": {
+    "name": "Velasquez Tree Services",
+    "category": "Tree Services",
+    "categories": [
+      "Tree Services"
+    ],
+    "description": "",
+    "address": {
+      "street": "147 Ellison Park",
+      "city": "Waltham",
+      "state": "MA",
+      "postalCode": "02452",
+      "country": "US",
+      "formatted": "147 Ellison Park, Waltham, MA 02452"
+    },
+    "geo": {
+      "lat": 42.3784345,
+      "lng": -71.2274863
+    },
+    "phone": "(781) 408-8072",
+    "phoneE164": "+17814088072"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(781) 408-8072",
+        "phoneE164": "+17814088072",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.5,
+      "reviewCount": 11,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 22,
+    "tier": "D",
+    "reasons": []
+  },
+  "ai": {},
+  "raw": {
+    "collectedAt": "2026-01-13T03:21:44.300Z",
+    "runId": "iurPDvY7eyBXPp7IC",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "6a91f99519ba78fb",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/roberto-affordable-land-and-tree-service-watertown?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "1ZvZOudJ3_MlTtPcvyAoWQ"
+    }
+  },
+  "business": {
+    "name": "Roberto Affordable Land & Tree Service",
+    "category": "Landscaping",
+    "categories": [
+      "Landscaping",
+      "Tree Services",
+      "Gutter Services"
+    ],
+    "description": "",
+    "address": {
+      "street": "",
+      "city": "Watertown",
+      "state": "MA",
+      "postalCode": "02472",
+      "country": "US",
+      "formatted": "Watertown, MA 02472"
+    },
+    "geo": {
+      "lat": 42.368613,
+      "lng": -71.1605303
+    },
+    "phone": "(781) 996-8555",
+    "phoneE164": "+17819968555"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(781) 996-8555",
+        "phoneE164": "+17819968555",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.4,
+      "reviewCount": 87,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 33,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {},
+  "raw": {
+    "collectedAt": "2026-01-13T03:21:44.459Z",
+    "runId": "iurPDvY7eyBXPp7IC",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "5787e5ebeac2070e",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/specialized-rigging-and-tree-care-hingham?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "Pb133fbvQT9WAY0xC92DuQ"
+    }
+  },
+  "business": {
+    "name": "Specialized Rigging and Tree Care",
+    "category": "Tree Services",
+    "categories": [
+      "Tree Services"
+    ],
+    "description": "",
+    "address": {
+      "street": "",
+      "city": "Hingham",
+      "state": "MA",
+      "postalCode": "02043",
+      "country": "US",
+      "formatted": "Hingham, MA 02043"
+    },
+    "geo": {
+      "lat": 42.22925,
+      "lng": -70.88607
+    },
+    "phone": "(617) 325-7756",
+    "phoneE164": "+16173257756"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(617) 325-7756",
+        "phoneE164": "+16173257756",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.9,
+      "reviewCount": 28,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 28,
+    "tier": "D",
+    "reasons": [
+      "Well-reviewed business"
+    ]
+  },
+  "ai": {},
+  "raw": {
+    "collectedAt": "2026-01-13T03:21:44.583Z",
+    "runId": "iurPDvY7eyBXPp7IC",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "32a45eab75d8011a",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/the-little-tree-company-walpole-6?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "SXFAe5dDQktldoyFq7UDMA"
+    }
+  },
+  "business": {
+    "name": "The Little Tree Company",
+    "category": "Tree Services",
+    "categories": [
+      "Tree Services"
+    ],
+    "description": "",
+    "address": {
+      "street": "54 Summit Ave",
+      "city": "Walpole",
+      "state": "MA",
+      "postalCode": "02081",
+      "country": "US",
+      "formatted": "54 Summit Ave, Walpole, MA 02081"
+    },
+    "geo": {
+      "lat": 42.1409014,
+      "lng": -71.2261032
+    },
+    "phone": "(508) 404-6807",
+    "phoneE164": "+15084046807"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(508) 404-6807",
+        "phoneE164": "+15084046807",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 5,
+      "reviewCount": 7,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 22,
+    "tier": "D",
+    "reasons": []
+  },
+  "ai": {},
+  "raw": {
+    "collectedAt": "2026-01-13T03:21:44.834Z",
+    "runId": "iurPDvY7eyBXPp7IC",
+    "notes": "Collected from Yelp Fusion API"
+  }
+},
+{
+  "dedupeId": "9388f5fb7c91f65d",
+  "confidence": 0.9,
+  "sources": {
+    "yelp": {
+      "url": "https://www.yelp.com/biz/d-and-w-tree-service-and-landscaping-lynn-2?adjust_creative=jIjeImDQyry4UzsIfsFEbw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=jIjeImDQyry4UzsIfsFEbw",
+      "bizId": "4Pq3AoOMbZYF8Mc9_JflFQ"
+    }
+  },
+  "business": {
+    "name": "D&W Tree Service and Landscaping",
+    "category": "Tree Services",
+    "categories": [
+      "Tree Services",
+      "Landscaping",
+      "Snow Removal"
+    ],
+    "description": "",
+    "address": {
+      "street": "",
+      "city": "Lynn",
+      "state": "MA",
+      "postalCode": "01902",
+      "country": "US",
+      "formatted": "Lynn, MA 01902"
+    },
+    "geo": {
+      "lat": 42.470869,
+      "lng": -70.939908
+    },
+    "phone": "(781) 518-3457",
+    "phoneE164": "+17815183457"
+  },
+  "online": {
+    "website": "",
+    "domain": "",
+    "socials": {}
+  },
+  "contacts": {
+    "emails": [],
+    "phones": [
+      {
+        "phone": "(781) 518-3457",
+        "phoneE164": "+17815183457",
+        "source": "yelpApi",
+        "confidence": 0.9
+      }
+    ],
+    "keyPeople": []
+  },
+  "signals": {
+    "reviews": {
+      "rating": 4.7,
+      "reviewCount": 10,
+      "lastReviewDate": ""
+    },
+    "hours": {
+      "isOpen": true,
+      "hoursText": ""
+    },
+    "websiteSignals": {},
+    "techSignals": {}
+  },
+  "score": {
+    "leadScore": 22,
+    "tier": "D",
+    "reasons": []
+  },
+  "ai": {},
+  "raw": {
+    "collectedAt": "2026-01-13T03:21:45.245Z",
+    "runId": "iurPDvY7eyBXPp7IC",
+    "notes": "Collected from Yelp Fusion API"
+  }
+}]
