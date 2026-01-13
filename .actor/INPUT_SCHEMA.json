@@ -239,11 +239,36 @@
           "editor": "json",
           "default": {},
           "properties": {
-            "reviews": { "type": "number", "default": 1 },
-            "recency": { "type": "number", "default": 1 },
-            "hasWebsite": { "type": "number", "default": 1 },
-            "techSignals": { "type": "number", "default": 1 },
-            "contactability": { "type": "number", "default": 1 }
+            "reviews": { 
+              "title": "Reviews Weight",
+              "type": "number", 
+              "description": "Weight for review count and rating signals",
+              "default": 1 
+            },
+            "recency": { 
+              "title": "Recency Weight",
+              "type": "number", 
+              "description": "Weight for business recency signals",
+              "default": 1 
+            },
+            "hasWebsite": { 
+              "title": "Website Weight",
+              "type": "number", 
+              "description": "Weight for having a website",
+              "default": 1 
+            },
+            "techSignals": { 
+              "title": "Tech Signals Weight",
+              "type": "number", 
+              "description": "Weight for marketing technology presence",
+              "default": 1 
+            },
+            "contactability": { 
+              "title": "Contactability Weight",
+              "type": "number", 
+              "description": "Weight for contact information availability",
+              "default": 1 
+            }
           }
         }
       }
