@@ -59,11 +59,13 @@
     "centerLat": {
       "title": "Center Latitude",
       "type": "number",
+      "description": "Center latitude for radius search. Only used when Geo Mode = Lat/Lng + radius.",
       "default": 42.665
     },
     "centerLng": {
       "title": "Center Longitude",
       "type": "number",
+      "description": "Center longitude for radius search. Only used when Geo Mode = Lat/Lng + radius.",
       "default": -71.588
     },
     "sources": {
