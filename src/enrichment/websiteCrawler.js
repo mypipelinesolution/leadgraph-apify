@@ -1,4 +1,4 @@
-import { PlaywrightCrawler, log } from 'crawlee';
+import { CheerioCrawler, log } from 'crawlee';
 
 export async function crawlWebsite(websiteUrl, options) {
   if (!websiteUrl) {
@@ -38,32 +38,20 @@ export async function crawlWebsite(websiteUrl, options) {
       }
     }
     
-    const crawler = new PlaywrightCrawler({
+    const crawler = new CheerioCrawler({
       maxRequestsPerCrawl: maxPages,
       maxConcurrency: 2,
       requestHandlerTimeoutSecs: 30,
-      launchContext: {
-        launchOptions: {
-          headless: true,
-          args: ['--no-sandbox', '--disable-setuid-sandbox']
-        }
-      },
-      async requestHandler({ page, request, enqueueLinks }) {
+      async requestHandler({ $, request, enqueueLinks }) {
         try {
-          // Wait for page to load
-          await page.waitForLoadState('domcontentloaded');
-          
-          const title = await page.title();
-          const html = await page.content();
-          const bodyText = await page.evaluate(() => document.body.innerText);
-          
+          const html = $.html();
           crawledPages.push({
             url: request.url,
-            title: title,
+            title: $('title').text().trim(),
             html: html
           });
           
-          allHtml += ' ' + bodyText;
+          allHtml += ' ' + $('body').text();
           
           if (crawledPages.length < maxPages) {
             await enqueueLinks({
