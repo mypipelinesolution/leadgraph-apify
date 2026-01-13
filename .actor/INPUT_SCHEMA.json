@@ -100,6 +100,7 @@
       "title": "Filters",
       "type": "object",
       "description": "Filtering and qualification rules.",
+      "editor": "json",
       "properties": {
         "minRating": {
           "title": "Min Rating",
@@ -148,6 +149,7 @@
       "title": "Enrichment",
       "type": "object",
       "description": "Website crawl + contact extraction options.",
+      "editor": "json",
       "properties": {
         "crawlWebsite": {
           "title": "Crawl Website for Contacts",
@@ -190,6 +192,7 @@
       "title": "Dedupe & Matching",
       "type": "object",
       "description": "Deduplication settings for merging duplicate businesses.",
+      "editor": "json",
       "properties": {
         "enabled": {
           "title": "Enable Dedupe",
@@ -212,6 +215,7 @@
       "title": "Lead Scoring",
       "type": "object",
       "description": "Lead scoring configuration (0-100 score with A/B/C/D tiers).",
+      "editor": "json",
       "properties": {
         "enabled": {
           "title": "Enable Scoring",
@@ -232,6 +236,7 @@
           "title": "Custom Weights (advanced)",
           "type": "object",
           "description": "Custom scoring weights (only used when preset = custom).",
+          "editor": "json",
           "default": {},
           "properties": {
             "reviews": { "type": "number", "default": 1 },
@@ -247,6 +252,7 @@
       "title": "AI Outreach Generation",
       "type": "object",
       "description": "AI-powered outreach content generation using OpenAI.",
+      "editor": "json",
       "properties": {
         "enabled": {
           "title": "Enable AI Outreach",
@@ -296,6 +302,7 @@
       "title": "Exports & Integrations",
       "type": "object",
       "description": "Output format and integration settings.",
+      "editor": "json",
       "properties": {
         "outputFormat": {
           "title": "Output Format",
@@ -333,6 +340,7 @@
       "title": "Run Mode",
       "type": "object",
       "description": "Advanced runtime configuration.",
+      "editor": "json",
       "properties": {
         "stealth": {
           "title": "Stealth Mode",
@@ -368,6 +376,7 @@
       "title": "Debug",
       "type": "object",
       "description": "Debugging and logging options.",
+      "editor": "json",
       "properties": {
         "saveHtmlSnapshots": {
           "title": "Save HTML Snapshots",
