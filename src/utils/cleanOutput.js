@@ -56,14 +56,15 @@ export function cleanLeadForOutput(lead) {
 
 function extractEmailSubject(coldEmail) {
   if (!coldEmail) return '';
-  const match = coldEmail.match(/^Subject:\s*(.+?)(?:\n|$)/);
+  const match = coldEmail.match(/^Subject:\s*(.+?)(?:\n|$)/m);
   return match ? match[1].trim() : '';
 }
 
 function extractEmailBody(coldEmail) {
   if (!coldEmail) return '';
-  const match = coldEmail.match(/Subject:.*?\n\n(.+)$/s);
-  return match ? match[1].trim() : coldEmail;
+  // Remove "Subject: [subject line]" and any leading/trailing whitespace
+  const withoutSubject = coldEmail.replace(/^Subject:.*?\n+/m, '').trim();
+  return withoutSubject || coldEmail;
 }
 
 function getSource(sources) {
