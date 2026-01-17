@@ -4,8 +4,8 @@
   "locations": ["Denver, CO"],
   "useApis": true,
   "sources": ["googleMaps", "yelp"],
-  "maxResultsPerLocation": 15,
-  "maxTotalResults": 30,
+  "maxResultsPerLocation": 10,
+  "maxTotalResults": 10,
   "filters": {
     "minRating": 4.0,
     "minReviews": 25,
