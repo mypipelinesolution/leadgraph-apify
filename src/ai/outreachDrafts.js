@@ -28,8 +28,30 @@ export async function generateOutreach(lead, options) {
     const hasWebsite = !!website;
     const rating = lead.signals?.reviews?.rating || 0;
     const reviewCount = lead.signals?.reviews?.reviewCount || 0;
+    const leadScore = lead.score?.leadScore || 0;
+    const tier = lead.score?.tier || 'D';
+    const hasEmail = lead.contacts?.emails?.length > 0;
+    const hasContactForm = lead.signals?.websiteSignals?.hasContactForm || false;
+    const hasBookingWidget = lead.signals?.websiteSignals?.hasBookingWidget || false;
+    const hasChatWidget = lead.signals?.websiteSignals?.hasChatWidget || false;
+    const techSignals = lead.signals?.techSignals || {};
 
-    const prompt = buildPrompt(businessName, category, location, hasWebsite, rating, reviewCount, options);
+    const prompt = buildPrompt({
+      businessName,
+      category,
+      location,
+      hasWebsite,
+      rating,
+      reviewCount,
+      leadScore,
+      tier,
+      hasEmail,
+      hasContactForm,
+      hasBookingWidget,
+      hasChatWidget,
+      techSignals,
+      options
+    });
 
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
       method: 'POST',
@@ -38,19 +60,19 @@ export async function generateOutreach(lead, options) {
         'Authorization': `Bearer ${apiKey}`
       },
       body: JSON.stringify({
-        model: options?.ai?.model || 'gpt-3.5-turbo',
+        model: options?.ai?.model || 'gpt-4o-mini',
         messages: [
           {
             role: 'system',
-            content: 'You are a professional sales copywriter specializing in B2B outreach for local service businesses.'
+            content: 'You are an expert B2B sales copywriter with 10+ years of experience crafting personalized outreach for local service businesses. You write compelling, value-driven messages that get responses. Your style is professional yet conversational, focusing on specific pain points and concrete benefits rather than generic pitches.'
           },
           {
             role: 'user',
             content: prompt
           }
         ],
-        temperature: 0.7,
-        max_tokens: 1000
+        temperature: 0.8,
+        max_tokens: 1500
       })
     });
 
@@ -77,33 +99,95 @@ export async function generateOutreach(lead, options) {
   }
 }
 
-function buildPrompt(businessName, category, location, hasWebsite, rating, reviewCount, options) {
-  const yourCompany = options?.ai?.yourCompanyName || '[Your Company]';
-  const yourService = options?.ai?.yourServiceOffering || 'digital marketing services';
+function buildPrompt({
+  businessName,
+  category,
+  location,
+  hasWebsite,
+  rating,
+  reviewCount,
+  leadScore,
+  tier,
+  hasEmail,
+  hasContactForm,
+  hasBookingWidget,
+  hasChatWidget,
+  techSignals,
+  options
+}) {
+  const yourCompany = options?.ai?.yourCompany?.name || 'Digital Growth Partners';
+  const yourServices = options?.ai?.yourCompany?.services || 'website design, SEO, and lead generation';
+  const targetAudience = options?.ai?.yourCompany?.targetAudience || 'local service businesses';
   
-  return `Generate personalized outreach content for a ${category} business:
-
-Business: ${businessName}
+  // Build context about the business
+  let businessContext = `Business: ${businessName}
+Category: ${category}
 Location: ${location}
-Has Website: ${hasWebsite ? 'Yes' : 'No'}
-Rating: ${rating > 0 ? `${rating}/5 (${reviewCount} reviews)` : 'Unknown'}
+`;
+  
+  if (rating > 0) {
+    businessContext += `Reputation: ${rating}/5 stars (${reviewCount} reviews) - ${rating >= 4.5 ? 'Excellent' : rating >= 4.0 ? 'Strong' : 'Good'} reputation\n`;
+  }
+  
+  businessContext += `Lead Quality: ${tier} tier (Score: ${leadScore}/100)\n`;
+  
+  // Website & tech insights
+  let techContext = '';
+  if (hasWebsite) {
+    techContext += `\nWebsite Features:\n`;
+    if (hasContactForm) techContext += `- Has contact form\n`;
+    if (hasBookingWidget) techContext += `- Has booking widget\n`;
+    if (hasChatWidget) techContext += `- Has chat widget\n`;
+    
+    const hasTech = Object.values(techSignals).some(v => v);
+    if (hasTech) {
+      techContext += `Marketing Tech: `;
+      const activeTech = Object.entries(techSignals)
+        .filter(([_, active]) => active)
+        .map(([tech, _]) => tech);
+      techContext += activeTech.length > 0 ? activeTech.join(', ') : 'None detected';
+      techContext += `\n`;
+    } else {
+      techContext += `Marketing Tech: None detected (opportunity for improvement)\n`;
+    }
+  } else {
+    techContext += `\nWebsite: None found (major opportunity!)\n`;
+  }
+  
+  return `You're reaching out to a ${category} business on behalf of ${yourCompany}, which provides ${yourServices} for ${targetAudience}.
 
-Your company: ${yourCompany}
-Your offering: ${yourService}
+${businessContext}${techContext}
+Your Task: Create highly personalized outreach that:
+1. References specific details about THEIR business (location, reputation, current tech setup)
+2. Identifies a relevant pain point or opportunity based on their current situation
+3. Positions your services as the solution with concrete benefits
+4. Uses their business name naturally (not just in greeting)
+5. Includes social proof or credibility elements
+6. Has a clear, low-friction call-to-action
 
-Generate 3 types of outreach:
+Tone: Professional but warm, consultative not salesy, confident but not pushy.
 
-1. COLD EMAIL (subject + body, 150-200 words)
-2. VOICEMAIL SCRIPT (30-45 seconds when read aloud)
-3. SMS MESSAGE (160 characters max)
+Generate 3 outreach formats:
 
-Make it:
-- Personalized to their business
-- Value-focused (not salesy)
-- Include a clear call-to-action
-- Professional but friendly tone
+1. COLD EMAIL (200-250 words)
+   - Compelling subject line that mentions their business or a specific insight
+   - Personalized opening that shows you researched them
+   - 2-3 specific value propositions relevant to their situation
+   - Clear CTA with next step
 
-Format your response EXACTLY like this:
+2. VOICEMAIL SCRIPT (45-60 seconds)
+   - Natural conversational tone
+   - Hook them in first 10 seconds
+   - Mention specific detail about their business
+   - Clear reason to call back
+
+3. SMS MESSAGE (140-160 characters)
+   - Ultra-concise but personalized
+   - Include business name
+   - One specific hook
+   - Clear CTA
+
+Format EXACTLY as:
 
 COLD_EMAIL_SUBJECT:
 [subject line]
@@ -116,6 +200,7 @@ VOICEMAIL:
 
 SMS:
 [sms message]`;
+}
 }
 
 function parseOutreachResponse(content) {

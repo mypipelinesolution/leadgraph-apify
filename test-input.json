@@ -1,0 +1,58 @@
+{
+  "seedType": "keyword",
+  "keywords": ["roofing contractor", "roof repair"],
+  "locations": ["Austin, TX"],
+  "useApis": true,
+  "sources": ["googleMaps", "yelp"],
+  "maxResultsPerLocation": 10,
+  "maxTotalResults": 20,
+  "filters": {
+    "minRating": 4.0,
+    "minReviews": 50,
+    "requireWebsite": false,
+    "excludeFranchises": false,
+    "excludeKeywords": [],
+    "includeKeywords": []
+  },
+  "enrichment": {
+    "crawlWebsite": true,
+    "maxWebsitePages": 5,
+    "emailExtraction": "standard",
+    "phoneExtraction": true,
+    "collectTechSignals": true
+  },
+  "dedupe": {
+    "enabled": true,
+    "strategy": "balanced"
+  },
+  "scoring": {
+    "enabled": true,
+    "weightsPreset": "localService"
+  },
+  "ai": {
+    "enabled": true,
+    "provider": "openai",
+    "model": "gpt-4o-mini",
+    "yourCompany": {
+      "name": "Digital Growth Partners",
+      "services": "website design, SEO, and lead generation",
+      "targetAudience": "local service businesses"
+    }
+  },
+  "exports": {
+    "outputFormat": "dataset",
+    "deltaMode": false,
+    "webhookUrl": "",
+    "webhookMode": "off"
+  },
+  "runMode": {
+    "stealth": true,
+    "maxConcurrency": 2,
+    "maxRetries": 3,
+    "proxyEnabled": false
+  },
+  "debug": {
+    "saveHtmlSnapshots": false,
+    "logLevel": "INFO"
+  }
+}
