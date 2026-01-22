@@ -34,8 +34,8 @@
     "provider": "openai",
     "model": "gpt-4o-mini",
     "yourCompany": {
-      "name": "Digital Growth Partners",
-      "services": "website design, SEO, and lead generation",
+      "name": "My Pipelines Solutions",
+      "services": "Advertising and Marketing",
       "targetAudience": "local service businesses"
     }
   },

@@ -1,106 +1,123 @@
-# LeadGraph™
+# LeadGraph™ — Local Business Leads with AI-Powered Outreach
 
-Local business lead discovery with enrichment, scoring, and AI-powered outreach generation.
+**Stop wasting hours on manual prospecting.** Get verified local business leads with emails, phone numbers, and ready-to-send outreach messages — in minutes.
 
-## Features
+---
 
-- **Lead Discovery** - Find local businesses via Google Places API
-- **Website Enrichment** - Extract emails, phones, social links, and tech signals
-- **Lead Scoring** - Score leads 0-100 with A/B/C/D tiers
-- **AI Outreach** - Generate personalized cold emails, voicemail scripts, and SMS messages
-- **Deduplication** - Stable SHA1-based deduplication across runs
-- **Delta Mode** - Only output new/changed leads on subsequent runs
+## Why LeadGraph?
+
+Most lead generation tools give you a list of names. **LeadGraph gives you a sales pipeline.**
+
+| The Old Way | The LeadGraph Way |
+|-------------|-------------------|
+| Manually search Google Maps | Automated discovery across locations |
+| Copy-paste business info into spreadsheets | Structured, CRM-ready data |
+| Hunt for emails on websites | Emails extracted automatically |
+| Guess which leads are worth pursuing | AI-scored leads (A/B/C/D tiers) |
+| Write cold emails from scratch | Personalized outreach generated for you |
+
+---
+
+## What You Get
+
+### Every Lead Includes:
+
+**Business Details** — Name, category, full address, phone number, Google Maps link
+
+**Online Presence** — Website, Facebook, Instagram, LinkedIn, and more
+
+**Contact Info** — Email addresses and phone numbers extracted from their website
+
+**Reputation Signals** — Google rating, review count, and business signals
+
+**Lead Score** — 0-100 quality score with A/B/C/D tier ranking
+
+**AI Outreach** — Personalized cold email, voicemail script, and SMS message
+
+---
+
+## Perfect For
+
+- **Marketing Agencies** — Find clients who need your services
+- **Sales Teams** — Build targeted prospect lists by industry and location
+- **Local Service Businesses** — Find partners, vendors, or competitors
+- **Consultants** — Identify businesses that match your ideal client profile
+
+---
 
 ## How It Works
 
-1. Enter your target **keywords** (e.g., "tree service", "plumber") and **locations**
-2. LeadGraph discovers businesses from Google Maps
-3. Optionally enrich leads with website data (emails, phones, social links)
-4. Score and rank leads by quality (A/B/C/D tiers)
-5. Generate personalized AI outreach (cold email, voicemail, SMS)
-6. Export CRM-ready lead data
+**1. Pick Your Target**
+Enter keywords (e.g., "dentist", "HVAC contractor") and locations (e.g., "Austin, TX")
 
-## Input Configuration
+**2. We Do The Work**
+LeadGraph searches Google Maps, visits websites, extracts contact info, and scores every lead
 
-```json
-{
-  "keywords": ["tree service", "landscaping"],
-  "locations": ["Boston, MA", "Cambridge, MA"],
-  "maxResultsPerLocation": 20,
-  "enrichment": {
-    "crawlWebsite": true
-  },
-  "scoring": {
-    "enabled": true
-  },
-  "ai": {
-    "enabled": true,
-    "yourCompany": {
-      "name": "Your Agency Name",
-      "services": "web design, SEO, lead generation",
-      "targetAudience": "local service businesses"
-    }
-  },
-  "filters": {
-    "minRating": 3.5,
-    "minReviews": 5,
-    "requireWebsite": false
-  }
-}
+**3. Get Sales-Ready Leads**
+Download your leads with AI-generated outreach — ready to import into your CRM or start calling
+
+---
+
+## What Makes Us Different
+
+### Real Contact Info
+We don't just give you a business name. We crawl their website to find actual email addresses and phone numbers.
+
+### AI-Powered Outreach
+Every lead comes with a personalized cold email, voicemail script, and SMS — written by AI based on their business details.
+
+### Quality Over Quantity  
+Our scoring algorithm ranks leads so you focus on the best opportunities first. No more wasting time on dead ends.
+
+### Always Fresh
+Run weekly or monthly to catch new businesses. Delta mode shows you only what's new or changed.
+
+---
+
+## Sample Output
+
+```
+Business: ABC Tree Service
+Location: Boston, MA
+Phone: (617) 555-1234
+Website: abctreeservice.com
+Email: info@abctreeservice.com
+Rating: 4.8/5 (127 reviews)
+Lead Score: 92/100 (A-Tier)
+
+AI Cold Email:
+Subject: Quick question about ABC Tree Service's online presence
+
+Hi,
+
+I came across ABC Tree Service while researching top-rated tree companies 
+in Boston — your 4.8-star rating with 127 reviews is impressive...
 ```
 
-## Output
+---
 
-Each lead includes:
+## Input Options
 
-```json
-{
-  "dedupeId": "abc123...",
-  "business": {
-    "name": "Business Name",
-    "category": "tree service",
-    "address": { "street": "...", "city": "...", "state": "...", "postalCode": "..." },
-    "phone": "(555) 123-4567",
-    "phoneE164": "+15551234567"
-  },
-  "online": {
-    "website": "https://example.com",
-    "domain": "example.com",
-    "socials": { "facebook": "...", "instagram": "..." }
-  },
-  "contacts": {
-    "emails": [{ "email": "...", "confidence": 0.9 }],
-    "phones": [{ "phone": "...", "source": "website" }]
-  },
-  "signals": {
-    "reviews": { "rating": 4.8, "reviewCount": 127 },
-    "techSignals": { "googleAnalytics": true, "facebookPixel": false }
-  },
-  "score": {
-    "leadScore": 85,
-    "tier": "A",
-    "reasons": ["High rating", "Active website", "Contact info available"]
-  },
-  "ai": {
-    "coldEmail": "Subject: ...\n\nHi...",
-    "voicemail": "Hi, this is...",
-    "sms": "Hi [Name], quick question..."
-  }
-}
-```
+| Option | Description |
+|--------|-------------|
+| **Keywords** | Business types to find (e.g., "plumber", "lawyer") |
+| **Locations** | Cities or areas to search (e.g., "Miami, FL") |
+| **Max Results** | Limit leads per location |
+| **Enrichment** | Extract emails/phones from websites |
+| **AI Outreach** | Generate personalized messages |
+| **Filters** | Min rating, min reviews, require website |
 
-## Actor Owner Setup
+---
 
-To deploy this Actor on Apify:
+## Start Finding Leads Now
 
-1. Push code to your Apify Actor
-2. Add environment variables in **Actor Settings → Environment variables**:
-   - `GOOGLE_PLACES_API_KEY` - [Get from Google Cloud Console](https://console.cloud.google.com/apis/credentials)
-   - `OPENAI_API_KEY` - [Get from OpenAI Platform](https://platform.openai.com/api-keys)
-3. Set your pricing in Apify Store
+1. Enter your target keywords and locations
+2. Enable the features you need
+3. Click **Start**
+4. Download your leads and start closing deals
 
-Users pay per run through Apify - they don't need to provide API keys.
+**Questions?** Check out the [HOWTO Guide](./HOWTO.md) for detailed instructions.
 
-## License
+---
 
-ISC
+*LeadGraph™ — Turn Google Maps into your sales pipeline.*
