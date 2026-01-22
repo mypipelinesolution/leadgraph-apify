@@ -11,37 +11,14 @@ Local business lead discovery with enrichment, scoring, and AI-powered outreach 
 - **Deduplication** - Stable SHA1-based deduplication across runs
 - **Delta Mode** - Only output new/changed leads on subsequent runs
 
-## Requirements
+## How It Works
 
-You need two API keys:
-
-| API | Purpose | Get Key |
-|-----|---------|---------|
-| **Google Places API** | Lead discovery | [Google Cloud Console](https://console.cloud.google.com/apis/credentials) |
-| **OpenAI API** | AI outreach generation | [OpenAI Platform](https://platform.openai.com/api-keys) |
-
-## Setup
-
-### 1. Environment Variables
-
-Create a `.env` file in the project root:
-
-```env
-GOOGLE_PLACES_API_KEY=your_google_places_api_key
-OPENAI_API_KEY=your_openai_api_key
-```
-
-### 2. Install Dependencies
-
-```bash
-npm install
-```
-
-### 3. Run
-
-```bash
-npm start
-```
+1. Enter your target **keywords** (e.g., "tree service", "plumber") and **locations**
+2. LeadGraph discovers businesses from Google Maps
+3. Optionally enrich leads with website data (emails, phones, social links)
+4. Score and rank leads by quality (A/B/C/D tiers)
+5. Generate personalized AI outreach (cold email, voicemail, SMS)
+6. Export CRM-ready lead data
 
 ## Input Configuration
 
@@ -49,22 +26,15 @@ npm start
 {
   "keywords": ["tree service", "landscaping"],
   "locations": ["Boston, MA", "Cambridge, MA"],
-  "useApis": true,
   "maxResultsPerLocation": 20,
-  "apiKeys": {
-    "googlePlaces": "your_key_here"
-  },
   "enrichment": {
     "crawlWebsite": true
   },
   "scoring": {
-    "enabled": true,
-    "weightsPreset": "localService"
+    "enabled": true
   },
   "ai": {
     "enabled": true,
-    "openaiApiKey": "your_key_here",
-    "model": "gpt-4o-mini",
     "yourCompany": {
       "name": "Your Agency Name",
       "services": "web design, SEO, lead generation",
@@ -75,9 +45,6 @@ npm start
     "minRating": 3.5,
     "minReviews": 5,
     "requireWebsite": false
-  },
-  "exports": {
-    "deltaMode": false
   }
 }
 ```
@@ -122,13 +89,17 @@ Each lead includes:
 }
 ```
 
-## Apify Deployment
+## Actor Owner Setup
+
+To deploy this Actor on Apify:
 
 1. Push code to your Apify Actor
-2. Add environment variables in Actor Settings:
-   - `GOOGLE_PLACES_API_KEY`
-   - `OPENAI_API_KEY`
-3. Run the Actor with your input configuration
+2. Add environment variables in **Actor Settings → Environment variables**:
+   - `GOOGLE_PLACES_API_KEY` - [Get from Google Cloud Console](https://console.cloud.google.com/apis/credentials)
+   - `OPENAI_API_KEY` - [Get from OpenAI Platform](https://platform.openai.com/api-keys)
+3. Set your pricing in Apify Store
+
+Users pay per run through Apify - they don't need to provide API keys.
 
 ## License
 
