@@ -1,11 +1,9 @@
 import { Actor } from 'apify';
 import { log } from 'crawlee';
 import { scrapeGoogleMaps } from './discovery/googleMaps.js';
-import { scrapeYelp } from './discovery/yelp.js';
 import { scrapeBBB } from './discovery/bbb.js';
 import { scrapeSERP } from './discovery/serp.js';
 import { scrapeGoogleMapsApi } from './discovery/googleMapsApi.js';
-import { scrapeYelpApi } from './discovery/yelpApi.js';
 import { generateDedupeId } from './utils/dedupeId.js';
 import { mergeLeads } from './processing/merge.js';
 import { scoreLead } from './processing/scoring.js';
@@ -35,7 +33,7 @@ try {
   const rawLeads = [];
   const keywords = input.keywords || [];
   const locations = input.locations || [];
-  const sources = input.sources || ['googleMaps', 'yelp'];
+  const sources = input.sources || ['googleMaps'];
 
   log.info('Starting discovery phase', { 
     keywordCount: keywords.length, 
@@ -64,18 +62,6 @@ try {
           log.info(`Google Maps: ${gmLeads.length} leads found`);
         } catch (error) {
           log.error('Google Maps scraping failed', { error: error.message });
-        }
-      }
-
-      if (sources.includes('yelp')) {
-        try {
-          const yelpLeads = useApis
-            ? await scrapeYelpApi(keyword, location, input)
-            : await scrapeYelp(keyword, location, input);
-          rawLeads.push(...yelpLeads);
-          log.info(`Yelp: ${yelpLeads.length} leads found`);
-        } catch (error) {
-          log.error('Yelp scraping failed', { error: error.message });
         }
       }
 

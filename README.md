@@ -4,8 +4,8 @@ Multi-source local business lead discovery with website enrichment, deduplicatio
 
 ## 🚀 Features
 
-- **Multi-source Discovery**: Google Maps, Yelp, BBB, Chambers of Commerce, SERP
-- **API Mode**: Use official APIs (Google Places, Yelp Fusion) for faster, reliable data
+- **Multi-source Discovery**: Google Maps, BBB, Chambers of Commerce, SERP
+- **API Mode**: Use official Google Places API for faster, reliable data
 - **Web Scraping Mode**: Free alternative using Playwright and Cheerio
 - **Website Enrichment**: Email, phone, contact forms, social links, tech signals
 - **Smart Deduplication**: Stable dedupeId using SHA1 hash
@@ -20,17 +20,17 @@ Multi-source local business lead discovery with website enrichment, deduplicatio
 
 1. Get API keys:
    - [Google Places API](https://console.cloud.google.com/apis/credentials)
-   - [Yelp Fusion API](https://www.yelp.com/developers/v3/manage_app) (FREE 500 calls/day)
+   - [OpenAI API](https://platform.openai.com/api-keys) (for AI outreach generation)
 
 2. Set environment variables:
 ```bash
 # Windows (PowerShell)
 $env:GOOGLE_PLACES_API_KEY="YOUR_KEY_HERE"
-$env:YELP_API_KEY="YOUR_KEY_HERE"
+$env:OPENAI_API_KEY="YOUR_KEY_HERE"
 
 # Mac/Linux
 export GOOGLE_PLACES_API_KEY="YOUR_KEY_HERE"
-export YELP_API_KEY="YOUR_KEY_HERE"
+export OPENAI_API_KEY="YOUR_KEY_HERE"
 ```
 
 3. Run:
@@ -63,7 +63,7 @@ See `INPUT_SCHEMA.json` for complete configuration options.
   "seedType": "keyword",
   "keywords": ["tree service"],
   "locations": ["Pepperell, MA"],
-  "sources": ["googleMaps", "yelp"],
+  "sources": ["googleMaps"],
   "enrichment": {
     "crawlWebsite": true
   },
@@ -96,7 +96,6 @@ Enable `deltaMode` to only output new or changed leads compared to previous runs
 
 **Phase 1**: ✅ Core Discovery (MVP) - COMPLETED
 - Google Maps scraper (Playwright)
-- Yelp scraper (Cheerio)
 - Deduplication & merge logic
 - Lead scoring (0-100 with A/B/C/D tiers)
 - Full pipeline integration

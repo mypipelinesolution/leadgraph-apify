@@ -21,7 +21,7 @@
   },
   "comments": {
     "playwright": "Used only for Google Maps web scraping (when useApis=false). Not used for website enrichment.",
-    "cheerio": "Used for Yelp, BBB, and SERP web scrapers. Not used for website enrichment.",
+    "cheerio": "Used for BBB and SERP web scrapers. Not used for website enrichment.",
     "crawl4ai": "Website enrichment now uses Crawl4AI (external service) with simple fetch fallback."
   }
 }
