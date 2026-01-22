@@ -1,123 +1,135 @@
-# LeadGraph™ - Local Business Lead Discovery & Enrichment
+# LeadGraph™
 
-Multi-source local business lead discovery with website enrichment, deduplication, scoring, and CRM-ready output.
+Local business lead discovery with enrichment, scoring, and AI-powered outreach generation.
 
-## 🚀 Features
+## Features
 
-- **Multi-source Discovery**: Google Maps, BBB, Chambers of Commerce, SERP
-- **API Mode**: Use official Google Places API for faster, reliable data
-- **Web Scraping Mode**: Free alternative using Playwright and Cheerio
-- **Website Enrichment**: Email, phone, contact forms, social links, tech signals
-- **Smart Deduplication**: Stable dedupeId using SHA1 hash
-- **Lead Scoring**: 0-100 score with A/B/C/D tiers
-- **AI Outreach**: Cold email, voicemail, SMS drafts (optional)
-- **Delta Mode**: Only output new/changed leads
-- **CRM Integration**: Webhook/batch push to TradeHive/AdSuite
+- **Lead Discovery** - Find local businesses via Google Places API
+- **Website Enrichment** - Extract emails, phones, social links, and tech signals
+- **Lead Scoring** - Score leads 0-100 with A/B/C/D tiers
+- **AI Outreach** - Generate personalized cold emails, voicemail scripts, and SMS messages
+- **Deduplication** - Stable SHA1-based deduplication across runs
+- **Delta Mode** - Only output new/changed leads on subsequent runs
 
-## 📋 Quick Start
+## Requirements
 
-### Option 1: Using APIs (Recommended)
+You need two API keys:
 
-1. Get API keys:
-   - [Google Places API](https://console.cloud.google.com/apis/credentials)
-   - [OpenAI API](https://platform.openai.com/api-keys) (for AI outreach generation)
+| API | Purpose | Get Key |
+|-----|---------|---------|
+| **Google Places API** | Lead discovery | [Google Cloud Console](https://console.cloud.google.com/apis/credentials) |
+| **OpenAI API** | AI outreach generation | [OpenAI Platform](https://platform.openai.com/api-keys) |
 
-2. Set environment variables:
-```bash
-# Windows (PowerShell)
-$env:GOOGLE_PLACES_API_KEY="YOUR_KEY_HERE"
-$env:OPENAI_API_KEY="YOUR_KEY_HERE"
+## Setup
 
-# Mac/Linux
-export GOOGLE_PLACES_API_KEY="YOUR_KEY_HERE"
-export OPENAI_API_KEY="YOUR_KEY_HERE"
+### 1. Environment Variables
+
+Create a `.env` file in the project root:
+
+```env
+GOOGLE_PLACES_API_KEY=your_google_places_api_key
+OPENAI_API_KEY=your_openai_api_key
 ```
 
-3. Run:
-```bash
-node test-local.js
-```
-
-**For Apify deployment:** See [SECRETS-SETUP.md](./SECRETS-SETUP.md)
-
-### Option 2: Web Scraping (Free)
+### 2. Install Dependencies
 
 ```bash
-# Install Playwright browsers
-npx playwright install chromium
-
-# Run
-node test-local.js
+npm install
 ```
 
-See [API-SETUP.md](./API-SETUP.md) for detailed instructions.
+### 3. Run
 
-## 🔧 Input Parameters
+```bash
+npm start
+```
 
-See `INPUT_SCHEMA.json` for complete configuration options.
-
-### Basic Example
+## Input Configuration
 
 ```json
 {
-  "seedType": "keyword",
-  "keywords": ["tree service"],
-  "locations": ["Pepperell, MA"],
-  "sources": ["googleMaps"],
+  "keywords": ["tree service", "landscaping"],
+  "locations": ["Boston, MA", "Cambridge, MA"],
+  "useApis": true,
+  "maxResultsPerLocation": 20,
+  "apiKeys": {
+    "googlePlaces": "your_key_here"
+  },
   "enrichment": {
     "crawlWebsite": true
   },
   "scoring": {
-    "enabled": true
+    "enabled": true,
+    "weightsPreset": "localService"
+  },
+  "ai": {
+    "enabled": true,
+    "openaiApiKey": "your_key_here",
+    "model": "gpt-4o-mini",
+    "yourCompany": {
+      "name": "Your Agency Name",
+      "services": "web design, SEO, lead generation",
+      "targetAudience": "local service businesses"
+    }
+  },
+  "filters": {
+    "minRating": 3.5,
+    "minReviews": 5,
+    "requireWebsite": false
+  },
+  "exports": {
+    "deltaMode": false
   }
 }
 ```
 
-## 📊 Output Schema
+## Output
 
 Each lead includes:
-- Business information (name, address, phone, category)
-- Online presence (website, social media)
-- Contact details (emails, phones, contact forms)
-- Signals (reviews, tech stack, website features)
-- Lead score (0-100 with tier A/B/C/D)
-- AI-generated outreach drafts (optional)
 
-## 🔑 Delta Mode
+```json
+{
+  "dedupeId": "abc123...",
+  "business": {
+    "name": "Business Name",
+    "category": "tree service",
+    "address": { "street": "...", "city": "...", "state": "...", "postalCode": "..." },
+    "phone": "(555) 123-4567",
+    "phoneE164": "+15551234567"
+  },
+  "online": {
+    "website": "https://example.com",
+    "domain": "example.com",
+    "socials": { "facebook": "...", "instagram": "..." }
+  },
+  "contacts": {
+    "emails": [{ "email": "...", "confidence": 0.9 }],
+    "phones": [{ "phone": "...", "source": "website" }]
+  },
+  "signals": {
+    "reviews": { "rating": 4.8, "reviewCount": 127 },
+    "techSignals": { "googleAnalytics": true, "facebookPixel": false }
+  },
+  "score": {
+    "leadScore": 85,
+    "tier": "A",
+    "reasons": ["High rating", "Active website", "Contact info available"]
+  },
+  "ai": {
+    "coldEmail": "Subject: ...\n\nHi...",
+    "voicemail": "Hi, this is...",
+    "sms": "Hi [Name], quick question..."
+  }
+}
+```
 
-Enable `deltaMode` to only output new or changed leads compared to previous runs. Perfect for weekly/monthly re-runs.
+## Apify Deployment
 
-## 🎯 Development Status
+1. Push code to your Apify Actor
+2. Add environment variables in Actor Settings:
+   - `GOOGLE_PLACES_API_KEY`
+   - `OPENAI_API_KEY`
+3. Run the Actor with your input configuration
 
-**Phase 0**: ✅ Setup & Foundation - COMPLETED
-- Project structure created
-- Dependencies installed
-- Configuration files ready
-
-**Phase 1**: ✅ Core Discovery (MVP) - COMPLETED
-- Google Maps scraper (Playwright)
-- Deduplication & merge logic
-- Lead scoring (0-100 with A/B/C/D tiers)
-- Full pipeline integration
-
-**Phase 2**: ✅ Enrichment & Processing - COMPLETED
-- Website crawler (up to 10 pages per site)
-- Email extraction with validation
-- Phone extraction with E.164 formatting
-- Social media link extraction (Facebook, Instagram, LinkedIn, YouTube, TikTok, X)
-- Tech signals detection (Google Analytics, GTM, Facebook Pixel, HubSpot, Mailchimp)
-- Website signals (HTTPS, contact forms, booking widgets, chat widgets)
-
-**Phase 3**: ✅ Advanced Features - COMPLETED
-- BBB (Better Business Bureau) scraper
-- SERP (Google Search) scraper
-- AI outreach generation (cold email, voicemail, SMS)
-- OpenAI integration for personalized outreach
-
-**Phase 4**: ⏭️ CRM Integration - SKIPPED
-- CSV export available via Apify dataset
-- User can format for CRM import with custom scripts
-
-## 📝 License
+## License
 
 ISC
