@@ -21,7 +21,11 @@ await Actor.init();
 const startTime = Date.now();
 
 try {
-  const input = await Actor.getInput();
+  const rawInput = await Actor.getInput();
+  
+  // Normalize input: map simplified schema to internal structure
+  const input = normalizeInput(rawInput);
+  
   log.info('LeadGraph™ Actor started', { 
     keywords: input.keywords,
     locations: input.locations,
@@ -188,6 +192,11 @@ try {
             
             lead.signals.techSignals = techSignals;
             
+            // Store website chunk for AI context
+            if (crawlResult.websiteChunk) {
+              lead.signals.websiteChunk = crawlResult.websiteChunk;
+            }
+            
             if (emails.length > 0 || phones.length > 0 || Object.values(socials).some(s => s)) {
               enrichedCount++;
             }
@@ -306,4 +315,75 @@ try {
   throw error;
 } finally {
   await Actor.exit();
+}
+
+// Normalize simplified input schema to internal structure
+// SYSTEM DEFAULTS - not customizable by users
+function normalizeInput(raw) {
+  // Auto-detect if Google Places API is available
+  const hasGoogleApiKey = !!process.env.GOOGLE_PLACES_API_KEY;
+  
+  return {
+    // Core search params (from user input)
+    keywords: raw.keywords || [],
+    locations: raw.locations || [],
+    
+    // SYSTEM DEFAULTS (hardcoded)
+    sources: ['googleMaps'],
+    useApis: hasGoogleApiKey, // Auto-use API if key exists
+    
+    // Limits (from user input)
+    maxResultsPerLocation: raw.maxLeadsPerLocation || 20,
+    maxTotalResults: (raw.maxLeadsPerLocation || 20) * (raw.locations?.length || 1) * 2,
+    
+    // Filters (user input + system defaults)
+    filters: {
+      minRating: raw.minRating || 0,
+      minReviews: raw.minReviews || 0,
+      requireWebsite: true, // SYSTEM DEFAULT: always require website
+      excludeFranchises: false // SYSTEM DEFAULT
+    },
+    
+    // Enrichment - SYSTEM DEFAULTS (always enabled)
+    enrichment: {
+      crawlWebsite: true,
+      maxWebsitePages: 10,
+      emailExtraction: 'standard',
+      phoneExtraction: true,
+      collectTechSignals: true
+    },
+    
+    // Dedupe - SYSTEM DEFAULT (always enabled)
+    dedupe: {
+      enabled: true,
+      strategy: 'balanced'
+    },
+    
+    // Scoring - SYSTEM DEFAULT (always enabled)
+    scoring: {
+      enabled: true,
+      weightsPreset: 'localService'
+    },
+    
+    // AI Outreach - ALWAYS ENABLED (core feature)
+    ai: {
+      enabled: true, // SYSTEM DEFAULT - always on, core feature
+      model: 'gpt-4o-mini', // SYSTEM DEFAULT - you pay for this
+      yourName: raw.yourName || '',
+      yourCompany: {
+        name: raw.yourCompanyName || 'Our Agency',
+        services: raw.yourServices || 'digital marketing services',
+        description: raw.yourCompanyDescription || '',
+        targetAudience: 'local service businesses'
+      }
+    },
+    
+    // Run mode - SYSTEM DEFAULTS
+    runMode: {
+      stealth: true,
+      maxConcurrency: 5,
+      maxRetries: 3,
+      proxyEnabled: true
+    }
+  };
 }

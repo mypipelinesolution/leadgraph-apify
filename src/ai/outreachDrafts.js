@@ -35,6 +35,7 @@ export async function generateOutreach(lead, options) {
     const hasBookingWidget = lead.signals?.websiteSignals?.hasBookingWidget || false;
     const hasChatWidget = lead.signals?.websiteSignals?.hasChatWidget || false;
     const techSignals = lead.signals?.techSignals || {};
+    const websiteChunk = lead.signals?.websiteChunk || '';
 
     const prompt = buildPrompt({
       businessName,
@@ -50,6 +51,7 @@ export async function generateOutreach(lead, options) {
       hasBookingWidget,
       hasChatWidget,
       techSignals,
+      websiteChunk,
       options
     });
 
@@ -116,10 +118,13 @@ function buildPrompt({
   hasBookingWidget,
   hasChatWidget,
   techSignals,
+  websiteChunk,
   options
 }) {
-  const yourCompany = options?.ai?.yourCompany?.name || 'Digital Growth Partners';
-  const yourServices = options?.ai?.yourCompany?.services || 'website design, SEO, and lead generation';
+  const yourName = options?.ai?.yourName || '';
+  const yourCompany = options?.ai?.yourCompany?.name || 'Our Agency';
+  const yourServices = options?.ai?.yourCompany?.services || 'digital marketing services';
+  const yourCompanyDescription = options?.ai?.yourCompany?.description || '';
   const targetAudience = options?.ai?.yourCompany?.targetAudience || 'local service businesses';
   
   // Build context about the business
@@ -157,9 +162,34 @@ Location: ${location}
     techContext += `\nWebsite: None found (major opportunity!)\n`;
   }
   
-  return `You're reaching out to a ${category} business on behalf of ${yourCompany}, which provides ${yourServices} for ${targetAudience}.
+  // Add website content context if available
+  let websiteContext = '';
+  if (websiteChunk && websiteChunk.length > 50) {
+    websiteContext = `\n--- WEBSITE CONTENT (extracted from their homepage) ---
+${websiteChunk}
+--- END WEBSITE CONTENT ---
 
-${businessContext}${techContext}
+Use the above website content to:
+- Understand their specific services and offerings
+- Reference their unique selling points or specialties
+- Identify gaps or opportunities in their current messaging
+- Personalize your outreach with specific details from their site
+`;
+  }
+  
+  // Build sender context
+  let senderContext = `You're reaching out on behalf of ${yourCompany}, which provides ${yourServices} for ${targetAudience}.`;
+  if (yourCompanyDescription) {
+    senderContext += `\n\nAbout ${yourCompany}: ${yourCompanyDescription}`;
+  }
+  if (yourName) {
+    senderContext += `\n\nThe outreach will be signed by: ${yourName}`;
+  }
+  
+  return `${senderContext}
+
+TARGET BUSINESS:
+${businessContext}${techContext}${websiteContext}
 Your Task: Create highly personalized outreach that:
 1. References specific details about THEIR business (location, reputation, current tech setup)
 2. Identifies a relevant pain point or opportunity based on their current situation
@@ -177,18 +207,21 @@ Generate 3 outreach formats:
    - Personalized opening that shows you researched them
    - 2-3 specific value propositions relevant to their situation
    - Clear CTA with next step
+   - Sign off with: ${yourName || '[Your Name]'}, ${yourCompany}
 
 2. VOICEMAIL SCRIPT (45-60 seconds)
    - Natural conversational tone
    - Hook them in first 10 seconds
    - Mention specific detail about their business
    - Clear reason to call back
+   - Introduce yourself as: ${yourName || '[Your Name]'} from ${yourCompany}
 
 3. SMS MESSAGE (140-160 characters)
    - Ultra-concise but personalized
    - Include business name
    - One specific hook
    - Clear CTA
+   - Sign with first name: ${yourName ? yourName.split(' ')[0] : '[Name]'}
 
 Format EXACTLY as:
 

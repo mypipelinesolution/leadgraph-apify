@@ -1,0 +1,114 @@
+<table border="1" cellpadding="0" cellspacing="2" style="width:99%">
+	<thead>
+		<tr>
+			<th colspan="1" rowspan="2" scope="row" style="text-align: center;">ANSI Code</th>
+			<th colspan="1" rowspan="2" scope="col" style="text-align: center;">ANSI Color Code</th>
+			<th colspan="1" rowspan="2" scope="col" style="text-align: center;">Positive<br>
+			(+) Lead</th>
+			<th colspan="1" rowspan="2" scope="col" style="text-align: center;">Negative<br>
+			(-) Lead</th>
+			<th colspan="1" rowspan="2" scope="col" style="text-align: center;">Temperature Range</th>
+			<th colspan="2" rowspan="1" scope="col" style="text-align: center;">Initial Calibration Tolerances</th>
+		</tr>
+		<tr>
+			<th scope="col" style="text-align: center;">Standard</th>
+			<th scope="col" style="text-align: center;">Special</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row" style="text-align: center;"><strong>JX</strong></th>
+			<td style="text-align:center"><img alt="Type JX" src="/wp-content/uploads/2026/01/BlackWhite-Red.png" style="cursor: pointer;" class="imageye-selected"></td>
+			<td style="text-align:center">Iron</td>
+			<td style="text-align:center">Constantan<br>
+			(45% Nickel,<br>
+			55% Copper)</td>
+			<td style="text-align:center">32-392°F (0-200°C)</td>
+			<td style="text-align:center">±2.2°C</td>
+			<td style="text-align:center">±1.1°C</td>
+		</tr>
+		<tr>
+			<th scope="row" style="text-align: center;"><strong>KX</strong></th>
+			<td style="text-align:center"><img alt="Type KX" src="/wp-content/uploads/2026/01/YellowYellow-Red.png" style="cursor: pointer;" class="imageye-selected"></td>
+			<td style="text-align:center">Chromel<sup>®</sup><br>
+			(90% Nickel,<br>
+			10% Chromium)</td>
+			<td style="text-align:center">Alumel<br>
+			(95% Nickel,<br>
+			2% Aluminum,<br>
+			2% Manganese,<br>
+			1% Silicon)</td>
+			<td style="text-align:center">32-392°F (0-200°C)</td>
+			<td style="text-align:center">±2.2°C</td>
+			<td style="text-align:center">±1.1°C</td>
+		</tr>
+		<tr>
+			<th scope="row" style="text-align: center;"><strong>EX</strong></th>
+			<td style="text-align:center"><img alt="Type EX" src="/wp-content/uploads/2026/01/PurplePurple-Red.png" style="cursor: pointer;" class="imageye-selected"></td>
+			<td style="text-align:center">Chromel<sup>®</sup><br>
+			(90% Nickel,</td>
+			<td style="text-align:center">Constantan<br>
+			(45% Nickel,</td>
+			<td style="text-align:center">32-392°F (0-200°C)</td>
+			<td style="text-align:center">±1.7°C</td>
+			<td style="text-align:center">±1.1°C</td>
+		</tr>
+		<tr>
+			<th scope="row" style="text-align: center;"><strong>TX</strong></th>
+			<td style="text-align:center"><img alt="Type TX" src="/wp-content/uploads/2026/01/BlueBlue-Red.png" style="cursor: pointer;" class="imageye-selected"></td>
+			<td style="text-align:center">Copper</td>
+			<td style="text-align:center">Constantan<br>
+			(45% Nickel,</td>
+			<td style="text-align:center">32 to 212°F (0-100°C)</td>
+			<td style="text-align:center">±1.0°C</td>
+			<td style="text-align:center">±0.5°C</td>
+		</tr>
+		<tr>
+			<th scope="row" style="text-align: center;"><strong>NX</strong></th>
+			<td style="text-align:center"><img alt="Type NX" src="/wp-content/uploads/2026/01/OrangeOrange-Red.png" style="cursor: pointer;" class="imageye-selected"></td>
+			<td style="text-align:center">Nicrosil<br>
+			(84.6% Nickel,<br>
+			4% Chromium,<br>
+			1.4 % Silicon)</td>
+			<td style="text-align:center">Nisil<br>
+			(95.6% Nickel,<br>
+			4.4 % Silicon)</td>
+			<td style="text-align:center">32-392°F (0-200°C)</td>
+			<td style="text-align:center">±2.2°C</td>
+			<td>±1.1°C</td>
+		</tr>
+		<tr>
+			<th colspan="7" scope="row"><em>Compensating Extension Wire Type</em></th>
+		</tr>
+		<tr>
+			<th scope="row" style="text-align: center;"><strong>RX<span style="color:#ad1219">*</span></strong></th>
+			<td style="text-align:center"><img alt="Type RX" src="/wp-content/uploads/2026/01/GreenBlack-Red.png" style="cursor: pointer;" class="imageye-selected"></td>
+			<td style="text-align:center">Copper</td>
+			<td style="text-align:center">Copper Alloy</td>
+			<td style="text-align:center">32-392°F (0-200°C)</td>
+			<td style="text-align:center">±9°F<br>
+			(±5°C)</td>
+			<td style="text-align:center">N/A</td>
+		</tr>
+		<tr>
+			<th scope="row" style="text-align: center;"><strong>SX<span style="color:#ad1219">*</span></strong></th>
+			<td style="text-align:center"><img alt="Type SX" src="/wp-content/uploads/2026/01/GreenBlack-Red.png" style="cursor: pointer;" class="imageye-selected"></td>
+			<td style="text-align:center">Copper</td>
+			<td style="text-align:center">Copper Alloy</td>
+			<td style="text-align:center">32-392°F (0-200°C)</td>
+			<td style="text-align:center">±9°F<br>
+			(±5°C)</td>
+			<td style="text-align:center">N/A</td>
+		</tr>
+		<tr>
+			<th scope="row" style="text-align: center;"><strong>BX<span style="color:#ad1219">*</span></strong><span style="color:#ad1219">†</span></th>
+			<td style="text-align:center"><img alt="Type BX" src="/wp-content/uploads/2026/01/GrayGray-Red.png" style="cursor: pointer;" class="imageye-selected"></td>
+			<td style="text-align:center">Copper</td>
+			<td style="text-align:center">Copper</td>
+			<td style="text-align:center">32 to 212°F (0-100°C)</td>
+			<td style="text-align:center">+0°F&nbsp;&nbsp;(+0°C)<br>
+			–6.7°F (–3.7°C)</td>
+			<td style="text-align:center">N/A</td>
+		</tr>
+	</tbody>
+</table>

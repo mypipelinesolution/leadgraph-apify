@@ -42,20 +42,48 @@ export async function scrapeGoogleMaps(keyword, location, options) {
           }
         }
         
-        const businesses = await page.$$('div[role="feed"] > div > div[jsaction]');
-        log.info(`Found ${businesses.length} businesses on Google Maps`);
+        const businessCount = await page.$$eval('div[role="feed"] > div > div[jsaction]', els => els.length);
+        log.info(`Found ${businessCount} businesses on Google Maps`);
         
-        for (let i = 0; i < Math.min(businesses.length, maxResults); i++) {
+        const targetCount = Math.min(businessCount, maxResults);
+        
+        for (let i = 0; i < targetCount; i++) {
           try {
-            await businesses[i].click();
-            await page.waitForTimeout(1000);
+            // Re-query the element each time to avoid stale references
+            const businessSelector = `div[role="feed"] > div > div[jsaction]:nth-child(${i + 1})`;
+            const business = await page.$(businessSelector);
+            
+            if (!business) {
+              // Fallback: try clicking by index using evaluate
+              const clicked = await page.evaluate((index) => {
+                const items = document.querySelectorAll('div[role="feed"] > div > div[jsaction]');
+                if (items[index]) {
+                  items[index].click();
+                  return true;
+                }
+                return false;
+              }, i);
+              
+              if (!clicked) {
+                log.warning(`Could not find business ${i + 1}, skipping`);
+                continue;
+              }
+            } else {
+              await business.click();
+            }
+            
+            await page.waitForTimeout(1500);
+            
+            // Wait for the detail panel to load
+            await page.waitForSelector('h1.DUwDvf', { timeout: 5000 }).catch(() => null);
             
             const lead = await extractBusinessData(page, location);
             if (lead) {
               leads.push(lead);
+              log.info(`Extracted: ${lead.business.name}`);
             }
           } catch (error) {
-            log.warning(`Failed to extract business ${i}:`, error.message);
+            log.warning(`Failed to extract business ${i + 1}: ${error.message}`);
           }
         }
       } catch (error) {

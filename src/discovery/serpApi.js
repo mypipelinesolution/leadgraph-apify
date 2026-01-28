@@ -12,9 +12,12 @@ export async function scrapeSERP(keyword, location, options) {
     const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}&num=${Math.min(maxResults, 100)}`;
     
     const crawler = new CheerioCrawler({
-      maxRequestsPerCrawl: 1,
+      maxRequestsPerCrawl: 2,
       maxConcurrency: 1,
       requestHandlerTimeoutSecs: 60,
+      additionalMimeTypes: ['text/html'],
+      navigationTimeoutSecs: 30,
+      ignoreSslErrors: true,
       async requestHandler({ $, request }) {
         try {
           // Look for organic search results
@@ -151,7 +154,8 @@ export async function scrapeSERP(keyword, location, options) {
       },
     });
 
-    await crawler.run([searchUrl]);
+    await crawler.addRequests([{ url: searchUrl, uniqueKey: `serp-${keyword}-${location}` }]);
+    await crawler.run();
 
     log.info(`Collected ${leads.length} leads from SERP`);
     return leads;

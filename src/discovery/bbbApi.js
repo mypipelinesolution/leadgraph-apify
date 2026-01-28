@@ -11,9 +11,12 @@ export async function scrapeBBB(keyword, location, options) {
     const searchUrl = `https://www.bbb.org/search?find_text=${encodeURIComponent(keyword)}&find_loc=${encodeURIComponent(location)}&page=1`;
     
     const crawler = new CheerioCrawler({
-      maxRequestsPerCrawl: Math.ceil(maxResults / 10),
+      maxRequestsPerCrawl: Math.ceil(maxResults / 10) + 1,
       maxConcurrency: 1,
       requestHandlerTimeoutSecs: 60,
+      additionalMimeTypes: ['text/html'],
+      navigationTimeoutSecs: 30,
+      ignoreSslErrors: true,
       async requestHandler({ $, request }) {
         try {
           const businesses = $('.result-item, .search-result-item, [data-bbb-id]');
@@ -135,7 +138,8 @@ export async function scrapeBBB(keyword, location, options) {
       },
     });
 
-    await crawler.run([searchUrl]);
+    await crawler.addRequests([{ url: searchUrl, uniqueKey: `bbb-${keyword}-${location}` }]);
+    await crawler.run();
 
     log.info(`Collected ${leads.length} leads from BBB`);
     return leads;

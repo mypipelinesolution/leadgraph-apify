@@ -1,0 +1,11 @@
+{
+  "keywords": ["tree service", "landscaping", "lawn care"],
+  "locations": ["Boston, MA", "Cambridge, MA", "Somerville, MA"],
+  "maxLeadsPerLocation": 20,
+  "minRating": 3.5,
+  "minReviews": 5,
+  "yourName": "John Smith",
+  "yourCompanyName": "My Pipeline Solution",
+  "yourServices": "website design, local SEO, and Google Ads management",
+  "yourCompanyDescription": "We help home service businesses get more customers online through modern websites and targeted advertising."
+}

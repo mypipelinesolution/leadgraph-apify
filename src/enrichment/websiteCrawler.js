@@ -143,7 +143,10 @@ function buildCrawlResult(crawledPages, allHtml, domain) {
                        allHtml.toLowerCase().includes('intercom') ||
                        allHtml.toLowerCase().includes('drift');
   
-  log.info(`Crawled ${crawledPages.length} page(s) from ${domain}`);
+  // Extract clean text content for AI context
+  const websiteChunk = extractWebsiteChunk(allHtml);
+  
+  log.info(`Crawled ${crawledPages.length} page(s) from ${domain}, extracted ${websiteChunk.length} chars for AI context`);
   
   return {
     pages: crawledPages,
@@ -153,6 +156,110 @@ function buildCrawlResult(crawledPages, allHtml, domain) {
       hasBookingWidget,
       hasChatWidget
     },
-    htmlContent: allHtml
+    htmlContent: allHtml,
+    websiteChunk: websiteChunk
   };
+}
+
+// Extract clean, meaningful text from HTML for AI context
+function extractWebsiteChunk(html, maxLength = 2000) {
+  if (!html) return '';
+  
+  try {
+    let text = html;
+    
+    // Remove script, style, and other non-content tags
+    text = text.replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '');
+    text = text.replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '');
+    text = text.replace(/<noscript[^>]*>[\s\S]*?<\/noscript>/gi, '');
+    text = text.replace(/<svg[^>]*>[\s\S]*?<\/svg>/gi, '');
+    text = text.replace(/<nav[^>]*>[\s\S]*?<\/nav>/gi, ''); // Remove nav menus
+    text = text.replace(/<footer[^>]*>[\s\S]*?<\/footer>/gi, ''); // Remove footer
+    text = text.replace(/<!--[\s\S]*?-->/g, ''); // Remove comments
+    
+    // Extract key sections with labels
+    const sections = [];
+    
+    // Get title
+    const titleMatch = html.match(/<title[^>]*>([^<]+)<\/title>/i);
+    if (titleMatch) {
+      sections.push(`TITLE: ${titleMatch[1].trim()}`);
+    }
+    
+    // Get meta description
+    const metaDescMatch = html.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']+)["']/i);
+    if (metaDescMatch) {
+      sections.push(`DESCRIPTION: ${metaDescMatch[1].trim()}`);
+    }
+    
+    // Get H1 headings (main topics)
+    const h1Matches = html.match(/<h1[^>]*>([^<]+)<\/h1>/gi);
+    if (h1Matches && h1Matches.length > 0) {
+      const h1s = h1Matches.map(h => h.replace(/<[^>]+>/g, '').trim()).filter(h => h.length > 0);
+      if (h1s.length > 0) {
+        sections.push(`MAIN HEADINGS: ${h1s.slice(0, 3).join(' | ')}`);
+      }
+    }
+    
+    // Get H2 headings (services/sections)
+    const h2Matches = html.match(/<h2[^>]*>([^<]+)<\/h2>/gi);
+    if (h2Matches && h2Matches.length > 0) {
+      const h2s = h2Matches.map(h => h.replace(/<[^>]+>/g, '').trim()).filter(h => h.length > 0);
+      if (h2s.length > 0) {
+        sections.push(`SECTIONS: ${h2s.slice(0, 5).join(' | ')}`);
+      }
+    }
+    
+    // Extract about/services content
+    const aboutMatch = html.match(/<(?:section|div)[^>]*(?:id|class)=["'][^"']*(?:about|services|what-we-do)[^"']*["'][^>]*>([\s\S]*?)<\/(?:section|div)>/i);
+    if (aboutMatch) {
+      const aboutText = aboutMatch[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+      if (aboutText.length > 50) {
+        sections.push(`ABOUT/SERVICES: ${aboutText.substring(0, 500)}`);
+      }
+    }
+    
+    // Get main body text (cleaned)
+    text = text.replace(/<[^>]+>/g, ' '); // Remove all HTML tags
+    text = text.replace(/&nbsp;/g, ' ');
+    text = text.replace(/&amp;/g, '&');
+    text = text.replace(/&lt;/g, '<');
+    text = text.replace(/&gt;/g, '>');
+    text = text.replace(/&quot;/g, '"');
+    text = text.replace(/&#\d+;/g, ''); // Remove numeric entities
+    text = text.replace(/\s+/g, ' ').trim();
+    
+    // Remove common boilerplate phrases
+    const boilerplate = [
+      /all rights reserved/gi,
+      /privacy policy/gi,
+      /terms of service/gi,
+      /cookie policy/gi,
+      /copyright \d{4}/gi,
+      /powered by/gi,
+      /built with/gi
+    ];
+    for (const pattern of boilerplate) {
+      text = text.replace(pattern, '');
+    }
+    
+    // Add main content excerpt
+    if (text.length > 100) {
+      sections.push(`CONTENT: ${text.substring(0, 1000)}`);
+    }
+    
+    // Combine sections
+    const result = sections.join('\n\n');
+    
+    // Truncate to max length
+    if (result.length > maxLength) {
+      return result.substring(0, maxLength) + '...';
+    }
+    
+    return result;
+    
+  } catch (error) {
+    log.warning('Failed to extract website chunk:', error.message);
+    return '';
+  }
 }
