@@ -8,16 +8,14 @@
       "type": "array",
       "description": "What type of businesses are you looking for? (e.g., 'plumber', 'landscaping', 'HVAC contractor')",
       "editor": "stringList",
-      "default": ["tree service"],
-      "prefill": ["tree service"]
+      "default": ["tree service"]
     },
     "locations": {
       "title": "📍 Locations",
       "type": "array",
       "description": "Where to search. Use 'City, State' format (e.g., 'Boston, MA', 'Austin, TX')",
       "editor": "stringList",
-      "default": ["Boston, MA"],
-      "prefill": ["Boston, MA"]
+      "default": ["Boston, MA"]
     },
     "maxLeadsPerLocation": {
       "title": "📊 Max Leads per Location",
@@ -48,30 +46,29 @@
       "title": "👤 Your Name",
       "type": "string",
       "description": "Your name for AI-generated outreach signatures (e.g., 'John Smith')",
-      "default": "",
-      "prefill": ""
+      "editor": "textfield",
+      "default": ""
     },
     "yourCompanyName": {
       "title": "🏢 Your Company Name",
       "type": "string",
       "description": "Your company name for AI-generated outreach",
-      "default": "",
-      "prefill": ""
+      "editor": "textfield",
+      "default": ""
     },
     "yourServices": {
       "title": "💼 Your Services",
       "type": "string",
       "description": "What services do you offer? (e.g., 'website design, SEO, and Google Ads management')",
-      "default": "",
-      "prefill": ""
+      "editor": "textfield",
+      "default": ""
     },
     "yourCompanyDescription": {
       "title": "📝 Brief Company Description",
       "type": "string",
       "description": "A short description of your company for better AI personalization (e.g., 'We help home service businesses get more customers through digital marketing')",
-      "default": "",
       "editor": "textarea",
-      "prefill": ""
+      "default": ""
     }
   },
   "required": ["keywords", "locations"]
