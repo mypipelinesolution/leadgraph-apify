@@ -163,14 +163,6 @@ Website enrichment depends on the business's website:
 - Some use JavaScript-heavy frameworks that are harder to parse
 - Some simply don't have much content on their homepage
 
-### Why did some AI outreach fail to generate?
-
-AI outreach requires:
-- A valid OpenAI API key (set as `OPENAI_API_KEY` environment variable)
-- Enough context about the business
-
-If the AI response format varies, we use fallback extraction to still provide content.
-
 ### How long does it take?
 
 Typical run times:
@@ -216,20 +208,6 @@ The more context you provide, the better the AI outreach will be.
 
 ---
 
-## Cost Breakdown
-
-| Component | Cost per Lead |
-|-----------|---------------|
-| Apify Compute | ~$0.001 |
-| OpenAI (gpt-4o-mini) | ~$0.0005 |
-| Google Places API (if enabled) | ~$0.017 |
-| **Total (web scraping)** | **~$0.002/lead** |
-| **Total (with API)** | **~$0.02/lead** |
-
-*Google offers $200/month free credit, covering ~10,000 leads.*
-
----
-
 ## Start Finding Leads Now
 
 1. Enter your target keywords and locations
@@ -244,7 +222,7 @@ The more context you provide, the better the AI outreach will be.
 
 - **Timeout errors?** Increase timeout in Run Options (default: 30 minutes)
 - **No leads found?** Try broader keywords or different locations
-- **Missing AI content?** Make sure `OPENAI_API_KEY` is set in environment variables
+- **Missing AI content?** Check the logs for any API errors
 
 ---
 
