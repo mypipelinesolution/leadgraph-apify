@@ -127,6 +127,14 @@ function buildPrompt({
   const yourCompanyDescription = options?.ai?.yourCompany?.description || '';
   const targetAudience = options?.ai?.yourCompany?.targetAudience || 'local service businesses';
   
+  // Debug log to verify values are being passed
+  log.info('AI Prompt Context', { 
+    yourName: yourName || '(empty)', 
+    yourCompany, 
+    yourServices,
+    hasWebsiteChunk: websiteChunk?.length > 0
+  });
+  
   // Build context about the business
   let businessContext = `Business: ${businessName}
 Category: ${category}
