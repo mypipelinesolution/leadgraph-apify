@@ -1,0 +1,13 @@
+{
+  "actorOutputSchemaVersion": 1,
+  "title": "Local Business Leads with AI Outreach",
+  "description": "High-quality local business leads with contact info, lead scores, and personalized AI-generated outreach content.",
+  "properties": {
+    "leads": {
+      "type": "string",
+      "title": "📊 Business Leads",
+      "description": "Local business leads with contact info, scores, and AI outreach",
+      "template": "{{links.apiDefaultDatasetUrl}}/items"
+    }
+  }
+}
