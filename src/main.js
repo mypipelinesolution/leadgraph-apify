@@ -20,11 +20,19 @@ await Actor.init();
 
 const startTime = Date.now();
 
+// Helper for real-time status updates
+const updateStatus = async (message) => {
+  await Actor.setStatusMessage(message);
+  log.info(message);
+};
+
 try {
   const rawInput = await Actor.getInput();
   
   // Normalize input: map simplified schema to internal structure
   const input = normalizeInput(rawInput);
+  
+  await updateStatus('🚀 Starting LeadGraph™...');
   
   log.info('LeadGraph™ Actor started', { 
     keywords: input.keywords,
@@ -39,6 +47,8 @@ try {
   const locations = input.locations || [];
   const sources = input.sources || ['googleMaps'];
 
+  await updateStatus(`🔍 Discovering leads for ${keywords.length} keywords in ${locations.length} locations...`);
+  
   log.info('Starting discovery phase', { 
     keywordCount: keywords.length, 
     locationCount: locations.length,
@@ -100,6 +110,7 @@ try {
     }
   }
 
+  await updateStatus(`✅ Found ${rawLeads.length} businesses`);
   log.info(`Discovery complete: ${rawLeads.length} raw leads collected`);
 
   if (rawLeads.length === 0) {
@@ -115,6 +126,7 @@ try {
     });
   } else {
 
+  await updateStatus(`🔄 Deduplicating ${rawLeads.length} leads...`);
   log.info('Starting deduplication phase');
   rawLeads.forEach(lead => {
     lead.dedupeId = generateDedupeId(lead.business);
@@ -149,6 +161,7 @@ try {
   }
 
   if (input.enrichment?.crawlWebsite) {
+    await updateStatus(`🌐 Enriching ${mergedLeads.length} leads (crawling websites)...`);
     log.info('Starting enrichment phase');
     let enrichedCount = 0;
     
@@ -216,6 +229,7 @@ try {
   }
 
   if (input.scoring?.enabled !== false) {
+    await updateStatus(`📊 Scoring ${mergedLeads.length} leads...`);
     log.info('Starting scoring phase');
     for (const lead of mergedLeads) {
       lead.score = scoreLead(lead, input.scoring?.weightsPreset || 'localService');
@@ -224,33 +238,47 @@ try {
   }
 
   if (input.ai?.enabled) {
+    await updateStatus(`🤖 Generating AI outreach for ${mergedLeads.length} leads...`);
     log.info('Starting AI outreach generation');
     let aiCount = 0;
     
-    for (let i = 0; i < mergedLeads.length; i++) {
-      const lead = mergedLeads[i];
-      try {
-        const outreach = await generateOutreach(lead, input);
-        
-        if (outreach.coldEmail || outreach.voicemail || outreach.sms) {
-          lead.ai = {
-            coldEmail: outreach.coldEmail,
-            voicemail: outreach.voicemail,
-            sms: outreach.sms,
-            generatedAt: new Date().toISOString()
-          };
-          aiCount++;
-        }
-        
-        // Add delay between API calls to avoid rate limiting (1 second)
-        if (i < mergedLeads.length - 1) {
-          await new Promise(resolve => setTimeout(resolve, 1000));
-        }
-      } catch (error) {
-        log.warning(`AI generation failed for ${lead.business.name}:`, error.message);
+    // Process AI in batches of 3 for faster execution
+    const batchSize = 3;
+    for (let i = 0; i < mergedLeads.length; i += batchSize) {
+      const batch = mergedLeads.slice(i, i + batchSize);
+      const progress = Math.round(((i + batchSize) / mergedLeads.length) * 100);
+      await updateStatus(`🤖 AI outreach: ${Math.min(i + batchSize, mergedLeads.length)}/${mergedLeads.length} leads (${progress}%)`);
+      
+      const results = await Promise.allSettled(
+        batch.map(async (lead) => {
+          try {
+            const outreach = await generateOutreach(lead, input);
+            if (outreach.coldEmail || outreach.voicemail || outreach.sms) {
+              lead.ai = {
+                coldEmail: outreach.coldEmail,
+                voicemail: outreach.voicemail,
+                sms: outreach.sms,
+                generatedAt: new Date().toISOString()
+              };
+              return true;
+            }
+            return false;
+          } catch (error) {
+            log.warning(`AI generation failed for ${lead.business.name}:`, error.message);
+            return false;
+          }
+        })
+      );
+      
+      aiCount += results.filter(r => r.status === 'fulfilled' && r.value).length;
+      
+      // Small delay between batches to avoid rate limiting
+      if (i + batchSize < mergedLeads.length) {
+        await new Promise(resolve => setTimeout(resolve, 500));
       }
     }
     
+    await updateStatus(`✨ AI outreach complete: ${aiCount}/${mergedLeads.length} leads`);
     log.info(`AI outreach complete: ${aiCount}/${mergedLeads.length} leads with AI content`);
   }
 
@@ -270,6 +298,7 @@ try {
   const { cleanLeadsForDataset } = await import('./utils/cleanOutput.js');
   const cleanedLeads = cleanLeadsForDataset(finalLeads);
 
+  await updateStatus(`💾 Saving ${cleanedLeads.length} leads to dataset...`);
   log.info(`Saving ${cleanedLeads.length} leads to dataset (cleaned format)`);
   await Actor.pushData(cleanedLeads);
 
@@ -304,9 +333,11 @@ try {
 
   await Actor.setValue('RUN_SUMMARY', summary);
 
+  const runtime = Math.round(summary.runTimeMs / 1000);
+  await updateStatus(`🎉 Done! ${finalLeads.length} leads with AI outreach ready (${runtime}s)`);
   log.info('LeadGraph™ Actor finished successfully', {
     totalLeads: finalLeads.length,
-    runtime: `${Math.round(summary.runTimeMs / 1000)}s`
+    runtime: `${runtime}s`
   });
   }
 

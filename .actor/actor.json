@@ -1,25 +1,49 @@
 {
   "actorSpecification": 1,
   "name": "leadgraph",
-  "title": "LeadGraph™ - Local Business Lead Discovery",
-  "description": "Multi-source local business lead discovery with enrichment, deduplication, scoring, and CRM integration. Uses official APIs for reliable data collection.",
-  "version": "0.2",
+  "title": "LeadGraph™ - Local Business Leads with AI-Powered Outreach",
+  "description": "Discover local business leads with AI-generated cold emails, voicemail scripts, and SMS messages. Includes website enrichment, lead scoring, and ready-to-use outreach content.",
+  "version": "0.3",
   "buildTag": "latest",
   "input": "./INPUT_SCHEMA.json",
   "dockerfile": "./Dockerfile",
   "readme": "./README.md",
   "defaultRunOptions": {
-    "timeout": 900
+    "timeout": 1800
   },
   "storages": {
     "dataset": {
       "actorSpecification": 1,
-      "title": "Leads",
+      "title": "Local Business Leads with AI Outreach",
+      "description": "High-quality leads with contact info, lead scores, and personalized AI-generated outreach content ready to use.",
       "views": {
         "overview": {
-          "title": "Overview",
+          "title": "Lead Overview",
+          "description": "Quick view of lead quality and contact info",
           "transformation": {
-            "fields": ["business.name", "business.category", "business.address.formatted", "business.phone", "online.website", "score.leadScore", "score.tier"]
+            "fields": ["tier", "leadScore", "businessName", "phone", "email", "website", "city", "state", "rating", "reviewCount"]
+          },
+          "display": {
+            "component": "table",
+            "properties": {
+              "tier": { "label": "Tier", "format": "text" },
+              "leadScore": { "label": "Score", "format": "number" },
+              "businessName": { "label": "Business", "format": "text" },
+              "phone": { "label": "Phone", "format": "text" },
+              "email": { "label": "Email", "format": "text" },
+              "website": { "label": "Website", "format": "link" },
+              "city": { "label": "City", "format": "text" },
+              "state": { "label": "State", "format": "text" },
+              "rating": { "label": "Rating", "format": "number" },
+              "reviewCount": { "label": "Reviews", "format": "number" }
+            }
+          }
+        },
+        "outreach": {
+          "title": "AI Outreach Content",
+          "description": "Ready-to-use personalized outreach messages",
+          "transformation": {
+            "fields": ["businessName", "email", "coldEmailSubject", "coldEmailBody", "voicemailScript", "smsMessage"]
           }
         }
       }
