@@ -89,7 +89,13 @@ export async function generateOutreach(lead, options) {
     // Debug: Log raw AI response for troubleshooting
     log.debug(`Raw AI response for ${businessName}:`, content.substring(0, 200));
 
-    const outreach = parseOutreachResponse(content);
+    let outreach = parseOutreachResponse(content);
+    
+    // If email parsing failed, create a fallback email from the raw content
+    if (!outreach.coldEmail && content.length > 100) {
+      log.info(`Using fallback email extraction for ${businessName}`);
+      outreach.coldEmail = createFallbackEmail(content, businessName, options);
+    }
 
     log.info(`Generated AI outreach for ${businessName}`);
     return outreach;
@@ -246,6 +252,45 @@ SMS:
 [sms message]`;
 }
 
+// Create a fallback email when AI response parsing fails
+function createFallbackEmail(rawContent, businessName, options) {
+  const yourName = options?.ai?.yourName || '';
+  const yourCompany = options?.ai?.yourCompany?.name || 'Our Agency';
+  const yourServices = options?.ai?.yourCompany?.services || 'digital marketing services';
+  
+  // Try to extract any email-like content from the raw response
+  // Look for greeting patterns
+  const greetingMatch = rawContent.match(/(?:Hi|Hello|Dear|Hey)[^.!?]*[.!?]/i);
+  const greeting = greetingMatch ? greetingMatch[0] : `Hi ${businessName} team,`;
+  
+  // Extract body paragraphs (sentences that look like email content)
+  const sentences = rawContent.split(/[.!?]+/).filter(s => s.trim().length > 30);
+  const bodyContent = sentences.slice(0, 5).join('. ').trim();
+  
+  if (bodyContent.length > 100) {
+    // Use extracted content
+    const subject = `Opportunity to Enhance ${businessName}'s Online Presence`;
+    const signoff = yourName ? `\n\nBest regards,\n${yourName}\n${yourCompany}` : `\n\nBest regards,\n${yourCompany}`;
+    return `Subject: ${subject}\n\n${greeting}\n\n${bodyContent}.${signoff}`;
+  }
+  
+  // Ultimate fallback: generate a simple template email
+  const subject = `Quick Question for ${businessName}`;
+  const body = `${greeting}
+
+I came across ${businessName} and was impressed by your reputation in the local market. 
+
+At ${yourCompany}, we specialize in ${yourServices} for local service businesses. I believe there's an opportunity to help you attract more customers online.
+
+Would you be open to a brief conversation about how we might be able to help?
+
+Best regards,
+${yourName || 'The Team'}
+${yourCompany}`;
+
+  return `Subject: ${subject}\n\n${body}`;
+}
+
 function parseOutreachResponse(content) {
   const outreach = {
     coldEmail: '',
@@ -254,27 +299,55 @@ function parseOutreachResponse(content) {
   };
 
   try {
-    // More flexible regex patterns to handle variations in AI output
-    const subjectMatch = content.match(/COLD_EMAIL_SUBJECT:\s*\n(.+?)(?=\n\n|COLD_EMAIL_BODY:|$)/s);
-    const bodyMatch = content.match(/COLD_EMAIL_BODY:\s*\n([\s\S]+?)(?=\n\nVOICEMAIL:|VOICEMAIL:|$)/);
-    const voicemailMatch = content.match(/VOICEMAIL:\s*\n([\s\S]+?)(?=\n\nSMS:|SMS:|$)/);
-    const smsMatch = content.match(/SMS:\s*\n([\s\S]+?)$/);
+    // Very flexible regex patterns to handle AI format variations
+    // Subject: allow optional newline, colon variations
+    const subjectMatch = content.match(/COLD[_\s]?EMAIL[_\s]?SUBJECT:?\s*\n?(.*?)(?=\n*COLD[_\s]?EMAIL[_\s]?BODY|$)/is);
+    
+    // Body: capture everything until VOICEMAIL
+    const bodyMatch = content.match(/COLD[_\s]?EMAIL[_\s]?BODY:?\s*\n?([\s\S]*?)(?=\n*VOICEMAIL|$)/i);
+    
+    // Voicemail: capture until SMS
+    const voicemailMatch = content.match(/VOICEMAIL:?\s*\n?([\s\S]*?)(?=\n*SMS:|$)/i);
+    
+    // SMS: capture rest
+    const smsMatch = content.match(/SMS:?\s*\n?([\s\S]*?)$/i);
 
     if (subjectMatch && bodyMatch) {
       const subject = subjectMatch[1].trim();
       const body = bodyMatch[1].trim();
-      outreach.coldEmail = `Subject: ${subject}\n\n${body}`;
-      log.debug(`Parsed email - Subject length: ${subject.length}, Body length: ${body.length}`);
-    } else {
-      log.warning('Failed to parse email subject/body from AI response');
+      if (subject && body) {
+        outreach.coldEmail = `Subject: ${subject}\n\n${body}`;
+      }
+    }
+    
+    // Fallback: try to find Subject: pattern directly in content
+    if (!outreach.coldEmail) {
+      const altSubjectMatch = content.match(/Subject:?\s*(.+?)(?:\n|$)/i);
+      const altBodyMatch = content.match(/(?:Subject:?.+?\n\n?)([\s\S]+?)(?=\n*VOICEMAIL|$)/i);
+      if (altSubjectMatch && altBodyMatch) {
+        outreach.coldEmail = `Subject: ${altSubjectMatch[1].trim()}\n\n${altBodyMatch[1].trim()}`;
+      }
+    }
+    
+    // If still no email, try to extract any reasonable email content
+    if (!outreach.coldEmail && content.includes('Subject:')) {
+      const emailSection = content.split(/VOICEMAIL/i)[0];
+      if (emailSection && emailSection.length > 100) {
+        outreach.coldEmail = emailSection.trim();
+      }
     }
 
-    if (voicemailMatch) {
+    if (voicemailMatch && voicemailMatch[1].trim()) {
       outreach.voicemail = voicemailMatch[1].trim();
     }
 
-    if (smsMatch) {
+    if (smsMatch && smsMatch[1].trim()) {
       outreach.sms = smsMatch[1].trim();
+    }
+    
+    // Log if we still couldn't parse
+    if (!outreach.coldEmail) {
+      log.warning('Failed to parse email from AI response. First 200 chars:', content.substring(0, 200));
     }
 
   } catch (error) {
